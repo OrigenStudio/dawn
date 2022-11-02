@@ -108,30 +108,32 @@
     "collage": {
       "type": "collage",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "4a67ee83-7362-412f-8b16-36db2fa6dc71": {
+          "type": "image",
           "settings": {
-            "collection": ""
+            "image": "shopify:\/\/shop_images\/L1004560.jpg",
+            "image_padding": false
           }
         },
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "brandblack-mens-rare-metal-ii-silver-black-slbw",
             "second_image": false
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "38bdb744-142b-448f-9316-7c872f9acee2": {
+          "type": "product",
           "settings": {
-            "collection": ""
+            "product": "",
+            "second_image": false
           }
         }
       },
       "block_order": [
-        "collection-0",
+        "4a67ee83-7362-412f-8b16-36db2fa6dc71",
         "product",
-        "collection-1"
+        "38bdb744-142b-448f-9316-7c872f9acee2"
       ],
       "settings": {
         "heading": "Multimedia collage",
