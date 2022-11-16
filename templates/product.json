@@ -3,23 +3,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
           }
         },
-        "caption": {
+        "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
           }
         },
         "price": {
@@ -42,7 +35,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
           }
         },
         "description": {
@@ -50,11 +43,20 @@
           "settings": {
           }
         },
-        "collapsible-row-0": {
+        "77d69a2b-269d-4ac6-bdaa-1760adbafaf5": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials",
-            "icon": "leaf",
+            "heading": "Description",
+            "icon": "pants",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sizing",
+            "icon": "ruler",
             "content": "",
             "page": ""
           }
@@ -68,51 +70,34 @@
             "page": ""
           }
         },
-        "collapsible-row-2": {
+        "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
+            "heading": "Financing",
+            "icon": "box",
+            "content": "<p>We offer financing vía Cetelem for bikes and Klarna for accesories<\/p>",
             "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "caption",
+        "vendor",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
+        "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
         "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "collapsible-row-1",
+        "collapsible-row-0"
       ],
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
         "gallery_layout": "stacked",
-        "media_size": "large",
+        "media_size": "medium",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "show",
         "hide_variants": true,
