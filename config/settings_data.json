@@ -106,13 +106,13 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/Velodrom.cc",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "http:\/\/instagram.com\/velodrom.cc",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UChsjeH5tK_e0qbrCj9ZCrTw",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
@@ -160,39 +160,47 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "footer-2": {
+            "type": "text",
+            "settings": {
+              "heading": "Locations",
+              "subtext": "<p><strong>Velodrom Barcelona<\/strong><br\/>Compte de Salvatierra 6, 08006 – Barcelona<br\/><a href=\"mailto:info@velodrom.cc\">info@velodrom.cc<\/a><\/p><p><strong>Velodrom Girona<\/strong><br\/>Carrer de l'Argenteria 9 - 17004 Girona<br\/><a href=\"mailto:info@velodrom.cc\">info@velodrom.cc<\/a><\/p><p><strong>Velodrom Katowice<\/strong><br\/>Kępowa 45, 40-583 Katowice, Poland<br\/><a href=\"mailto:katowice@velodrom.cc\">katowice@velodrom.cc<\/a><\/p><p><strong>Velodrom Ecuador<\/strong><br\/>Los Cipreses C, Ruta Viva 8, Quito 170184, Ecuador<br\/><a href=\"mailto:ecuador@velodrom.cc\">ecuador@velodrom.cc<\/a><\/p>"
+            }
+          },
+          "534d578a-bebf-4586-a5b1-8c2b0349f3ff": {
+            "type": "text",
+            "settings": {
+              "heading": "Working Hours",
+              "subtext": "<p><strong>Velodrom Barcelona<br\/><\/strong>Monday to Friday: 10:00-13:30 and 16:30-20:30<br\/>Saturday: 16:30-20:30<br\/>Sundays: Closed<br\/><br\/><strong>Velodrom Girona<br\/><\/strong>Tuesday to Saturday: 10:00-13:30 and 16:30-20:30<br\/>Monday: 16:30 - 20:30<br\/>Sundays: Closed<br\/><br\/><strong>Velodrom Katowice<br\/><\/strong>Monday to Friday: 10:00-18:00<br\/>Saturdays: 10:00 - 15:00 Monday: 16:30 - 20:30<br\/>Sundays: Closed<br\/><br\/><strong>Velodrom Ecuador<br\/><\/strong>Monday to Friday: 10:30-13:30 and 14:30-19:30<br\/>Saturdays: 11:00 - 14:00 Monday: 16:00 - 19:00<br\/>Sundays: Closed<\/p>"
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Velodrom",
               "menu": "footer"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
+              "heading": "Customer Service",
               "menu": "footer"
-            }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
           }
         },
         "block_order": [
+          "footer-2",
+          "534d578a-bebf-4586-a5b1-8c2b0349f3ff",
           "footer-0",
-          "footer-1",
-          "footer-2"
+          "footer-1"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "background-2",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_heading": "",
           "show_social": true,
-          "enable_country_selector": true,
+          "enable_country_selector": false,
           "enable_language_selector": true,
           "payment_enable": true,
           "margin_top": 48,
