@@ -124,6 +124,20 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
+        "blocks": {
+          "c0e8bc6f-a7d3-4e1b-9872-84217828833f": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "text_alignment": "center",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "c0e8bc6f-a7d3-4e1b-9872-84217828833f"
+        ],
         "settings": {
         }
       },
@@ -134,8 +148,8 @@
           "logo": "shopify:\/\/shop_images\/Vlogo_minuscul.png",
           "logo_width": 200,
           "logo_position": "middle-left",
-          "menu": "main-menu",
-          "menu_type_desktop": "dropdown",
+          "menu": "test-menu",
+          "menu_type_desktop": "mega",
           "show_line_separator": true,
           "enable_sticky_header": true,
           "mobile_logo_position": "center",
