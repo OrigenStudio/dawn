@@ -48,7 +48,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Description",
-            "icon": "shirt",
+            "icon": "clipboard",
             "content": "",
             "page": ""
           }
@@ -58,7 +58,7 @@
           "settings": {
             "heading": "Sizing",
             "icon": "ruler",
-            "content": "",
+            "content": "<p><\/p>",
             "page": ""
           }
         },
@@ -97,14 +97,14 @@
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
-        "gallery_layout": "stacked",
-        "media_size": "medium",
+        "gallery_layout": "columns",
+        "media_size": "large",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 24
       }
     },
     "image-with-text": {
