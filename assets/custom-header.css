@@ -1,0 +1,126 @@
+.header-custom {
+  padding: 0 1.5rem;
+}
+@media screen and (min-width: 990px) {
+  .header-custom {
+    padding: 0 5rem;
+  }
+}
+
+/* COMMON HEADER */
+.header__common {
+  display: grid;
+  grid-template-areas: "left-icon heading icons";
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+@media screen and (min-width: 990px) {
+  .header__common {
+    grid-template-areas: "heading nav icons";
+    grid-template-columns: 1fr auto auto;
+  }
+}
+
+.header__common-heading {
+  grid-area: heading;
+  justify-self: center;
+
+  margin: 0;
+  line-height: 0;
+}
+.header__common-heading img {
+  max-width: 200px;
+}
+
+.header__common-navigation {
+  grid-area: nav;
+  display: none;
+}
+@media screen and (min-width: 990px) {
+  .header__common-heading {
+    justify-self: start;
+  }
+
+  .header__common-navigation {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+
+  .header__common-navigation:before,
+  .header__common-navigation:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #e5e5e5;
+    top: 0;
+  }
+  .header__common-navigation:before {
+    left: 0;
+  }
+  .header__common-navigation:after {
+    right: 0;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px 2rem;
+    gap: 3rem;
+  }
+  .navigation-list li {
+    margin: 24px 0px;
+    width: auto;
+    height: auto;
+  }
+
+  .navigation-list__item {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+  }
+}
+
+.header__common-account {
+  grid-area: icons;
+  justify-self: end;
+  width: 2.85rem;
+  height: 2.85rem;
+  fill: inherit;
+}
+
+/* STICKY HEADER */
+.header__sticky {
+}
+
+@media screen and (max-width: 989px) {
+  .header--mobile {
+    grid-template-columns: auto 2fr 1fr;
+  }
+}
+
+/* MOBILE DRAWER */
+header-drawer {
+  justify-self: start;
+  margin-left: -1.2rem;
+}
+
+.header__icon .icon {
+  width: 2.85rem;
+  height: 2.85rem;
+  fill: inherit;
+}
+
+@media screen and (min-width: 990px) {
+  header-drawer {
+    display: none;
+  }
+}
