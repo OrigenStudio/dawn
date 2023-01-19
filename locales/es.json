@@ -53,6 +53,14 @@
       "next_slide": "Diapositiva a la derecha",
       "previous_slide": "Diapositiva a la izquierda",
       "name": "Carrusel"
+    },
+    "common_header":{
+      "ecommerce": "Shop",
+      "locations": "Locations",
+      "stories": "Stories",
+      "tours": "Travel",
+      "bike_builder": "Bike builder",
+      "contact": "Contact"
     }
   },
   "newsletter": {
