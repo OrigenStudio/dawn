@@ -3,7 +3,6 @@
       'common'
       'sticky';
   grid-template-columns: 1fr;
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 @media screen and (max-width: 989px) {
   .header--mobile {
@@ -110,22 +109,34 @@
   fill: inherit;
 }
 
-/* STICKY HEADER */
+/* FIXED HEADER */
 
-.header__sticky {
+.header__fixed {
   display: none;
 }
 
 @media screen and (min-width: 990px) {
   .header__sticky {
     grid-area: sticky;
-
     display: grid;
     grid-template-areas: "links icons";
     grid-template-columns: 1fr auto;
     column-gap: 1.5rem;
     align-items: center;
     padding: 0 5rem;
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    min-height: 50px;
+
+    position: relative;
+    transition: position 0.3s ease;
+  }
+
+  .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
   }
 }
 

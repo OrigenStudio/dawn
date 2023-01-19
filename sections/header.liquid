@@ -105,7 +105,7 @@ summary.list-menu__item {
   </symbol>
 </svg>
 
-<div class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<div class="header-wrapper gradient">
 <header class="header header--custom-align header--mobile{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     <div class="header__common">
         {%- if section.settings.menu != blank -%}
@@ -329,7 +329,7 @@ summary.list-menu__item {
             </span>
         </a>
     </div>
-    <div class="header__sticky">
+    <sticky-header class="header__sticky">
         <div class="header__sticky-navigation">
             {%- if section.settings.menu != blank -%}
                 {%- if section.settings.menu_type_desktop == 'dropdown' -%}
@@ -530,7 +530,7 @@ summary.list-menu__item {
                 {%- endif -%}
             </a>
         </div>
-    </div>
+    </sticky-header>
 </header>
 </div>
 
@@ -539,7 +539,37 @@ summary.list-menu__item {
 {%- endif -%}
 
 {% javascript %}
-   
+    class StickyHeader extends HTMLElement {
+        constructor(){
+            super();
+        }
+
+        connectedCallback() {
+            this.header = document.querySelector('sticky-header');
+            this.headerBounds = {};
+            this.currentScrollTop = 0;
+            this.predictiveSearch = this.querySelector('predictive-search');
+
+            this.onScrollHandler = this.onScroll.bind(this);
+            window.addEventListener('scroll', this.onScrollHandler, false);
+        }
+
+        onScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
+
+            if (scrollTop > this.currentScrollTop && scrollTop >= 77.8) {
+                this.header.classList.add('sticky', 'animate');
+            } else if (scrollTop < this.currentScrollTop && scrollTop <= 77.8) {
+                this.header.classList.remove('sticky', 'animate');
+            }
+
+            this.currentScrollTop = scrollTop;
+        }
+    }
+    
+    customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
 <script type="application/ld+json">
