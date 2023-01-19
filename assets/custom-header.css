@@ -3,9 +3,7 @@
       'common'
       'sticky';
   grid-template-columns: 1fr;
-
-  position: relative;
-  z-index: 1;
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 @media screen and (max-width: 989px) {
   .header--mobile {
@@ -143,7 +141,7 @@
 
 /* MOBILE DRAWER */
 
-.header__common .header__icon .icon {
+.header__common .icon-hamburger {
   width: 2.85rem;
   height: 2.85rem;
   fill: inherit;
