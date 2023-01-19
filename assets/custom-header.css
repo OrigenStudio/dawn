@@ -1,24 +1,41 @@
-.header-custom {
-  padding: 0 1.5rem;
+.header {
+  grid-template-areas:
+      'common'
+      'sticky';
+  grid-template-columns: 1fr;
+
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 989px) {
+  .header--mobile {
+    grid-template-areas: 'common';
+  }
 }
 @media screen and (min-width: 990px) {
-  .header-custom {
-    padding: 0 5rem;
+  .header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
+    margin-top: 0;
   }
 }
 
 /* COMMON HEADER */
+
 .header__common {
+  grid-area: common;
+
   display: grid;
   grid-template-areas: "left-icon heading icons";
   grid-template-columns: 1fr 2fr 1fr;
   column-gap: 1.5rem;
   align-items: center;
+  padding: 0 1.5rem;
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 @media screen and (min-width: 990px) {
   .header__common {
     grid-template-areas: "heading nav icons";
     grid-template-columns: 1fr auto auto;
+    padding: 0 5rem;
   }
 }
 
@@ -29,14 +46,12 @@
   margin: 0;
   line-height: 0;
 }
-.header__common-heading img {
-  max-width: 200px;
-}
 
 .header__common-navigation {
   grid-area: nav;
   display: none;
 }
+
 @media screen and (min-width: 990px) {
   .header__common-heading {
     justify-self: start;
@@ -98,29 +113,38 @@
 }
 
 /* STICKY HEADER */
+
 .header__sticky {
-}
-
-@media screen and (max-width: 989px) {
-  .header--mobile {
-    grid-template-columns: auto 2fr 1fr;
-  }
-}
-
-/* MOBILE DRAWER */
-header-drawer {
-  justify-self: start;
-  margin-left: -1.2rem;
-}
-
-.header__icon .icon {
-  width: 2.85rem;
-  height: 2.85rem;
-  fill: inherit;
+  display: none;
 }
 
 @media screen and (min-width: 990px) {
-  header-drawer {
-    display: none;
+  .header__sticky {
+    grid-area: sticky;
+
+    display: grid;
+    grid-template-areas: "links icons";
+    grid-template-columns: 1fr auto;
+    column-gap: 1.5rem;
+    align-items: center;
+    padding: 0 5rem;
   }
+}
+
+.header__sticky-navigation {
+  grid-area: links;
+  justify-self: center;
+}
+
+.header__sticky-icons {
+  grid-area: icons;
+  justify-self: end;
+}
+
+/* MOBILE DRAWER */
+
+.header__common .header__icon .icon {
+  width: 2.85rem;
+  height: 2.85rem;
+  fill: inherit;
 }
