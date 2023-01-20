@@ -117,11 +117,10 @@
             "image_padding": false
           }
         },
-        "product": {
-          "type": "product",
+        "99f836cf-1383-409d-80a0-0d97ae7ce1c1": {
+          "type": "collection",
           "settings": {
-            "product": "brandblack-mens-rare-metal-ii-silver-black-slbw",
-            "second_image": false
+            "collection": "velodrom-pockets-collection"
           }
         },
         "38bdb744-142b-448f-9316-7c872f9acee2": {
@@ -134,7 +133,7 @@
       },
       "block_order": [
         "bf3d396c-2675-4a0e-8fc5-5a66b477afd5",
-        "product",
+        "99f836cf-1383-409d-80a0-0d97ae7ce1c1",
         "38bdb744-142b-448f-9316-7c872f9acee2"
       ],
       "settings": {
