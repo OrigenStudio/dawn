@@ -110,11 +110,10 @@
     "collage": {
       "type": "collage",
       "blocks": {
-        "bf3d396c-2675-4a0e-8fc5-5a66b477afd5": {
-          "type": "image",
+        "fbda2528-df1e-49d9-8a3d-622e59956f30": {
+          "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/signup.jpg",
-            "image_padding": false
+            "collection": "laser-barcelona"
           }
         },
         "99f836cf-1383-409d-80a0-0d97ae7ce1c1": {
@@ -132,7 +131,7 @@
         }
       },
       "block_order": [
-        "bf3d396c-2675-4a0e-8fc5-5a66b477afd5",
+        "fbda2528-df1e-49d9-8a3d-622e59956f30",
         "99f836cf-1383-409d-80a0-0d97ae7ce1c1",
         "38bdb744-142b-448f-9316-7c872f9acee2"
       ],
