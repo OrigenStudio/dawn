@@ -167,6 +167,17 @@
   justify-content: center;
 }
 
+.footer__list-social {
+  gap: .75rem;
+}
+
+.footer__list-social .list-social__link {
+  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  color: rgb(var(--color-button-text)) !important;
+  border-radius: 50%;
+  padding: 1rem !important
+}
+
 .footer-block__newsletter {
   text-align: center;
 }
