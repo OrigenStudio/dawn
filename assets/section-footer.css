@@ -122,11 +122,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 3rem;
+  margin-bottom: 6rem;
 }
 
 .footer-block--newsletter:only-child {
-  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer-block--newsletter > * {
@@ -181,8 +181,8 @@
   }
 
   .footer-block__newsletter:not(:only-child) .footer__newsletter {
-    justify-content: flex-start;
-    margin: 0;
+    justify-content: flex-end;
+    margin-right: 0;
   }
 
   .footer-block__newsletter:not(:only-child) .newsletter-form__message--success {
