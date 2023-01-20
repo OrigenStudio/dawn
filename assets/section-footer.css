@@ -173,6 +173,12 @@
   gap: .75rem;
 }
 
+@media screen and (max-width: 749px) {
+  .footer__list-social {
+    margin-bottom: 2rem;
+  }
+}
+
 .footer__list-social .list-social__link {
   background-color: rgba(var(--color-button), var(--alpha-button-background));
   color: rgb(var(--color-button-text)) !important;
