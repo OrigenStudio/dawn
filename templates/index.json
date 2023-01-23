@@ -61,7 +61,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>FAST NATIONAL SHIPPING SPAIN<\/p>",
+            "text": "<p>🚚 FAST NATIONAL SHIPPING SPAIN<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -70,7 +70,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>FAST INTERNATIONAL SHIPPING<\/p>",
+            "text": "<p>🎁 FAST INTERNATIONAL SHIPPING<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -79,7 +79,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>FREE SIZE EXCHANGE IN EUROPE<\/p>",
+            "text": "<p>🔄 FREE SIZE EXCHANGE IN EUROPE<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -110,16 +110,16 @@
     "collage": {
       "type": "collage",
       "blocks": {
-        "fbda2528-df1e-49d9-8a3d-622e59956f30": {
-          "type": "collection",
-          "settings": {
-            "collection": "laser-barcelona"
-          }
-        },
         "99f836cf-1383-409d-80a0-0d97ae7ce1c1": {
           "type": "collection",
           "settings": {
             "collection": "velodrom-pockets-collection"
+          }
+        },
+        "fbda2528-df1e-49d9-8a3d-622e59956f30": {
+          "type": "collection",
+          "settings": {
+            "collection": "laser-barcelona"
           }
         },
         "38bdb744-142b-448f-9316-7c872f9acee2": {
@@ -131,8 +131,8 @@
         }
       },
       "block_order": [
-        "fbda2528-df1e-49d9-8a3d-622e59956f30",
         "99f836cf-1383-409d-80a0-0d97ae7ce1c1",
+        "fbda2528-df1e-49d9-8a3d-622e59956f30",
         "38bdb744-142b-448f-9316-7c872f9acee2"
       ],
       "settings": {
