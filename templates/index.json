@@ -10,7 +10,7 @@
             "heading": "Autum\/Winter 2022",
             "heading_size": "h1",
             "subheading": "PAS NORMAL STUDIO",
-            "button_label": "BUY PAS NORMAL STUDIO",
+            "button_label": "Shop Collection",
             "link": "shopify:\/\/collections\/pas-normal-studios-autumn-winter-22",
             "button_style_secondary": false,
             "box_align": "middle-left",
@@ -110,30 +110,49 @@
     "collage": {
       "type": "collage",
       "blocks": {
-        "99f836cf-1383-409d-80a0-0d97ae7ce1c1": {
-          "type": "collection",
+        "dd696413-cfea-4a69-abb3-3a225aa4ba27": {
+          "type": "image",
           "settings": {
-            "collection": "velodrom-pockets-collection"
+            "image": "shopify:\/\/shop_images\/home_page_600x_crop_center_0dbf4dae-1a3a-4b55-9219-5c717eb79c58.webp",
+            "image_link": "shopify:\/\/pages\/newsletter-signup",
+            "image_padding": false
           }
         },
-        "fbda2528-df1e-49d9-8a3d-622e59956f30": {
-          "type": "collection",
-          "settings": {
-            "collection": "laser-barcelona"
-          }
-        },
-        "38bdb744-142b-448f-9316-7c872f9acee2": {
+        "7a5f5fbc-e2be-4635-938a-61ad39a4523f": {
           "type": "product",
           "settings": {
-            "product": "laser-og-diy-logo-tee-tshirt-emerald",
+            "product": "velodrom-vcc-javingfun-casual-tshirt-cream",
+            "second_image": false
+          }
+        },
+        "e007b13e-0038-44d5-95dc-4600e34655b1": {
+          "type": "product",
+          "settings": {
+            "product": "pas-normal-studios-escapism-down-vest-army-green",
+            "second_image": false
+          }
+        },
+        "dd5cc332-7111-4399-8ed0-8e0e163a23ea": {
+          "type": "product",
+          "settings": {
+            "product": "brandblack-rare-metal-ii-casual-shoes-orange-grey-orgy",
+            "second_image": false
+          }
+        },
+        "39949fdc-0f9c-46bc-868d-5f727b155b5a": {
+          "type": "product",
+          "settings": {
+            "product": "laser-doctor-dou-5-panel-hat-corduroy-multi-color",
             "second_image": false
           }
         }
       },
       "block_order": [
-        "99f836cf-1383-409d-80a0-0d97ae7ce1c1",
-        "fbda2528-df1e-49d9-8a3d-622e59956f30",
-        "38bdb744-142b-448f-9316-7c872f9acee2"
+        "dd696413-cfea-4a69-abb3-3a225aa4ba27",
+        "7a5f5fbc-e2be-4635-938a-61ad39a4523f",
+        "e007b13e-0038-44d5-95dc-4600e34655b1",
+        "dd5cc332-7111-4399-8ed0-8e0e163a23ea",
+        "39949fdc-0f9c-46bc-868d-5f727b155b5a"
       ],
       "settings": {
         "heading": "",
@@ -176,11 +195,18 @@
     "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86": {
       "type": "collage",
       "blocks": {
-        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-1": {
-          "type": "product",
+        "d5114076-50ea-4407-b011-53683a1d9e29": {
+          "type": "image",
           "settings": {
-            "product": "laser-montseny-crewneck-fossil",
-            "second_image": false
+            "image": "shopify:\/\/shop_images\/homepageyeti.webp",
+            "image_link": "shopify:\/\/collections\/yeti",
+            "image_padding": false
+          }
+        },
+        "ae364c5b-0dfe-4c90-960c-d1e02eda3663": {
+          "type": "collection",
+          "settings": {
+            "collection": "laser-barcelona"
           }
         },
         "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-2": {
@@ -189,20 +215,28 @@
             "collection": "velodrom-pockets-collection"
           }
         },
-        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-0": {
-          "type": "video",
+        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-1": {
+          "type": "product",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/2022-07-15-PAS-NORMAL-STUDIO-EDITORIAL-57283-copy-hd.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
+            "product": "laser-montseny-crewneck-fossil",
+            "second_image": false
+          }
+        },
+        "60ca8f96-d519-40d3-b398-9c36b6b563ea": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/filantev2_600x_crop_center_f12bcae7-56ad-4726-8247-ffa56f60dde6.jpg",
+            "image_link": "https:\/\/velodrom.dreambikebuilder.com\/",
             "image_padding": false
           }
         }
       },
       "block_order": [
-        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-1",
+        "d5114076-50ea-4407-b011-53683a1d9e29",
+        "ae364c5b-0dfe-4c90-960c-d1e02eda3663",
         "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-2",
-        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-0"
+        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-1",
+        "60ca8f96-d519-40d3-b398-9c36b6b563ea"
       ],
       "settings": {
         "heading": "",
