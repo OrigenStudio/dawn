@@ -4,7 +4,31 @@
 }
 
 .collection-list-title {
+  position: relative;
+  text-align: center;
+  width: 100%;
   margin: 0;
+}
+
+.collection-list-title:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #e0e0e0;
+  top: -moz-calc(50% - 0.5px);
+  top: -webkit-calc(50% - 0.5px);
+  top: -ms-calc(50% - 0.5px);
+  top: calc(50% - 0.5px);
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.collection-list-title span {
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+  background-color: #FFF;
 }
 
 @media screen and (max-width: 749px) {

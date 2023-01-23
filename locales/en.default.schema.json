@@ -484,6 +484,9 @@
             "image_padding": {
               "label": "Use original image ratio",
               "info": "Select if you don't want your image to be cropped."
+            },
+            "image_link": {
+              "label": "Link"
             }
           }
         },
