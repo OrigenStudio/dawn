@@ -361,6 +361,11 @@ a.product__text {
   margin-top: -1.5rem;
 }
 
+.product__title-color {
+  color: rgb(var(--color-foreground), 0.5);
+  text-transform: uppercase;
+}
+
 .product__text.caption-with-letter-spacing + .product__title {
   margin-top: 0;
 }
