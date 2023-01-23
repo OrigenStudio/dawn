@@ -3,6 +3,24 @@
     "e0911e38-e306-463a-9877-cdf1960a5028": {
       "type": "slideshow",
       "blocks": {
+        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ANGUI-MODEL-10.jpg",
+            "heading": "Early'23 collection",
+            "heading_size": "h1",
+            "subheading": "VELODROM",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/velodrom-strtwr-early23-collection",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 20,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0": {
           "type": "slide",
           "settings": {
@@ -41,6 +59,7 @@
         }
       },
       "block_order": [
+        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf",
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0",
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1"
       ],
