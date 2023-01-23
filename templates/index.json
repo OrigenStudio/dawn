@@ -215,13 +215,6 @@
             "collection": "velodrom-pockets-collection"
           }
         },
-        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-1": {
-          "type": "product",
-          "settings": {
-            "product": "laser-montseny-crewneck-fossil",
-            "second_image": false
-          }
-        },
         "60ca8f96-d519-40d3-b398-9c36b6b563ea": {
           "type": "image",
           "settings": {
@@ -229,14 +222,20 @@
             "image_link": "https:\/\/velodrom.dreambikebuilder.com\/",
             "image_padding": false
           }
+        },
+        "0e727a75-b267-40ec-9570-d94f0502dea7": {
+          "type": "collection",
+          "settings": {
+            "collection": "eyewear"
+          }
         }
       },
       "block_order": [
         "d5114076-50ea-4407-b011-53683a1d9e29",
         "ae364c5b-0dfe-4c90-960c-d1e02eda3663",
         "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-2",
-        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-1",
-        "60ca8f96-d519-40d3-b398-9c36b6b563ea"
+        "60ca8f96-d519-40d3-b398-9c36b6b563ea",
+        "0e727a75-b267-40ec-9570-d94f0502dea7"
       ],
       "settings": {
         "heading": "",
@@ -323,21 +322,21 @@
         "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "BRANDBLACK",
             "heading_size": "h1"
           }
         },
         "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>BE RARE. Brandblack is the ultimate shoe brand.<\/p>",
             "text_style": "body"
           }
         },
         "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Shop Now",
             "button_link": "shopify:\/\/collections\/brandblack"
           }
         }
@@ -352,7 +351,7 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
@@ -367,21 +366,21 @@
         "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "HAMMERHEAD KAROO",
             "heading_size": "h1"
           }
         },
         "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Available now in Velodrom. Stay ahead of the competition with Hammerhead Karoo.<\/p>",
             "text_style": "body"
           }
         },
         "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Shop Now",
             "button_link": "shopify:\/\/products\/hammerhead-karoo-2-cycling-gps"
           }
         }
@@ -396,7 +395,7 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
