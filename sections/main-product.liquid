@@ -696,6 +696,60 @@
     {%- endif -%}
   </div>
 
+  {% comment %} Fixed footer for product page {% endcomment %}
+  <script>console.log({{ product | json }});</script>
+  <div class="product--fixed">
+    <div class="product--fixed-wrapper page-width">
+      <div class="product-content">
+        {%- if product.featured_media != blank -%}
+          <img class="predictive-search__image"
+            src="{{ product.featured_media | image_url: width: 150 }}"
+            alt="{{ product.featured_media.alt }}"
+            width="50"
+            height="{{ 50 | divided_by: product.featured_media.preview_image.aspect_ratio }}"
+          >
+        {%- endif -%}  
+        <span>{{ product.title }}</span>
+      </div>
+      <div class="product-actions">
+        {%- unless product.has_only_default_variant -%}
+          <variant-selects
+            id="variant-selects-{{ section.id }}"
+            class="no-js-hidden"
+            data-section="{{ section.id }}"
+            data-url="{{ product.url }}"
+            {{ block.shopify_attributes }}
+          >
+            {%- for option in product.options_with_values -%}
+              <div class="product-form__input product-form__input--dropdown">
+                <div class="select">
+                  <select
+                    id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                    class="select__select"
+                    name="options[{{ option.name | escape }}]"
+                    form="{{ product_form_id }}"
+                  >
+                    {% render 'product-variant-options-dropdown',
+                      product: product,
+                      option: option,
+                      block: block
+                    %}
+                  </select>
+                  {% render 'icon-caret' %}
+                </div>
+              </div>
+            {%- endfor -%}
+
+            <script type="application/json">
+              {{ product.variants | json }}
+            </script>
+          </variant-selects>
+        {%- endunless -%}
+        <div>{% render 'product-buy-button' %}</div>
+      </div>
+    </div>
+  </div>
+
   {% render 'product-media-modal' variant_images: variant_images %}
 
   {% assign popups = section.blocks | where: 'type', 'popup' %}
