@@ -33,6 +33,18 @@
             "show_dynamic_checkout": false
           }
         },
+        "9d5dbc74-6089-4876-8a3a-efb84a6edc0d": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "return",
+            "heading_1": "30 DÍAS PARA CAMBIOS Y DEVOLUCIONES",
+            "icon_2": "plane",
+            "heading_2": "ENVÍO GRATIS A TODO EL MUNDO",
+            "icon_3": "stopwatch",
+            "heading_3": "PLAN DE PAGO: COMPRA AHORA Y PAGA MÁS TARDE"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -82,6 +94,7 @@
         "variant_picker",
         "beff3ab0-159c-4337-9ca1-c4542cbb2c46",
         "buy_buttons",
+        "9d5dbc74-6089-4876-8a3a-efb84a6edc0d",
         "description",
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
         "collapsible-row-2",
