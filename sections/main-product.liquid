@@ -748,7 +748,9 @@
             </script>
           </variant-selects>
         {%- endunless -%}
-        <div>{% render 'product-buy-button' %}</div>
+        <div {{ block.shopify_attributes }}>
+          {% render 'product-buy-button' %}
+        </div>
       </div>
     </div>
   </div>
