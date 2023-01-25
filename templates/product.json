@@ -19,6 +19,14 @@
             "picker_type": "button"
           }
         },
+        "beff3ab0-159c-4337-9ca1-c4542cbb2c46": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "uppercase",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -72,6 +80,7 @@
         "title",
         "price",
         "variant_picker",
+        "beff3ab0-159c-4337-9ca1-c4542cbb2c46",
         "buy_buttons",
         "description",
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
