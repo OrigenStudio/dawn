@@ -116,6 +116,7 @@
     },
     "70778267-f159-4f99-810a-ba653d4d37f2": {
       "type": "collapsible-content",
+      "disabled": true,
       "blocks": {
         "template--14546355716230__70778267-f159-4f99-810a-ba653d4d37f2-167464875414a83e75-0": {
           "type": "collapsible_row",
