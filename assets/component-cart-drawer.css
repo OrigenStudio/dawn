@@ -208,8 +208,8 @@ cart-drawer-items {
 
 .cart-drawer .cart-item {
   display: grid;
-  grid-template: repeat(2,auto) / repeat(4,1fr);
-  gap: 1.5rem;
+  grid-template: 1fr / 1fr 1fr 1fr 40px;
+  gap: 1rem;
   margin-bottom: 0;
 }
 
@@ -218,7 +218,7 @@ cart-drawer-items {
 }
 
 .cart-drawer .cart-item__media {
-  grid-row: 1 / 3;
+  grid-row: 1;
 }
 
 .cart-drawer .cart-item__image {
@@ -318,6 +318,10 @@ cart-drawer-items {
 .cart-drawer .tax-note {
   margin: 1.2rem 0 1rem auto;
   text-align: left;
+}
+
+.cart-drawer .product-option {
+  font-size: 1.25rem;
 }
 
 .cart-drawer .product-option dd {

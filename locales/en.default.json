@@ -265,6 +265,7 @@
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
       "headings": {
         "product": "Product",
+        "products": "Products",
         "price": "Price",
         "total": "Total",
         "quantity": "Quantity",
