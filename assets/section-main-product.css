@@ -377,7 +377,7 @@ a.product__text {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
   .product__title > h1 {
     font-size: calc(var(--font-heading-scale) * 3rem);
   }
