@@ -377,7 +377,7 @@ a.product__text {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
   .product__title > h1 {
     font-size: calc(var(--font-heading-scale) * 3rem);
   }
@@ -1449,13 +1449,18 @@ a.product__text {
   align-items: center;
 }
 
+.icon-with-text__item span.h6 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
 .icon-with-text--horizontal .icon-with-text__item {
   flex-direction: column;
   width: 33%;
 }
 
 .icon-with-text--vertical .icon-with-text__item {
-  margin-bottom: var(--icon-size);
+  margin-bottom: calc(var(--font-heading-scale) * 1rem);
 }
 
 /* SKU block */

@@ -174,7 +174,7 @@
                   <summary>
                     <div class="summary__title">
                       {% render 'icon-accordion', icon: block.settings.icon %}
-                      <h2 class="h4 accordion__title">
+                      <h2 class="h5 accordion__title">
                         {{ block.settings.heading | default: block.settings.page.title }}
                       </h2>
                     </div>
@@ -634,7 +634,7 @@
                         loading="lazy"
                       >
                     {%- endif -%}
-                    <span class="h4">
+                    <span class="h6">
                       {{- block.settings.heading_1 -}}
                     </span>
                   </li>
@@ -656,7 +656,7 @@
                         loading="lazy"
                       >
                     {%- endif -%}
-                    <span class="h4">
+                    <span class="h6">
                       {{- block.settings.heading_2 -}}
                     </span>
                   </li>
@@ -678,7 +678,7 @@
                         loading="lazy"
                       >
                     {%- endif -%}
-                    <span class="h4">
+                    <span class="h6">
                       {{- block.settings.heading_3 -}}
                     </span>
                   </li>
@@ -748,7 +748,9 @@
             </script>
           </variant-selects>
         {%- endunless -%}
-        <div>{% render 'product-buy-button' %}</div>
+        <div {{ block.shopify_attributes }}>
+          {% render 'product-buy-button' %}
+        </div>
       </div>
     </div>
   </div>
