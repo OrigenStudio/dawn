@@ -111,7 +111,7 @@
 
 /* FIXED HEADER */
 
-.header__fixed {
+.header__sticky {
   display: none;
 }
 
