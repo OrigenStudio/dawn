@@ -8,6 +8,13 @@
           "settings": {
           }
         },
+        "9e85b48a-fce8-405e-b63b-228fc611b84e": {
+          "type": "text",
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -30,7 +37,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false
+            "show_dynamic_checkout": true
           }
         },
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d": {
@@ -47,13 +54,11 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
           }
         },
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Description",
             "icon": "clipboard",
@@ -90,10 +95,23 @@
             "content": "<p>We offer financing vía Cetelem for bikes and Klarna for accesories<\/p>",
             "page": ""
           }
+        },
+        "9e2d8f59-01e6-4420-ace4-af63180976fc": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "heading_1": "Heading",
+            "icon_2": "return",
+            "heading_2": "Heading",
+            "icon_3": "truck",
+            "heading_3": "Heading"
+          }
         }
       },
       "block_order": [
         "title",
+        "9e85b48a-fce8-405e-b63b-228fc611b84e",
         "price",
         "variant_picker",
         "beff3ab0-159c-4337-9ca1-c4542cbb2c46",
@@ -103,7 +121,8 @@
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
         "collapsible-row-2",
         "collapsible-row-1",
-        "collapsible-row-0"
+        "collapsible-row-0",
+        "9e2d8f59-01e6-4420-ace4-af63180976fc"
       ],
       "settings": {
         "enable_sticky_info": true,
