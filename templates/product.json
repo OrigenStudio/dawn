@@ -10,6 +10,7 @@
         },
         "9e85b48a-fce8-405e-b63b-228fc611b84e": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Text block",
             "text_style": "body"
@@ -40,25 +41,24 @@
             "show_dynamic_checkout": true
           }
         },
-        "9d5dbc74-6089-4876-8a3a-efb84a6edc0d": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "vertical",
-            "icon_1": "return",
-            "heading_1": "30 DÍAS PARA CAMBIOS Y DEVOLUCIONES",
-            "icon_2": "plane",
-            "heading_2": "ENVÍO GRATIS A TODO EL MUNDO",
-            "icon_3": "stopwatch",
-            "heading_3": "PLAN DE PAGO: COMPRA AHORA Y PAGA MÁS TARDE"
-          }
-        },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "<p><strong>SHIPPING TO SPAIN<\/strong>: 5.95 EUR<br\/><br\/><strong>SHIPPING TO EUROPEAN UNION vía ups: <\/strong>12-30 EUR depending on postcode.<br\/><br\/><strong>Shippings to non Eu Countries:<br\/><\/strong>The shipping might be subject to customs fees. Unfortunately we are not able to cover this costs at the moment.<br\/><br\/><strong>Return for size exchange:<br\/><\/strong>SPAIN - We offer exchanges via UPS - free of charge.<br\/>EUROPE - 25 eur.<br\/>UNITED STATES AND UK - See table in our <a href=\"\/pages\/refund-policy\" target=\"_blank\" title=\"Refund, return and exchanges policies\">returns page<\/a>.<br\/>REST OF THE COUNTRIES - See table in our <a href=\"\/pages\/refund-policy\" target=\"_blank\" title=\"Refund, return and exchanges policies\">returns page<\/a>.<br\/><br\/><strong>Return for Refund:<br\/><\/strong>SPAIN - We offer returns of products via UPS - 8 eur<br\/>EUROPEAN UNION - We offer returns of products via UPS - 35 eur.<br\/>UK AND UNITED STATES - See table in our returns page.<br\/>REST OF THE COUNTRIES - See in our return page.<\/p>",
+            "page": ""
           }
         },
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Description",
             "icon": "clipboard",
@@ -76,15 +76,6 @@
             "page": ""
           }
         },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "<p><strong>SHIPPING TO SPAIN<\/strong>: 5.95 EUR<br\/><br\/><strong>SHIPPING TO EUROPEAN UNION vía ups: <\/strong>12-30 EUR depending on postcode.<br\/><br\/><strong>Shippings to non Eu Countries:<br\/><\/strong>The shipping might be subject to customs fees. Unfortunately we are not able to cover this costs at the moment.<br\/><br\/><strong>Return for size exchange:<br\/><\/strong>SPAIN - We offer exchanges via UPS - free of charge.<br\/>EUROPE - 25 eur.<br\/>UNITED STATES AND UK - See table in our <a href=\"\/pages\/refund-policy\" target=\"_blank\" title=\"Refund, return and exchanges policies\">returns page<\/a>.<br\/>REST OF THE COUNTRIES - See table in our <a href=\"\/pages\/refund-policy\" target=\"_blank\" title=\"Refund, return and exchanges policies\">returns page<\/a>.<br\/><br\/><strong>Return for Refund:<br\/><\/strong>SPAIN - We offer returns of products via UPS - 8 eur<br\/>EUROPEAN UNION - We offer returns of products via UPS - 35 eur.<br\/>UK AND UNITED STATES - See table in our returns page.<br\/>REST OF THE COUNTRIES - See in our return page.<\/p>",
-            "page": ""
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -93,6 +84,18 @@
             "icon": "box",
             "content": "<p>We offer financing vía Cetelem for bikes and Klarna for accesories<\/p>",
             "page": ""
+          }
+        },
+        "9d5dbc74-6089-4876-8a3a-efb84a6edc0d": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "return",
+            "heading_1": "30 DÍAS PARA CAMBIOS Y DEVOLUCIONES",
+            "icon_2": "plane",
+            "heading_2": "ENVÍO GRATIS A TODO EL MUNDO",
+            "icon_3": "stopwatch",
+            "heading_3": "PLAN DE PAGO: COMPRA AHORA Y PAGA MÁS TARDE"
           }
         }
       },
@@ -103,12 +106,12 @@
         "variant_picker",
         "beff3ab0-159c-4337-9ca1-c4542cbb2c46",
         "buy_buttons",
-        "9d5dbc74-6089-4876-8a3a-efb84a6edc0d",
         "description",
+        "collapsible-row-1",
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
         "collapsible-row-2",
-        "collapsible-row-1",
-        "collapsible-row-0"
+        "collapsible-row-0",
+        "9d5dbc74-6089-4876-8a3a-efb84a6edc0d"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -223,7 +226,6 @@
     },
     "multicolumn": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
