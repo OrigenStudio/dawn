@@ -53,6 +53,7 @@
         },
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Description",
             "icon": "clipboard",
@@ -62,15 +63,17 @@
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Sizing",
             "icon": "ruler",
-            "content": "<p><\/p>",
+            "content": "",
             "page": ""
           }
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -80,6 +83,7 @@
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Financing",
             "icon": "box",
