@@ -65,62 +65,36 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "large",
+        "slide_height": "small",
         "slider_visual": "dots",
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 9,
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p>🚚 FAST NATIONAL SHIPPING SPAIN<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p>🎁 FAST INTERNATIONAL SHIPPING<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p>🔄 FREE SIZE EXCHANGE IN EUROPE<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
+    "81eb5dff-ea73-49d9-945f-59d6b676ce36": {
+      "type": "featured-collection",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
+        "title": "NEW ARRIVALS",
+        "heading_size": "h2",
+        "description": "<p>Discover the latest additions to our range of clothing<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 12,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
         "color_scheme": "background-1",
-        "columns_mobile": "1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
@@ -133,8 +107,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/local_shipping_FILL0_wght400_GRAD0_opsz48.png",
-            "title": "",
-            "text": "<p><strong>FAST NATIONAL SHIPPING SPAIN<\/strong><\/p>",
+            "title": "FAST NATIONAL SHIPPING SPAIN",
+            "text": "<p>Lorem ipsum<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -240,33 +214,6 @@
         "padding_bottom": 36
       }
     },
-    "81eb5dff-ea73-49d9-945f-59d6b676ce36": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "NEW ARRIVALS",
-        "heading_size": "h2",
-        "description": "<p>Discover the latest additions to our range of clothing<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-arrivals",
-        "products_to_show": 12,
-        "columns_desktop": 5,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86": {
       "type": "collage",
       "blocks": {
@@ -319,6 +266,60 @@
         "mobile_layout": "collage",
         "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>🚚 FAST NATIONAL SHIPPING SPAIN<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>🎁 FAST INTERNATIONAL SHIPPING<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>🔄 FREE SIZE EXCHANGE IN EUROPE<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -509,11 +510,11 @@
   },
   "order": [
     "e0911e38-e306-463a-9877-cdf1960a5028",
-    "multicolumn",
+    "81eb5dff-ea73-49d9-945f-59d6b676ce36",
     "5c87412e-d4b0-440b-94e5-b4c77e0eec42",
     "collage",
-    "81eb5dff-ea73-49d9-945f-59d6b676ce36",
     "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86",
+    "multicolumn",
     "3f450f81-8ef5-4cb4-9131-0db3d899a279",
     "4c322433-45f4-4925-8736-535bb7314d61",
     "82567d4d-8ae0-45d7-a3be-82328b8203f7",
