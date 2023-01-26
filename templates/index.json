@@ -126,6 +126,62 @@
         "padding_bottom": 36
       }
     },
+    "5c87412e-d4b0-440b-94e5-b4c77e0eec42": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/local_shipping_FILL0_wght400_GRAD0_opsz48.png",
+            "title": "",
+            "text": "<p><strong>FAST NATIONAL SHIPPING SPAIN<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/directions_boat_FILL0_wght400_GRAD0_opsz48.png",
+            "title": "",
+            "text": "<p><strong>FAST INTERNATIONAL SHIPPING<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cached_FILL0_wght400_GRAD0_opsz48.png",
+            "title": "",
+            "text": "<p><strong>FREE SIZE EXCHANGE IN EUROPE<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-0",
+        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-1",
+        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -454,6 +510,7 @@
   "order": [
     "e0911e38-e306-463a-9877-cdf1960a5028",
     "multicolumn",
+    "5c87412e-d4b0-440b-94e5-b4c77e0eec42",
     "collage",
     "81eb5dff-ea73-49d9-945f-59d6b676ce36",
     "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86",
