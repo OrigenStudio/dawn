@@ -78,7 +78,6 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -95,18 +94,6 @@
             "content": "<p>We offer financing vía Cetelem for bikes and Klarna for accesories<\/p>",
             "page": ""
           }
-        },
-        "9e2d8f59-01e6-4420-ace4-af63180976fc": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "heart",
-            "heading_1": "Heading",
-            "icon_2": "return",
-            "heading_2": "Heading",
-            "icon_3": "truck",
-            "heading_3": "Heading"
-          }
         }
       },
       "block_order": [
@@ -121,8 +108,7 @@
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
         "collapsible-row-2",
         "collapsible-row-1",
-        "collapsible-row-0",
-        "9e2d8f59-01e6-4420-ace4-af63180976fc"
+        "collapsible-row-0"
       ],
       "settings": {
         "enable_sticky_info": true,
