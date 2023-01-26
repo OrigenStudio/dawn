@@ -126,17 +126,6 @@
     padding: 0 5rem;
     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
     min-height: 50px;
-
-    position: relative;
-    transition: position 0.3s ease;
-  }
-
-  .sticky {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: white;
   }
 }
 
