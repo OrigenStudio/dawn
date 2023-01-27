@@ -45,15 +45,27 @@
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
-      :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
-        --font-body-style: {{ settings.type_body_font.style }};
-        --font-body-weight: {{ settings.type_body_font.weight }};
-        --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
+      @font-face {
+        font-family: "ProximaNovaRegular";
+        src: url("{{ 'ProximaNovaRegular.woff2' | asset_url }}") format("woff2");
+        font-display: swap;
+      }
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
-        --font-heading-style: {{ settings.type_header_font.style }};
-        --font-heading-weight: {{ settings.type_header_font.weight }};
+      @font-face {
+        font-family: "ProximaNovaSemibold";
+        src: url("{{ 'ProximaNovaSemibold.woff2' | asset_url }}") format("woff2");
+        font-display: swap;
+      }
+
+      :root {
+        --font-body-family: {{ "ProximaNovaRegular" }}, {{ settings.type_body_font.fallback_families }};
+        --font-body-style: {{ "normal" }};
+        --font-body-weight: {{ "400" }};
+        --font-body-weight-bold: {{ "400" | plus: 300 | at_most: 1000 }};
+
+        --font-heading-family: {{ "ProximaNovaSemibold" }}, {{ settings.type_header_font.fallback_families }};
+        --font-heading-style: {{ "normal" }};
+        --font-heading-weight: {{ "700" }};
 
         --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
         --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
