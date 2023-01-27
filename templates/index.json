@@ -2,6 +2,7 @@
   "sections": {
     "a4b5e10c-91be-487d-b223-abdded7b196e": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "template--14546355290246__a4b5e10c-91be-487d-b223-abdded7b196e-1674759332d4096a7f-0": {
           "type": "heading",
@@ -117,7 +118,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "small",
+        "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 9,
