@@ -17,6 +17,10 @@ slideshow-component .slideshow.banner {
   gap: 0;
 }
 
+slideshow-component:hover .slider-buttons--none {
+  opacity: 1;
+}
+
 .slideshow__slide {
   padding: 0;
   position: relative;

@@ -354,6 +354,8 @@ slider-component.slider-component-full-width {
   top: calc(100% - 50%);
   transform: translateY(-50%);
   z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .slider-buttons--none .wrapper {
