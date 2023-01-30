@@ -347,6 +347,42 @@ slider-component.slider-component-full-width {
   }
 }
 
+.slider-buttons--none {
+  width: 100%;
+  border: none;
+  position: absolute;
+  top: calc(100% - 50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.slider-buttons--none .wrapper {
+  width: 100%;
+  max-width: var(--page-width);
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-buttons--none .slider-button {
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.slider-buttons--none .slider-button.slider-button--prev {
+  margin-left: 0.5rem;
+}
+
+.slider-buttons--none .slider-button.slider-button--next {
+  margin-right: 0.5rem;
+}
+
+.slider-buttons--none .slider-button:not([disabled]):hover {
+  color: #FFF;
+}
+
 .slider-button {
   color: rgba(var(--color-foreground), 0.75);
   background: transparent;

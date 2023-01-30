@@ -37,6 +37,10 @@ slideshow-component .slideshow.banner {
   }
 }
 
+.slideshow.banner--full_height {
+  height: 100vh;
+}
+
 .slideshow__text.banner__box {
   display: flex;
   flex-direction: column;
@@ -129,6 +133,12 @@ slideshow-component .slideshow.banner {
   .slideshow__controls {
     position: relative;
   }
+}
+
+.slideshow__controls--none {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 slideshow-component:not(.page-width) .slider-buttons {
