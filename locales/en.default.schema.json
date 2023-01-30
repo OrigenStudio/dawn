@@ -2661,6 +2661,9 @@
           },
           "options__4": {
             "label": "Large"
+          },
+          "options__5": {
+            "label": "Full height"
           }
         },
         "slider_visual": {
@@ -2673,6 +2676,9 @@
           },
           "options__3": {
             "label": "Numbers"
+          },
+          "options__4": {
+            "label": "None"
           }
         },
         "auto_rotate": {

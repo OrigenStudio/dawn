@@ -17,6 +17,10 @@ slideshow-component .slideshow.banner {
   gap: 0;
 }
 
+slideshow-component:hover .slider-buttons--none {
+  opacity: 1;
+}
+
 .slideshow__slide {
   padding: 0;
   position: relative;
@@ -35,6 +39,10 @@ slideshow-component .slideshow.banner {
   .slideshow--placeholder.banner--adapt_image {
     height: 56rem;
   }
+}
+
+.slideshow.banner--full_height {
+  height: 100vh;
 }
 
 .slideshow__text.banner__box {
@@ -129,6 +137,12 @@ slideshow-component .slideshow.banner {
   .slideshow__controls {
     position: relative;
   }
+}
+
+.slideshow__controls--none {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 slideshow-component:not(.page-width) .slider-buttons {
