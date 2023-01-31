@@ -275,7 +275,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/237.1.jpg",
             "title": "FAST NATIONAL SHIPPING",
-            "text": "<p>24-48h shipping to Spain<\/p>",
+            "text": "<p>24-48h shipping to Spain<br\/>Pick-up available at out stores<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -284,8 +284,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/PNS_MECH_WINTER_DITLEV_05_WomensLongSleeve_26274-1-hd.jpg",
-            "title": "FAST INTERNATIONAL SHIPPING",
-            "text": "",
+            "title": "INTERNATIONAL SHIPPING",
+            "text": "<p>Shipping to anywhere in the world with express options at checkout<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -294,8 +294,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/PAS_NORMAL_CONTROL.jpg",
-            "title": "",
-            "text": "<p><strong>FREE SIZE EXCHANGE IN EUROPE<\/strong><\/p>",
+            "title": "FREE SIZE EXCHANGE",
+            "text": "<p>Free size exhange when shipping to\/from Europe<\/p>",
             "link_label": "",
             "link": ""
           }
