@@ -137,13 +137,13 @@
         "collection": "new-arrivals",
         "products_to_show": 12,
         "columns_desktop": 5,
-        "full_width": false,
+        "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
         "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": false,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
@@ -309,7 +309,7 @@
       "settings": {
         "title": "",
         "heading_size": "h2",
-        "image_width": "third",
+        "image_width": "half",
         "image_ratio": "circle",
         "columns_desktop": 3,
         "column_alignment": "center",
@@ -380,10 +380,28 @@
     "3f450f81-8ef5-4cb4-9131-0db3d899a279": {
       "type": "collection-list",
       "blocks": {
+        "90033165-845c-4b78-af1b-0d41d8db1735": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pas-normal-studios"
+          }
+        },
         "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-0": {
           "type": "featured_collection",
           "settings": {
             "collection": "maap"
+          }
+        },
+        "5487b3d9-fa30-4e56-98c5-6bf1d66c1348": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rapha"
+          }
+        },
+        "13eed67e-291a-482d-9bc5-59ba331f525e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "velodrom-vcc"
           }
         },
         "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-1": {
@@ -416,21 +434,32 @@
             "collection": "erstwhile"
           }
         },
-        "90033165-845c-4b78-af1b-0d41d8db1735": {
+        "c3fb98a3-d7cc-42f7-bd77-4104b2d33926": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "laser-barcelona"
+          }
+        },
+        "a6d7fb5f-0391-4a4f-b1dc-b765b39a1dd4": {
           "type": "featured_collection",
           "settings": {
-            "collection": "pas-normal-studios"
+            "collection": "brandblack"
           }
         }
       },
       "block_order": [
+        "90033165-845c-4b78-af1b-0d41d8db1735",
         "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-0",
+        "5487b3d9-fa30-4e56-98c5-6bf1d66c1348",
+        "13eed67e-291a-482d-9bc5-59ba331f525e",
         "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-1",
         "7b87dc12-4e12-4daa-bf45-03a9f9645e67",
         "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-2",
         "7f36f87d-a7d3-461e-9530-37a8061668f2",
         "e909b6fe-416a-4f6e-bb26-045ea4944158",
-        "90033165-845c-4b78-af1b-0d41d8db1735"
+        "c3fb98a3-d7cc-42f7-bd77-4104b2d33926",
+        "a6d7fb5f-0391-4a4f-b1dc-b765b39a1dd4"
       ],
       "settings": {
         "title": "APPAREL BRANDS",
