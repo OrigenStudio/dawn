@@ -264,10 +264,12 @@
             "image_padding": false
           }
         },
-        "ae364c5b-0dfe-4c90-960c-d1e02eda3663": {
-          "type": "collection",
+        "4eb853ee-52af-4bd2-9f38-db95856df3ac": {
+          "type": "image",
           "settings": {
-            "collection": "laser-barcelona"
+            "image": "shopify:\/\/shop_images\/236.2_f0657422-af8b-4fda-8f7b-16079ed78cfa.jpg",
+            "image_link": "shopify:\/\/collections\/laser-barcelona",
+            "image_padding": false
           }
         },
         "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-2": {
@@ -293,7 +295,7 @@
       },
       "block_order": [
         "d5114076-50ea-4407-b011-53683a1d9e29",
-        "ae364c5b-0dfe-4c90-960c-d1e02eda3663",
+        "4eb853ee-52af-4bd2-9f38-db95856df3ac",
         "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-2",
         "60ca8f96-d519-40d3-b398-9c36b6b563ea",
         "0e727a75-b267-40ec-9570-d94f0502dea7"
