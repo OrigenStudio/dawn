@@ -8,14 +8,6 @@
           "settings": {
           }
         },
-        "9e85b48a-fce8-405e-b63b-228fc611b84e": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Text block",
-            "text_style": "body"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -41,10 +33,13 @@
             "show_dynamic_checkout": true
           }
         },
-        "description": {
-          "type": "description",
-          "disabled": true,
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "Sizing",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
           }
         },
         "collapsible-row-1": {
@@ -56,6 +51,15 @@
             "page": ""
           }
         },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Financing",
+            "icon": "box",
+            "content": "<p>We offer financing vía Cetelem for bikes and Klarna for accesories<\/p>",
+            "page": ""
+          }
+        },
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -63,26 +67,6 @@
             "heading": "Description",
             "icon": "clipboard",
             "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Sizing",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Financing",
-            "icon": "box",
-            "content": "<p>We offer financing vía Cetelem for bikes and Klarna for accesories<\/p>",
             "page": ""
           }
         },
@@ -101,16 +85,14 @@
       },
       "block_order": [
         "title",
-        "9e85b48a-fce8-405e-b63b-228fc611b84e",
         "price",
         "variant_picker",
         "beff3ab0-159c-4337-9ca1-c4542cbb2c46",
         "buy_buttons",
-        "description",
-        "collapsible-row-1",
-        "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
         "collapsible-row-2",
+        "collapsible-row-1",
         "collapsible-row-0",
+        "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d"
       ],
       "settings": {
@@ -226,6 +208,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
