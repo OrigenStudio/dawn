@@ -202,41 +202,45 @@
             "image_padding": false
           }
         },
-        "7a5f5fbc-e2be-4635-938a-61ad39a4523f": {
-          "type": "product",
+        "b5d63601-2bac-4530-8e59-298838708944": {
+          "type": "image",
           "settings": {
-            "product": "velodrom-vcc-javingfun-casual-tshirt-cream",
-            "second_image": false
+            "image": "shopify:\/\/shop_images\/259_1.png",
+            "image_link": "shopify:\/\/collections\/velodrom-vcc",
+            "image_padding": false
           }
         },
-        "e007b13e-0038-44d5-95dc-4600e34655b1": {
-          "type": "product",
+        "a3d944b9-fa26-4108-9436-81a02fa69695": {
+          "type": "image",
           "settings": {
-            "product": "pas-normal-studios-escapism-down-vest-army-green",
-            "second_image": false
+            "image": "shopify:\/\/shop_images\/BTKA_1643190396156627_872c2501bc680a6a63b7a75f0cc306.jpg",
+            "image_link": "shopify:\/\/collections\/pas-normal-studios",
+            "image_padding": false
           }
         },
-        "dd5cc332-7111-4399-8ed0-8e0e163a23ea": {
-          "type": "product",
+        "923923a4-5f8a-4304-9d9d-52df5ac780a1": {
+          "type": "image",
           "settings": {
-            "product": "brandblack-rare-metal-ii-casual-shoes-orange-grey-orgy",
-            "second_image": false
+            "image": "shopify:\/\/shop_images\/233.2.jpg",
+            "image_link": "shopify:\/\/collections\/brandblack",
+            "image_padding": false
           }
         },
-        "39949fdc-0f9c-46bc-868d-5f727b155b5a": {
-          "type": "product",
+        "409b7e7b-86a7-4693-9d12-f3e127eb9eb3": {
+          "type": "image",
           "settings": {
-            "product": "laser-doctor-dou-5-panel-hat-corduroy-multi-color",
-            "second_image": false
+            "image": "shopify:\/\/shop_images\/laser.jpg",
+            "image_link": "shopify:\/\/collections\/laser-barcelona",
+            "image_padding": false
           }
         }
       },
       "block_order": [
         "dd696413-cfea-4a69-abb3-3a225aa4ba27",
-        "7a5f5fbc-e2be-4635-938a-61ad39a4523f",
-        "e007b13e-0038-44d5-95dc-4600e34655b1",
-        "dd5cc332-7111-4399-8ed0-8e0e163a23ea",
-        "39949fdc-0f9c-46bc-868d-5f727b155b5a"
+        "b5d63601-2bac-4530-8e59-298838708944",
+        "a3d944b9-fa26-4108-9436-81a02fa69695",
+        "923923a4-5f8a-4304-9d9d-52df5ac780a1",
+        "409b7e7b-86a7-4693-9d12-f3e127eb9eb3"
       ],
       "settings": {
         "heading": "",
