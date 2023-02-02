@@ -410,7 +410,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "half",
+        "image_width": "third",
         "image_ratio": "circle",
         "columns_desktop": 3,
         "column_alignment": "center",
