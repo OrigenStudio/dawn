@@ -88,6 +88,12 @@
                   </h2>
                 </a>
               </div>
+            {%- when 'short_description'%}
+              {%- if product.metafields.custom.description.value != blank -%}
+                <p class="product__description rte" {{ block.shopify_attributes }}>
+                  {{ product.metafields.custom.description }}
+                </p>
+              {%- endif -%}
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
@@ -1244,6 +1250,11 @@
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
         }
       ]
+    },
+    {
+      "type": "short_description",
+      "name": "t:sections.main-product.blocks.short_description.name",
+      "limit": 1
     },
     {
       "type": "share",

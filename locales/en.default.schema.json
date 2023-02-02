@@ -1721,6 +1721,9 @@
         "description": {
           "name": "Description"
         },
+        "short_description": {
+          "name": "Short description"
+        },
         "sku": {
           "name": "SKU",
           "settings": {
