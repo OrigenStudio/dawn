@@ -269,6 +269,7 @@
     },
     "5c87412e-d4b0-440b-94e5-b4c77e0eec42": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-0": {
           "type": "column",
@@ -320,6 +321,62 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "0c51e748-ba08-476b-b81d-dc929a1a184f": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-aleksandar-pasaric-1388030_1.jpg",
+            "title": "FAST NATIONAL SHIPPING",
+            "text": "<p>24-48h shipping to Spain<br\/>Pick-up available at out stores<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-alexander-bobrov-3277769.jpg",
+            "title": "INTERNATIONAL SHIPPING",
+            "text": "<p>Shipping to anywhere in the world with express options at checkout<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-kindel-media-6994138.jpg",
+            "title": "FREE SIZE EXCHANGE",
+            "text": "<p>Free size exhange when shipping to\/from Europe<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0",
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1",
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -543,6 +600,7 @@
     "collage",
     "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86",
     "5c87412e-d4b0-440b-94e5-b4c77e0eec42",
+    "0c51e748-ba08-476b-b81d-dc929a1a184f",
     "3f450f81-8ef5-4cb4-9131-0db3d899a279",
     "4c322433-45f4-4925-8736-535bb7314d61",
     "82567d4d-8ae0-45d7-a3be-82328b8203f7",
