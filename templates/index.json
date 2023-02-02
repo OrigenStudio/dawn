@@ -113,12 +113,12 @@
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wide_2022.09-hd.jpg",
-            "heading": "Autum\/Winter 2022",
-            "heading_size": "h1",
+            "image": "shopify:\/\/shop_images\/Essential_2.jpg",
+            "heading": "ESSENTIAL",
+            "heading_size": "h0",
             "subheading": "PAS NORMAL STUDIO",
             "button_label": "Shop Collection",
-            "link": "shopify:\/\/collections\/pas-normal-studios-autumn-winter-22",
+            "link": "shopify:\/\/collections\/essential-bib",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
