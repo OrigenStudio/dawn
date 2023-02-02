@@ -1,58 +1,5 @@
 {
   "sections": {
-    "a4b5e10c-91be-487d-b223-abdded7b196e": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "template--14546355290246__a4b5e10c-91be-487d-b223-abdded7b196e-1674759332d4096a7f-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--14546355290246__a4b5e10c-91be-487d-b223-abdded7b196e-1674759332d4096a7f-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--14546355290246__a4b5e10c-91be-487d-b223-abdded7b196e-1674759332d4096a7f-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": true,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--14546355290246__a4b5e10c-91be-487d-b223-abdded7b196e-1674759332d4096a7f-0",
-        "template--14546355290246__a4b5e10c-91be-487d-b223-abdded7b196e-1674759332d4096a7f-1",
-        "template--14546355290246__a4b5e10c-91be-487d-b223-abdded7b196e-1674759332d4096a7f-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2023-01-23_at_13.02.28.png",
-        "image_2": "shopify:\/\/shop_images\/Slide_Velodrom_by_Laser_-_3.jpg",
-        "image_overlay_opacity": 30,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "e0911e38-e306-463a-9877-cdf1960a5028": {
       "type": "slideshow",
       "blocks": {
@@ -308,63 +255,6 @@
         "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
         "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "5c87412e-d4b0-440b-94e5-b4c77e0eec42": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/237.1.jpg",
-            "title": "FAST NATIONAL SHIPPING",
-            "text": "<p>24-48h shipping to Spain<br\/>Pick-up available at out stores<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PNS_MECH_WINTER_DITLEV_05_WomensLongSleeve_26274-1-hd.jpg",
-            "title": "INTERNATIONAL SHIPPING",
-            "text": "<p>Shipping to anywhere in the world with express options at checkout<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PAS_NORMAL_CONTROL.jpg",
-            "title": "FREE SIZE EXCHANGE",
-            "text": "<p>Free size exhange when shipping to\/from Europe<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-0",
-        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-1",
-        "template--14546355290246__5c87412e-d4b0-440b-94e5-b4c77e0eec42-1674732779c0a0a58f-2"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "half",
-        "image_ratio": "circle",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -638,12 +528,10 @@
     }
   },
   "order": [
-    "a4b5e10c-91be-487d-b223-abdded7b196e",
     "e0911e38-e306-463a-9877-cdf1960a5028",
     "81eb5dff-ea73-49d9-945f-59d6b676ce36",
     "collage",
     "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86",
-    "5c87412e-d4b0-440b-94e5-b4c77e0eec42",
     "0c51e748-ba08-476b-b81d-dc929a1a184f",
     "3f450f81-8ef5-4cb4-9131-0db3d899a279",
     "4c322433-45f4-4925-8736-535bb7314d61",
