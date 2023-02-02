@@ -69,7 +69,7 @@
             "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 10,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
@@ -131,17 +131,17 @@
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grid2.jpg",
-            "heading": "The new and amazing bike from ENVE",
-            "heading_size": "h1",
-            "subheading": "ENVE MELEE BIKE",
-            "button_label": "Button label",
+            "image": "shopify:\/\/shop_images\/258.2.jpg",
+            "heading": "Training Collection",
+            "heading_size": "h0",
+            "subheading": "MAAP",
+            "button_label": "Shop Now",
             "link": "shopify:\/\/products\/enve-melee-bike-frameset",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 10,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
