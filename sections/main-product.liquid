@@ -466,6 +466,14 @@
                     </div>
                   {%- endform -%}
                 </product-form>
+
+                <!-- Klarna integration - Placement v2 -->
+                  <klarna-placement
+                    data-key="credit-promotion-badge"
+                    data-locale="{{ shop.locale }}-ES"
+                    data-purchase-amount="{{ product.price }}"
+                  ></klarna-placement>
+                <!-- Klarna integration - end Placement -->
               </div>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}

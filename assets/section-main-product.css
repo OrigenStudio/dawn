@@ -509,10 +509,6 @@ a.product__text {
   margin: 0 auto 1.2rem auto;
 }
 
-.product-form__buttons {
-  max-width: 44rem;
-}
-
 .product--no-media .product__info-container > modal-opener {
   display: block;
   text-align: center;
