@@ -297,5 +297,14 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <!-- Klarna integration -->
+      <script
+      async
+      data-environment="production"
+      src="https://osm.klarnaservices.com/lib.js"
+      data-client-id="133f7ab1-968f-5866-aa4e-68cccdf9c51f"
+      ></script>
+    <!-- Klarna integration - end -->
   </body>
 </html>
