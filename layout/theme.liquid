@@ -306,5 +306,26 @@
       data-client-id="133f7ab1-968f-5866-aa4e-68cccdf9c51f"
       ></script>
     <!-- Klarna integration - end -->
+
+    <!-- Kiwi sizing -->
+      <script>
+        window.KiwiSizing = window.KiwiSizing === undefined ? {} : window.KiwiSizing;
+        KiwiSizing.shop = "{{ shop.permanent_domain }}";
+        {% assign t = template | prepend: '/' | append: '.' %}
+        {% if t contains '/product.' %}
+          KiwiSizing.data = {
+            collections: "{{ product.collections | map: 'id' | join: ','}}",
+            tags: {{ product.tags | join: ',' | json}},
+            product: "{{product.id}}",
+            vendor: {{product.vendor | json}},
+            type: {{product.type | json}},
+            title: {{product.title | json}},
+            images: {{product.images | json}},
+            options: {{product.options_with_values | json}},
+            variants: {{product.variants | json}},
+          };
+        {% endif %}
+      </script>
+    <!-- Kiwi sizing - end -->
   </body>
 </html>
