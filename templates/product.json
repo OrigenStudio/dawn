@@ -33,13 +33,20 @@
             "show_dynamic_checkout": true
           }
         },
-        "collapsible-row-2": {
+        "77d69a2b-269d-4ac6-bdaa-1760adbafaf5": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Sizing",
-            "icon": "ruler",
+            "heading": "Description",
+            "icon": "clipboard",
             "content": "",
             "page": ""
+          }
+        },
+        "702dfa33-3e03-414d-92e9-df28379ef93d": {
+          "type": "kiwi-sizing",
+          "settings": {
+            "heading": "Kiwi sizing",
+            "icon": "ruler"
           }
         },
         "collapsible-row-1": {
@@ -57,16 +64,6 @@
             "heading": "Financing",
             "icon": "box",
             "content": "<p>We offer financing vía Cetelem for bikes and Klarna for accesories<\/p>",
-            "page": ""
-          }
-        },
-        "77d69a2b-269d-4ac6-bdaa-1760adbafaf5": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Description",
-            "icon": "clipboard",
-            "content": "",
             "page": ""
           }
         },
@@ -89,10 +86,10 @@
         "variant_picker",
         "beff3ab0-159c-4337-9ca1-c4542cbb2c46",
         "buy_buttons",
-        "collapsible-row-2",
+        "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
+        "702dfa33-3e03-414d-92e9-df28379ef93d",
         "collapsible-row-1",
         "collapsible-row-0",
-        "77d69a2b-269d-4ac6-bdaa-1760adbafaf5",
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d"
       ],
       "settings": {
