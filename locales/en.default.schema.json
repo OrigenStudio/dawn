@@ -2024,6 +2024,9 @@
               "label": "Third heading"
             }
           }
+        },
+        "kiwi_sizing": {
+          "name": "Kiwi sizing"
         }
       },
       "settings": {
