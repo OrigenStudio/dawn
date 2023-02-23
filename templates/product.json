@@ -41,8 +41,8 @@
         "77d69a2b-269d-4ac6-bdaa-1760adbafaf5": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Description",
-            "icon": "clipboard",
+            "heading": "DESCRIPTION",
+            "icon": "none",
             "content": "",
             "page": ""
           }
