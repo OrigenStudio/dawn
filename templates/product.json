@@ -50,15 +50,15 @@
         "702dfa33-3e03-414d-92e9-df28379ef93d": {
           "type": "kiwi-sizing",
           "settings": {
-            "heading": "Kiwi sizing",
-            "icon": "ruler"
+            "heading": "SIZING",
+            "icon": "none"
           }
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
+            "heading": "SHIPPING AND RETURNS",
+            "icon": "none",
             "content": "<p><strong>SHIPPING TO SPAIN<\/strong>: 5.95 EUR<br\/><br\/><strong>SHIPPING TO EUROPEAN UNION vía ups: <\/strong>12-30 EUR depending on postcode.<br\/><br\/><strong>Shippings to non Eu Countries:<br\/><\/strong>The shipping might be subject to customs fees. Unfortunately we are not able to cover this costs at the moment.<br\/><br\/><strong>Return for size exchange:<br\/><\/strong>SPAIN - We offer exchanges via UPS - free of charge.<br\/>EUROPE - 25 eur.<br\/>UNITED STATES AND UK - See table in our <a href=\"\/pages\/refund-policy\" target=\"_blank\" title=\"Refund, return and exchanges policies\">returns page<\/a>.<br\/>REST OF THE COUNTRIES - See table in our <a href=\"\/pages\/refund-policy\" target=\"_blank\" title=\"Refund, return and exchanges policies\">returns page<\/a>.<br\/><br\/><strong>Return for Refund:<br\/><\/strong>SPAIN - We offer returns of products via UPS - 8 eur<br\/>EUROPEAN UNION - We offer returns of products via UPS - 35 eur.<br\/>UK AND UNITED STATES - See table in our returns page.<br\/>REST OF THE COUNTRIES - See in our return page.<\/p>",
             "page": ""
           }
@@ -66,7 +66,7 @@
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Financing",
+            "heading": "FINANZING",
             "icon": "box",
             "content": "<p>We offer financing vía Cetelem for bikes and Klarna for accesories<\/p>",
             "page": ""
