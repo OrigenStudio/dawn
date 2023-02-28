@@ -158,6 +158,7 @@
       },
       "share": "Share this product",
       "shipping_time": "We ship it today if you order it within ",
+      "sold_out": "SOLD OUT",
       "unavailable": "Unavailable",
       "vendor": "Vendor",
       "value_unavailable": "{{ option_value }} - Unavailable",
