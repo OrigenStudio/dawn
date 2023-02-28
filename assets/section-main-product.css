@@ -933,6 +933,10 @@ a.product__text {
 
 /* Product popup */
 
+.global-media-settings {
+  border: none;
+}
+
 .product-popup-modal {
   box-sizing: border-box;
   opacity: 0;
