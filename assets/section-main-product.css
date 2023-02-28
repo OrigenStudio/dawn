@@ -1504,11 +1504,6 @@ a.product__text {
 
 /* Product fixed footer */
 
-.product--fixed {
-  display: none;
-}
-
-@media screen and (min-width: 750px) {
   .product--fixed {
     display: block;
     position: fixed;
@@ -1541,5 +1536,15 @@ a.product__text {
     display: flex;
     max-height: 46px;
     gap: 2rem;
+}
+
+@media screen and (max-width: 749px) {
+  .product--fixed-wrapper .product-content {
+    display: none;
+  }
+
+  .product--fixed-wrapper .product-actions {
+    width: 100%;
+    justify-content: center;
   }
 }
