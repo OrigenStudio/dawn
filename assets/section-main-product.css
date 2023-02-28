@@ -1383,6 +1383,12 @@ a.product__text {
 
 /* Inventory status */
 
+.inventory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .product__inventory {
   display: flex;
   align-items: center;
