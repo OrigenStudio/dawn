@@ -345,6 +345,24 @@ fieldset.product-form__input .form__label {
   letter-spacing: 0.1rem;
 }
 
+/* Shipping time */
+
+.shipping-time {
+  text-align: center;
+}
+
+.shipping-time p {
+  margin: 1rem 0;
+}
+
+.shipping-time strong {
+  color:#41872B;
+}
+
+.shipping-time.disabled {
+  visibility: hidden;
+}
+
 /* Product info */
 
 .product__info-container > * + * {
