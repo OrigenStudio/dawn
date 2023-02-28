@@ -24,12 +24,12 @@
         "97e73aef-1ac7-4d7c-babc-783ca2d37e4f": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PAS_NORMAL_03_0234_-1.jpg",
-            "heading": "Yoshida & CO.",
-            "heading_size": "h0",
-            "subheading": "PAS NORMAL STUDIOS X PORTER",
+            "image": "shopify:\/\/shop_images\/02.03_PNS_Escapism_1926-min_185c38d8-6f81-4bb5-b5cf-4908767728db.jpg",
+            "heading": "PAS NORMAL STUDIOS ESCAPISM LIGHT",
+            "heading_size": "h1",
+            "subheading": "THE NEW GRAVEL COLLECTION FROM PAS NORMAL STUDIOS",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/porter-yoshida-pas-normal",
+            "link": "shopify:\/\/collections\/pas-normal-studios-escapism-collection",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -41,6 +41,7 @@
         },
         "0f7b703a-7798-417b-aa4a-5030c3773521": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/WINTER-JERSEY-VCC-32.jpg",
             "heading": "AW'22 Collection",
@@ -59,6 +60,7 @@
         },
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Essential_2.jpg",
             "heading": "ESSENTIAL",
@@ -77,6 +79,7 @@
         },
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/258.2.jpg",
             "heading": "Training Collection",
