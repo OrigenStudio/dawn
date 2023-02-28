@@ -117,12 +117,12 @@
     "81eb5dff-ea73-49d9-945f-59d6b676ce36": {
       "type": "featured-collection",
       "settings": {
-        "title": "NEW ARRIVALS",
+        "title": "VELODROM BY LASER",
         "heading_size": "h2",
-        "description": "<p>Discover the latest additions to our range of clothing<\/p>",
+        "description": "<p>A TRIBUTE TO ONE OF OUR PREFERRED CLIMBS IN BARCELONA: FORAT DEL VENT<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "new-arrivals",
+        "collection": "velodrom-by-laser-forat-del-vent",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": true,
