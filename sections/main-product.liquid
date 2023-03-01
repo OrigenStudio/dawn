@@ -438,10 +438,6 @@
                     <span class="product-form__error-message"></span>
                   </div>
 
-                  <div class="shipping-time">
-                    <p>{{ 'products.product.shipping_time' | t }}<strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong></p>
-                  </div>
-
                   {%- form 'product',
                     product,
                     id: product_form_id,
@@ -808,6 +804,10 @@
 
                   <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
                 </div>
+              </div>
+            {%- when 'shipping-time' -%}
+              <div class="product__shipping-time" {{ block.shopify_attributes }}>
+                <p class="shipping-time">{{ 'products.product.shipping_time' | t }}<strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong></p>
               </div>
           {%- endcase -%}
         {%- endfor -%}
@@ -2782,6 +2782,11 @@
           "default": true
         }
       ]
+    },
+    {
+      "type": "shipping-time",
+      "name": "WE SHIP IT TODAY",
+      "limit": 1
     }
   ],
   "settings": [

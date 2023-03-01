@@ -348,9 +348,7 @@ fieldset.product-form__input .form__label {
 
 /* Shipping time */
 
-.shipping-time {
-  text-align: center;
-}
+.shipping-time {}
 
 .shipping-time p {
   margin: 1rem 0;
@@ -366,7 +364,7 @@ fieldset.product-form__input .form__label {
 
 /* Klarna widget */
 
-#klarna-placement *::part(osm-container)  {
+#klarna-placement *::part(osm-container) {
   border: none;
   padding: 0;
 }
