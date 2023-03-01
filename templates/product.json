@@ -13,9 +13,12 @@
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
+        "8e6f5573-f833-4396-8ff6-b51ad5577669": {
+          "type": "price-and-inventory",
           "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
           }
         },
         "variant_picker": {
@@ -24,18 +27,15 @@
             "picker_type": "button"
           }
         },
-        "beff3ab0-159c-4337-9ca1-c4542cbb2c46": {
-          "type": "inventory",
-          "settings": {
-            "text_style": "uppercase",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
+          }
+        },
+        "1baf60dc-4380-44ae-abcc-3f75e9306fe8": {
+          "type": "shipping-time",
+          "settings": {
           }
         },
         "5867240e-6103-4cb1-94cc-15bff73ae412": {
@@ -86,10 +86,10 @@
       "block_order": [
         "title",
         "627f1748-12cf-4f88-806a-fb965b548569",
-        "price",
+        "8e6f5573-f833-4396-8ff6-b51ad5577669",
         "variant_picker",
-        "beff3ab0-159c-4337-9ca1-c4542cbb2c46",
         "buy_buttons",
+        "1baf60dc-4380-44ae-abcc-3f75e9306fe8",
         "5867240e-6103-4cb1-94cc-15bff73ae412",
         "702dfa33-3e03-414d-92e9-df28379ef93d",
         "collapsible-row-1",
