@@ -358,11 +358,18 @@ fieldset.product-form__input .form__label {
 }
 
 .shipping-time strong {
-  color:#41872B;
+  color: #41872b;
 }
 
 .shipping-time.disabled {
   visibility: hidden;
+}
+
+/* Klarna widget */
+
+#klarna-placement *::part(osm-container)  {
+  border: none;
+  padding: 0;
 }
 
 /* Product info */
