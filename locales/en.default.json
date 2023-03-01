@@ -117,7 +117,7 @@
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
       "inventory_in_stock": "In stock",
-      "inventory_in_stock_show_count": "{{ quantity }} in stock",
+      "inventory_in_stock_show_count": "+3 units in stock",
       "inventory_low_stock": "Low stock",
       "inventory_low_stock_show_count": "Low stock: {{ quantity }} left",
       "inventory_out_of_stock": "Out of stock",
