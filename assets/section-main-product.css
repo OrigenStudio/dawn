@@ -137,6 +137,8 @@
   letter-spacing: 0.05rem;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+
+  display: none;
 }
 
 .shopify-payment-button__button + .shopify-payment-button__button--hidden {
@@ -181,7 +183,6 @@
 .product-form__input.fullbleed {
   max-width: 100%;
   min-width: 100%;
-  justify-content: center;
 }
 
 .product-form__input.fullbleed input[type="radio"] + label {
@@ -347,20 +348,25 @@ fieldset.product-form__input .form__label {
 
 /* Shipping time */
 
-.shipping-time {
-  text-align: center;
-}
+.shipping-time {}
 
 .shipping-time p {
   margin: 1rem 0;
 }
 
 .shipping-time strong {
-  color:#41872B;
+  color: #41872b;
 }
 
 .shipping-time.disabled {
   visibility: hidden;
+}
+
+/* Klarna widget */
+
+#klarna-placement *::part(osm-container) {
+  border: none;
+  padding: 0;
 }
 
 /* Product info */
@@ -1535,6 +1541,25 @@ a.product__text {
 
 .product-media-container .media {
   padding-top: var(--ratio-percent);
+}
+
+/* Price + Inventory Mix */
+
+.product__price-and-inventory {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.product__price-and-inventory .product__inventory-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.product__price-and-inventory .product__inventory-wrapper .product__inventory {
+  margin: 0;
 }
 
 /* Product fixed footer */
