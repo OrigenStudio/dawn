@@ -143,7 +143,7 @@
       },
       "pickup_availability": {
         "view_store_info": "View store information",
-        "check_other_stores": "Check availability at the stores",
+        "check_other_stores": "Stores stock",
         "pick_up_available": "Pickup available",
         "pick_up_available_at_html": "Pickup available at <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "pick_up_unavailable_at_html": "Pickup currently unavailable at <span class=\"color-foreground\">{{ location_name }}<\/span>",

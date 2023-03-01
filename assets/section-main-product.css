@@ -1545,6 +1545,25 @@ a.product__text {
   padding-top: var(--ratio-percent);
 }
 
+/* Price + Inventory Mix */
+
+.product__price-and-inventory {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.product__price-and-inventory .product__inventory-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.product__price-and-inventory .product__inventory-wrapper .product__inventory {
+  margin: 0;
+}
+
 /* Product fixed footer */
 
 .product--fixed {
