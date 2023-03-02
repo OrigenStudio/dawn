@@ -21,15 +21,15 @@
             "show_inventory_quantity": true
           }
         },
+        "1baf60dc-4380-44ae-abcc-3f75e9306fe8": {
+          "type": "shipping-time",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
-          }
-        },
-        "1baf60dc-4380-44ae-abcc-3f75e9306fe8": {
-          "type": "shipping-time",
-          "settings": {
           }
         },
         "buy_buttons": {
@@ -87,8 +87,8 @@
         "title",
         "627f1748-12cf-4f88-806a-fb965b548569",
         "8e6f5573-f833-4396-8ff6-b51ad5577669",
-        "variant_picker",
         "1baf60dc-4380-44ae-abcc-3f75e9306fe8",
+        "variant_picker",
         "buy_buttons",
         "5867240e-6103-4cb1-94cc-15bff73ae412",
         "702dfa33-3e03-414d-92e9-df28379ef93d",
