@@ -809,6 +809,10 @@
               <div class="product__shipping-time" {{ block.shopify_attributes }}>
                 <p class="shipping-time">{{ 'products.product.shipping_time' | t }}<strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong></p>
               </div>
+            {%- when 'color-picker' -%}
+              <div class="product__color-swatches" {{ block.shopify_attributes }}>
+                {% render 'color-swatches' %}
+              </div>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2786,6 +2790,11 @@
     {
       "type": "shipping-time",
       "name": "t:sections.main-product.blocks.shipping_time.name",
+      "limit": 1
+    },
+    {
+      "type": "color-picker",
+      "name": "t:sections.main-product.blocks.color_swatches.name",
       "limit": 1
     }
   ],

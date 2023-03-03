@@ -2997,3 +2997,286 @@ a.rebuy-product-image {
 .rebuy-widget .flickity-page-dots .dot {
   width: 6px !important;
 }
+
+/* Swatches - Color picker */
+
+.swatch {
+  margin-bottom: 13px
+}
+
+.swatch input[type=radio],
+.swatch .swatch-element .crossed-out {
+  display: none
+}
+
+.swatch .soldout {
+  opacity: .9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)";
+  filter: alpha(opacity=40)
+}
+
+.swatch .swatch-element {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 10px 12px 0;
+  position: relative
+}
+
+.swatch .swatch-element.soldout label {
+  cursor: pointer
+}
+
+.swatch .swatch-element.soldout label:after, .swatch .swatch-element.unavailable, #product-variants .swatch .swatch-element.soldout:not(.available) {
+  display: none
+}
+
+.swatch .swatch-element label {
+  min-width: 34px;
+  height: 34px;
+  border: 1px solid #e1e1e1;
+  margin: 0;
+  text-align: center;
+  padding: 3px;
+  line-height: 26px;
+  color: #323232;
+  cursor: pointer;
+  border-radius: 17%;
+}
+
+.swatch .swatch-element .bgImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.swatch .swatch-element:not(.color) label:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid #323232;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 2;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  border-radius: 17%;
+}
+
+.swatch .swatch-element.color label {
+  position: relative
+}
+
+.swatch .swatch-element.color label:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 4px solid #323232;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 2;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border-radius: 50%;
+}
+
+.swatch .swatch-element.color label.swatch_variant_img:after {
+  border-width: 3px
+}
+
+.swatch .swatch-element input:checked+label {
+  font-weight: 600
+}
+
+.swatch .swatch-element input:checked+label:after {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
+  filter: alpha(opacity=100);
+  visibility: visible
+}
+
+.swatch .tooltip {
+  text-align: center;
+  background: #000;
+  color: #FFF;
+  bottom: 100%;
+  padding: 5px 10px;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  min-width: 50px;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 12px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+.swatch .tooltip:before {
+  bottom: -16px;
+  content: "";
+  display: block;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  width: 100%
+}
+
+.swatch .tooltip:after {
+  border-left: solid transparent 7px;
+  border-right: solid transparent 7px;
+  border-top: solid #000 7px;
+  bottom: -7px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  width: 0
+}
+
+.swatch .swatch-element:hover .tooltip {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
+  filter: alpha(opacity=100);
+  visibility: visible;
+  pointer-events: auto
+}
+
+.swatch.swatch_size_large {
+  margin-bottom: 20px
+}
+
+.swatch.swatch_size_large .header {
+  font-size: 15px;
+  line-height: 24px;
+  color: #808080
+}
+
+.swatch.swatch_size_large .swatch-element {
+  margin: 0 10px 15px 0
+}
+
+.swatch.swatch_size_large .swatch-element label {
+  border-radius: 0;
+  background-color: #eaeaea
+}
+
+.swatch.swatch_size_large .swatch-element label:hover {
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2)
+}
+
+.swatch.swatch_size_large .swatch-element .bgImg {
+  border-radius: 50%;
+}
+
+.swatch.swatch_size_large .swatch-element:not(.color) label {
+  font-size: 15px;
+  line-height: 26px;
+  padding-top: 7px;
+}
+
+.swatch.swatch_size_large .swatch-element:not(.color) label:after {
+  border-radius: 0;
+  display: none;
+  border: 1px solid
+}
+
+.swatch.swatch_size_large .swatch-element:not(.color) input:checked+label {
+  background-color: #fff;
+  border-color: #ccc;
+  font-weight: 400
+}
+
+.swatch.swatch_size_large .swatch-element.color label {
+  padding: 0;
+}
+
+.swatch.swatch_size_large .swatch-element.color label:before {
+  content: '';
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  top: calc(50% - 7px);
+  left: calc(50% - 4px);
+  border: 2px solid transparent;
+  border-top: none;
+  border-right: none;
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.2s ease;
+  opacity: 1;
+  transform: scale(1) rotate(-45deg)
+}
+
+.swatch.swatch_size_large .swatch-element.color label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  border: 1px solid transparent;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+}
+
+.swatch.swatch_size_large .swatch-element.color input:checked+label:before {
+  border-color: #fff
+}

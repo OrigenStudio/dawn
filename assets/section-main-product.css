@@ -348,7 +348,8 @@ fieldset.product-form__input .form__label {
 
 /* Shipping time */
 
-.shipping-time {}
+.shipping-time {
+}
 
 .shipping-time p {
   margin: 1rem 0;
@@ -1556,6 +1557,55 @@ a.product__text {
 
 .product__price-and-inventory .product__inventory-wrapper .product__inventory {
   margin: 0;
+}
+
+/* Swatches - Color picker */
+
+.swatch {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  gap: 0.25rem;
+}
+
+.swatch .swatch-element {
+  margin: 0;
+}
+
+.swatch .swatch-element label {
+  border-radius: 0;
+  padding: 9px 24px;
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+}
+
+.swatch .swatch-element.color-swatch label {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  padding: 3px;
+  margin: 1px;
+}
+
+.swatch .swatch-element.color-swatch.selected label {
+  border: 2px solid black;
+}
+
+.swatch .swatch-element:not(.color) label:after {
+  border-radius: 0;
+}
+
+.swatch .swatch-element .bgImg {
+  background-size: inherit;
+}
+
+.swatch .tooltip {
+  min-width: 100px;
 }
 
 /* Product fixed footer */
