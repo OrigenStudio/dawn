@@ -2033,6 +2033,9 @@
         },
         "shipping_time": {
           "name": "Shipping time"
+        },
+        "color_swatches": {
+          "name": "Color picker"
         }
       },
       "settings": {

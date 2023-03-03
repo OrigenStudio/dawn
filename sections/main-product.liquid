@@ -94,16 +94,6 @@
                   {{ product.metafields.custom.description }}
                 </p>
               {%- endif -%}
-
-            {% comment %}
-              This does not go here, necesary to move it and make it a block )
-              {% render 'color-swatches' %} here it works but without the css
-            {% endcomment %}
-            {%- when 'color-swatches' -%}
-              
-
-
-
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
@@ -819,6 +809,10 @@
               <div class="product__shipping-time" {{ block.shopify_attributes }}>
                 <p class="shipping-time">{{ 'products.product.shipping_time' | t }}<strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong></p>
               </div>
+            {%- when 'color-picker' -%}
+              <div class="product__color-swatches" {{ block.shopify_attributes }}>
+                {% render 'color-swatches' %}
+              </div>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1081,12 +1075,6 @@
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
       "limit": 1
-    },
-    {
-      "type": "color-swatches",
-      "name": "t:sections.main-product.blocks.color_swatches.name",
-      "limit": 1,
-      "settings": []
     },
     {
       "type": "sku",
@@ -2802,6 +2790,11 @@
     {
       "type": "shipping-time",
       "name": "t:sections.main-product.blocks.shipping_time.name",
+      "limit": 1
+    },
+    {
+      "type": "color-picker",
+      "name": "t:sections.main-product.blocks.color_swatches.name",
       "limit": 1
     }
   ],
