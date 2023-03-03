@@ -94,6 +94,16 @@
                   {{ product.metafields.custom.description }}
                 </p>
               {%- endif -%}
+
+            {% comment %}
+              This does not go here, necesary to move it and make it a block )
+              {% render 'color-swatches' %} here it works but without the css
+            {% endcomment %}
+            {%- when 'color-swatches' -%}
+              
+
+
+
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
@@ -1071,6 +1081,12 @@
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
       "limit": 1
+    },
+    {
+      "type": "color-swatches",
+      "name": "t:sections.main-product.blocks.color_swatches.name",
+      "limit": 1,
+      "settings": []
     },
     {
       "type": "sku",
