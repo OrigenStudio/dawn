@@ -1,25 +1,3 @@
-{% comment %}
-  File inspired in the swatch liquid file in theme and this reference:
-  https://stephenkeable.medium.com/linking-alternative-colours-of-products-together-in-shopify-b0ad3c44ccb6
-{% endcomment %}
-<style>
-  .swatch .swatch-element.color-swatch label {
-    height: 34px;
-    width: 34px;
-    border-radius: 50%;
-    padding: 3px;
-    margin: 1px;
-  }
-  .swatch .swatch-element.color-swatch.selected label {
-    border: 2px solid black;
-  }
-  .swatch .swatch-element .bgImg {
-    background-size: inherit;
-  }
-  .swatch .tooltip {
-    min-width: 100px;
-  }
-</style>
 {%- assign collection_alt = 'BLANK' -%}
 {%- for collection in product.collections -%}
   {%- assign collection_prefix = collection.title | slice: 0, 5 -%}
@@ -28,46 +6,44 @@
     {%- break -%}
   {%- endif -%}
 {%- endfor -%}
+
 {%- unless collection_alt == 'BLANK' -%}
   {%- assign vendor_handle = product.vendor | handle -%}
   {%- if collections[collection_alt].products.size > 0 -%}
     {%- assign alt_products_total = 0 -%}
     {%- capture products_output -%}
-        {%- paginate collections[collection_alt].products by 200 -%}
-          {%- for alt_product in collections[collection_alt].products -%}
-              {% assign swatch_color = "" %}
-              {%- for tag in alt_product.tags -%}
-                {%- if tag contains "color:" -%}
-                  {% assign swatch_color = tag | split: ':' | last %}
-                  {%- if swatch_color contains "-" -%}
-                    {%- assign swatch_color = swatch_color | split: '-' | last -%}
-                  {%-else-%}
-                    {%- assign swatch_color = settings[swatch_color] -%}
-                  {%- endif -%}
-                {%- endif -%}
-              {%- endfor -%}
-              {%- assign alt_products_total = alt_products_total | plus: 1 -%}
-                <a href="{{ alt_product.url }}" title="{{ alt_product.title }}">
-                  <div data-value="{{ swatch_color | escape }}" class="swatch-element color-swatch color {{ swatch_color | handle }}{% if alt_product.available %} available{% else %} soldout{% endif %} {% if alt_product.id == product.id %} selected {% endif %}">
-                    <div class="tooltip">
-                        {{ alt_product.title | split: '-' | last }}
-                    </div>
-                    <label for="swatch-{{ option_index }}-{{ swatch_color | handle }}">
-                        <span class="bgImg" style="background-color: {{ swatch_color }};"></span>
-                    </label>
-                  </div>
-                </a>
+      {%- paginate collections[collection_alt].products by 200 -%}
+        {%- for alt_product in collections[collection_alt].products -%}
+          {% assign swatch_color = "" %}
+          {%- for tag in alt_product.tags -%}
+            {%- if tag contains "color:" -%}
+              {% assign swatch_color = tag | split: ':' | last %}
+              {%- if swatch_color contains "-" -%}
+                {%- assign swatch_color = swatch_color | split: '-' | last -%}
+              {%- else -%}
+                {%- assign swatch_color = settings[swatch_color] -%}
+              {%- endif -%}
+            {%- endif -%}
           {%- endfor -%}
-        {%- endpaginate -%}
-      {%- endcapture -%}
+          {%- assign alt_products_total = alt_products_total | plus: 1 -%}
+          <a href="{{ alt_product.url }}" title="{{ alt_product.title }}">
+            <div data-value="{{ swatch_color | escape }}" class="swatch-element color-swatch color {{ swatch_color | handle }}{% if alt_product.available %} available{% else %} soldout{% endif %} {% if alt_product.id == product.id %} selected {% endif %}">
+              <div class="tooltip">
+                {{ alt_product.title | split: '-' | last }}
+              </div>
+              <label for="swatch-{{ option_index }}-{{ swatch_color | handle }}">
+                <span class="bgImg" style="background-color: {{ swatch_color }};"></span>
+              </label>
+            </div>
+          </a>
+        {%- endfor -%}
+      {%- endpaginate -%}
+    {%- endcapture -%}
   {%- endif -%}
 {%- endunless -%}
 
 {%- if alt_products_total > 0 -%}
-  <div
-    class="swatch{% if settings.swatch_size_color == 'large' %} swatch_size_large{% endif %}"
-    data-option-index="{{ option_index }}"
-  >
+  <div class="swatch{% if settings.swatch_size_color == 'large' %} swatch_size_large{% endif %}" data-option-index="{{ option_index }}">
     {{ products_output }}
   </div>
 {%- endif -%}
