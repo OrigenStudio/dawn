@@ -2961,3 +2961,39 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+/* Rebuy widget */
+
+.rebuy-product-title.clickable {
+  font-family: var(--font-heading-family);
+}
+
+.rebuy-select {
+  font-family: inherit;
+  font-size: 1.2rem !important;
+  border-radius: 0px !important;
+}
+  
+.rebuy-button {
+  font-family: inherit;
+  border-radius: 0px !important;
+}
+
+a.rebuy-product-image {
+  aspect-ratio: 1/1;
+}
+
+.rebuy-widget .primary-title {
+  font-size: calc(var(--font-heading-scale) * 2rem);
+}
+
+
+@media only screen and (min-width: 750px) {
+  .rebuy-widget .primary-title {
+    font-size: calc(var(--font-heading-scale) * 2.4rem);
+  }
+}
+
+.rebuy-widget .flickity-page-dots .dot {
+  width: 6px !important;
+}
