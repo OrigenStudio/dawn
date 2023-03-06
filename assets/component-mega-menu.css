@@ -56,6 +56,8 @@
 
 .mega-menu__link--level-2 {
   font-size: 1.4rem;
+  font-family: var(--font-heading-family);
+  color: rgba(var(--color-foreground), 1);
 }
 
 .mega-menu__link--level-2:not(:only-child) {
