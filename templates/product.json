@@ -86,6 +86,15 @@
             "icon_3": "stopwatch",
             "heading_3": "INSTALLMENT PLAN: BUY NOW. PAY LATER"
           }
+        },
+        "c4ab42d0-a4e9-49c0-832f-7ba9eb03db2d": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": " 77097",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
         }
       },
       "block_order": [
@@ -100,7 +109,8 @@
         "702dfa33-3e03-414d-92e9-df28379ef93d",
         "collapsible-row-1",
         "collapsible-row-0",
-        "9d5dbc74-6089-4876-8a3a-efb84a6edc0d"
+        "9d5dbc74-6089-4876-8a3a-efb84a6edc0d",
+        "c4ab42d0-a4e9-49c0-832f-7ba9eb03db2d"
       ],
       "settings": {
         "enable_sticky_info": true,
