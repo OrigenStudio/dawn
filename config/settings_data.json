@@ -132,7 +132,7 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/VelodromLogoSM_1.png",
           "menu": "test-menu",
-          "menu_type_desktop": "dropdown"
+          "menu_type_desktop": "mega"
         }
       },
       "footer": {
