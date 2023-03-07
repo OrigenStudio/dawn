@@ -34,6 +34,8 @@
     <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
+  <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+
   {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
   {%- if first_3d_model -%}
     {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
@@ -179,8 +181,6 @@
                     </pickup-availability-preview>
                   </template>
                 </pickup-availability>
-
-                <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
               </div>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
@@ -725,7 +725,7 @@
                 </details>
               </div>
             {%- when 'price-and-inventory' -%}
-              <div class="product__price-and-inventory" {{ block.shopify_attributes }}>
+              <div class="no-js-hidden product__price-and-inventory" id="Inventory-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 <div>
                   {%- render 'price',
                   product: product,
@@ -801,8 +801,6 @@
                       </pickup-availability-preview>
                     </template>
                   </pickup-availability>
-
-                  <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
                 </div>
               </div>
             {%- when 'shipping-time' -%}
@@ -949,26 +947,6 @@
         hiddenInput.value = event.currentTarget.value;
       });
     });
-  </script>
-
-  <script>
-    function countdown() {
-      var now = new Date();
-      var day = now.getDay();
-      var end;
-
-      if (day >= 1 && day <= 5) {
-          end = new Date(now.getYear(), now.getMonth(), day, 15, 0, 0, 0);    
-      } else {
-          end = new Date(now.getYear(), now.getMonth(), 1, 15, 0, 0, 0);
-      }
-
-      var timeleft = end.getTime() - now.getTime();
-      var diff = new Date(timeleft);
-
-      document.querySelector('#shipping-time-countdown').html(diff.getHours() + "HRS" + diff.getMinutes() + "MIN");
-    }
-    countdown();
   </script>
 
   {%- liquid
