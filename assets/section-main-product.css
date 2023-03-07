@@ -469,7 +469,7 @@ a.product__text {
   }
 
   .product__info-container .price--on-sale .price-item--regular {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .product__info-container > *:first-child {
@@ -1564,7 +1564,7 @@ a.product__text {
 .swatch {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
