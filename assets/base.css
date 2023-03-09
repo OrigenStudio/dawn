@@ -3035,8 +3035,8 @@ a.rebuy-product-image {
 }
 
 .swatch .swatch-element label {
-  min-width: 34px;
-  height: 34px;
+  min-width: 30px;
+  height: 30px;
   border: 1px solid #e1e1e1;
   margin: 0;
   text-align: center;
@@ -3208,7 +3208,7 @@ a.rebuy-product-image {
 .swatch.swatch_size_large .header {
   font-size: 15px;
   line-height: 24px;
-  color: #808080
+  color: #808080;
 }
 
 .swatch.swatch_size_large .swatch-element {
@@ -3217,7 +3217,7 @@ a.rebuy-product-image {
 
 .swatch.swatch_size_large .swatch-element label {
   border-radius: 0;
-  background-color: #eaeaea
+  background-color: #eaeaea;
 }
 
 .swatch.swatch_size_large .swatch-element label:hover {

@@ -475,6 +475,12 @@
         }
       },
       "blocks": {
+        "title": {
+          "name": "Title"
+        },
+        "description": {
+          "name": "Description"
+        },
         "image": {
           "name": "Image",
           "settings": {

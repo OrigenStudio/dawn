@@ -29,7 +29,7 @@
             {%- when 'image' -%}
               <a href="{{ block.settings.image_link }}" class="full-unstyled-link">
                 <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
-                  <div class="media media--transparent ratio{% if block.settings.image_link != blank %} media--hover-effect{% endif %}"{% if block.settings.image != blank %} style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"{% else %} style="--ratio-percent: 100%"{% endif %}>
+                  <div class="media media--transparent ratio{% if block.settings.image_link != blank %} media--hover-effect{% endif %}{% if block.settings.title != blank or if block.settings.description != blank %} media-overlay{% endif %}"{% if block.settings.image != blank %} style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"{% else %} style="--ratio-percent: 100%"{% endif %}>
                     {%- if block.settings.image != blank -%}
                       {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px)}{%- endcapture -%}
 
@@ -40,6 +40,14 @@
                       }}
                     {%- else -%}
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                    {%- endif -%}
+                  </div>
+                  <div class="content">
+                    {%- if block.settings.title != blank -%}
+                      <h3 class="content__title"><span>{{ block.settings.title | escape }}</span></h3>
+                    {%- endif -%}
+                    {%- if block.settings.description != blank -%}
+                      <div class="content__description">{{ block.settings.description }}</div>
                     {%- endif -%}
                   </div>
                 </div>
@@ -54,10 +62,12 @@
             {%- when 'collection' -%}
               {% render 'card-collection-custom',
                 card_collection: block.settings.collection,
+                card_title: block.settings.title,
+                card_description: block.settings.description,
                 media_aspect_ratio: 'adapt',
                 columns: 2,
                 extend_height: true,
-                wrapper_class: section.settings.card_styles
+                wrapper_class: section.settings.card_styles,
               %}
             {%- when 'video' -%}
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}{{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
@@ -269,6 +279,16 @@
           "label": "t:sections.collage.blocks.image.settings.image.label"
         },
         {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.collage.blocks.title.name"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "t:sections.collage.blocks.description.name"
+        },
+        {
           "type": "url",
           "id": "image_link",
           "label": "t:sections.collage.blocks.image.settings.image_link.label"
@@ -307,6 +327,16 @@
           "type": "collection",
           "id": "collection",
           "label": "t:sections.collage.blocks.collection.settings.collection.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.collage.blocks.title.name"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "t:sections.collage.blocks.description.name"
         }
       ]
     },
