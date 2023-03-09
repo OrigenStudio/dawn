@@ -27,7 +27,7 @@
   if wrapper_class == nil or wrapper_class == 'none'
     assign card_color_scheme = settings.collection_card_color_scheme
     assign card_style = settings.collection_card_style
-  endif 
+  endif
 -%}
 
 <div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
@@ -40,7 +40,7 @@
       {% if card_collection.featured_image == nil and card_style == 'card' %} ratio{% endif %}"
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
-      <div class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+      <div class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}{% if card_title != blank %} media-overlay{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
         {%- if card_collection.featured_image -%}
           <div class="card__media">
             <div class="media media--transparent media--hover-effect">
@@ -67,41 +67,15 @@
             </div>
           </div>
         {%- endif -%}
-        <div class="card__content visually-hidden">
-          <div class="card__information">
-            <h3 class="card__heading">
-                {%- if card_collection.title != blank -%}
-                  {{- card_collection.title | escape -}}
-                {%- else -%}
-                  {{ 'onboarding.collection_title' | t }}
-                {%- endif -%}
-            </h3>
-            {%- if card_collection.description != blank -%}
-              <p class="card__caption">
-                {{- card_collection.description | strip_html | truncatewords: 12 -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
-              </p>
-            {%- endif -%}
-          </div>   
+        <div class="content">
+          {%- if card_title != blank -%}
+            <h3 class="content__title"><span>{{ card_title | escape }}</span></h3>
+          {%- endif -%}
+          {%- if card_description != blank -%}
+            <div class="content__description">{{ card_description }}</div>
+          {%- endif -%}
         </div>
       </div>
-      {% if card_style == 'card' or card_collection.featured_image %} 
-        <div class="card__content visually-hidden">
-          <div class="card__information">
-            <h3 class="card__heading">
-                {%- if card_collection.title != blank -%}
-                  {{- card_collection.title | escape -}}
-                {%- else -%}
-                  {{ 'onboarding.collection_title' | t }}
-                {%- endif -%}
-            </h3>
-            {%- if card_collection.featured_image == nil and card_collection.description != blank -%}
-              <p class="card__caption">
-                {{- card_collection.description | strip_html | truncatewords: 12 -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
-              </p>
-            {%- endif -%}
-          </div>
-        </div>
-      {% endif %} 
     </div>
   </a>
 </div>
