@@ -147,6 +147,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/home_page_600x_crop_center_0dbf4dae-1a3a-4b55-9219-5c717eb79c58.webp",
+            "title": "25€ OFF IN YOUR FIRST ORDER",
+            "description": "<p>SIGN-UP FOR OUR NEWSLETTER - CLICK HERE<\/p>",
             "image_link": "shopify:\/\/pages\/newsletter-signup",
             "image_padding": false
           }
@@ -155,6 +157,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/259_1.png",
+            "title": "",
+            "description": "",
             "image_link": "shopify:\/\/collections\/velodrom-vcc",
             "image_padding": false
           }
@@ -163,6 +167,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/BTKA_1643190396156627_872c2501bc680a6a63b7a75f0cc306.jpg",
+            "title": "",
+            "description": "",
             "image_link": "shopify:\/\/collections\/pas-normal-studios",
             "image_padding": false
           }
@@ -171,6 +177,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/233.2.jpg",
+            "title": "",
+            "description": "",
             "image_link": "shopify:\/\/collections\/brandblack",
             "image_padding": false
           }
@@ -179,6 +187,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/laser.jpg",
+            "title": "",
+            "description": "",
             "image_link": "shopify:\/\/collections\/laser-barcelona",
             "image_padding": false
           }
@@ -209,6 +219,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/homepageyeti.webp",
+            "title": "YETI",
+            "description": "<p>Discover the new accesories from YETI<\/p>",
             "image_link": "shopify:\/\/collections\/yeti",
             "image_padding": false
           }
@@ -217,6 +229,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/236.2_f0657422-af8b-4fda-8f7b-16079ed78cfa.jpg",
+            "title": "LASER IN STORE",
+            "description": "",
             "image_link": "shopify:\/\/collections\/laser-barcelona",
             "image_padding": false
           }
@@ -224,13 +238,17 @@
         "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-2": {
           "type": "collection",
           "settings": {
-            "collection": "velodrom-pockets-collection"
+            "collection": "velodrom-pockets-collection",
+            "title": "POCKET COLLECTION",
+            "description": ""
           }
         },
         "60ca8f96-d519-40d3-b398-9c36b6b563ea": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/filantev2_600x_crop_center_f12bcae7-56ad-4726-8247-ffa56f60dde6.jpg",
+            "title": "BUILD YOUR DREAM BIKE",
+            "description": "",
             "image_link": "https:\/\/velodrom.dreambikebuilder.com\/",
             "image_padding": false
           }
@@ -238,7 +256,9 @@
         "0e727a75-b267-40ec-9570-d94f0502dea7": {
           "type": "collection",
           "settings": {
-            "collection": "eyewear"
+            "collection": "eyewear",
+            "title": "SHOP SUNGLASSES",
+            "description": ""
           }
         }
       },
