@@ -882,6 +882,24 @@
     </div>
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function showFixedFooter() {
+        var scrollValue = window.scrollY;
+        var verticalOffset = 400;
+        var fixedFooter = document.querySelector('.product--fixed');
+
+        if (scrollValue > verticalOffset) {
+          fixedFooter.classList.add('active')
+        } else {
+          fixedFooter.classList.remove('active')
+        }
+      }
+      window.addEventListener('scroll', showFixedFooter);
+      showFixedFooter()
+    })
+  </script>
+
   {% render 'product-media-modal' variant_images: variant_images %}
 
   {% assign popups = section.blocks | where: 'type', 'popup' %}
@@ -1409,7 +1427,8 @@
            {
           "type": "checkbox",
           "id": "open",
-          "label": "Open by default"
+          "info": "t:sections.main-product.blocks.collapsible_tab.settings.open_collapsible.info",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.open_collapsible.label"
         },
         {
           "type": "text",
@@ -1608,10 +1627,10 @@
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.content.label"
         },
         {
-  "type": "liquid",
-  "id": "liquid",
-  "label": "Liquid"
-},
+          "type": "liquid",
+          "id": "liquid",
+          "label": "Liquid"
+        },
         {
           "type": "page",
           "id": "page",

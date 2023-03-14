@@ -412,21 +412,28 @@ summary.list-menu__item {
                                         <li>
                                         {%- if childlink.title contains '|' -%}
                                             <a href=""{{ childlink.url }} class="mega-menu__link mega-menu__link--level-2 link">
-                                            <img class="" src="{{ childlink.title | split: '|' | last }}" alt="" width="240" loading="lazy" style="max-width: 100%; height: auto; margin-bottom: .4rem;">
-                                            <div style="text-align: center">{{ childlink.title | split: '|' | first }}</div>
+                                                <img class="" src="{{ childlink.title | split: '|' | last }}" alt="" width="240" loading="lazy" style="width:100%;max-width: 100%; height: auto; margin-bottom: .4rem;">
+                                                <div style="text-align: center">{{ childlink.title | split: '|' | first }}</div>
                                             </a>
                                         {%- else -%}
-                                            <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                            {{ childlink.title | escape }}
+                                            <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active {% endif %}{%- if childlink.title contains 'hidden' -%}hidden{%- endif -%}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                                {{ childlink.title | escape }}
                                             </a>
                                         {%- endif -%}
                                         {%- if childlink.links != blank -%}
                                             <ul class="list-unstyled" role="list">
                                             {%- for grandchildlink in childlink.links -%}
                                                 <li>
-                                                <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                                    {{ grandchildlink.title | escape }}
-                                                </a>
+                                                {%- if grandchildlink.title contains '|' -%}
+                                                    <a href=""{{ grandchildlink.url }} class="mega-menu__link mega-menu__link--level-2 link">
+                                                        <img class="" src="{{ grandchildlink.title | split: '|' | last }}" alt="" width="240" loading="lazy" style="width:100%;max-width: 100%; height: auto; margin-bottom: .4rem;">
+                                                        <div style="text-align: center">{{ grandchildlink.title | split: '|' | first }}</div>
+                                                    </a>
+                                                {%- else -%}
+                                                    <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active {% endif %}{%- if grandchildlink.title contains 'hidden' -%}hidden{%- endif -%}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                                        {{ grandchildlink.title | escape }}
+                                                    </a>
+                                                {%- endif -%}
                                                 </li>
                                             {%- endfor -%}
                                             </ul>
@@ -438,9 +445,9 @@ summary.list-menu__item {
                                 </details>
                             </header-menu>
                             {%- else -%}
-                            <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                                <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                            </a>
+                                <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                                    <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                                </a>
                             {%- endif -%}
                         </li>
                         {%- endfor -%}

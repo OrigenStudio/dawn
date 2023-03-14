@@ -1773,6 +1773,10 @@
         "collapsible_tab": {
           "name": "Collapsible row",
           "settings": {
+            "open_collapsible": {
+              "info": "Show the Collapsible row open on first load.",
+              "label": "Open by default"
+            },
             "heading": {
               "info": "Include a heading that explains the content.",
               "label": "Heading"
