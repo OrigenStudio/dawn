@@ -805,7 +805,10 @@
               </div>
             {%- when 'shipping-time' -%}
               <div class="product__shipping-time" {{ block.shopify_attributes }}>
-                <p class="shipping-time">{{ 'products.product.shipping_time' | t }}<strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong></p>
+                <p class="shipping-time">
+                  <span id="shipping-time-text">{{ 'products.product.shipping_time' | t }}</span>
+                  <strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong>
+                </p>
               </div>
             {%- when 'color-picker' -%}
               <div class="product__color-swatches" {{ block.shopify_attributes }}>
@@ -1001,6 +1004,44 @@
       ]
     }
   </script>
+
+  <script> // Shipping Time Countdown
+    var now = new Date();
+    var day = now.getDay();
+    var end;
+    var diffInHours;
+    var diffInMinutes;
+    var textValue = '{{ 'products.product.shipping_time' | t }}'; // "Default text"
+
+    if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
+      
+        textValue = '{{ 'products.product.shipping_time_monday' | t }}';
+        var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
+        shippingTimeCountdown.innerHTML = '';
+
+    } else {
+
+      if (day >= 1 && day <= 5 && now.getHours() < 15) {
+        end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 15, 0, 0, 0);
+      } else {
+        end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 15, 0, 0, 0);
+        textValue = '{{ 'products.product.shipping_time_tomorrow' | t }}';
+      }
+
+      var timeleft = end.getTime() - now.getTime();
+
+      diffInHours = Math.floor(timeleft / (1000 * 60 * 60));
+      diffInMinutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+
+      var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
+      shippingTimeCountdown.innerHTML = diffInHours + 'HRS ' + diffInMinutes + 'MIN ';
+    }
+
+    var shippingTimeText = document.getElementById('shipping-time-text');
+    shippingTimeText.innerHTML = textValue;
+  </script>
+
+
 </section>
 
 {% schema %}
