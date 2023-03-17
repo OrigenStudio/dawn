@@ -2606,6 +2606,11 @@ details[open] > .header__submenu {
   display: none;
 }
 
+.header__inline-menu:hover .header__menu-item {
+  opacity: 0.5;
+  transition: opacity var(--duration-short) ease;
+}
+
 .header--top-center .header__inline-menu,
 .header--top-center .header__heading-link {
   margin-left: 0;
@@ -2640,6 +2645,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover {
+  opacity: 1 !important;
   color: rgb(var(--color-foreground));
 }
 
@@ -2647,33 +2653,17 @@ details[open] > .header__submenu {
   transition: text-decoration var(--duration-short) ease;
 }
 
-.header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
+.header__menu-item:hover span {}
 
-details[open] > .header__menu-item {
-  text-decoration: underline;
-}
+details[open] > .header__menu-item {}
 
-details[open]:hover > .header__menu-item {
-  text-decoration-thickness: 0.2rem;
-}
+details[open]:hover > .header__menu-item {}
 
-details[open] > .header__menu-item .icon-caret {
-  transform: rotate(180deg);
-}
+details[open] > .header__menu-item .icon-caret {}
 
-.header__active-menu-item {
-  transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
+.header__active-menu-item {}
 
-.header__menu-item:hover .header__active-menu-item {
-  text-decoration-thickness: 0.2rem;
-}
+.header__menu-item:hover .header__active-menu-item {}
 
 .header__submenu {
   transition: opacity var(--duration-default) ease,
