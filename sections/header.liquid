@@ -399,7 +399,7 @@ summary.list-menu__item {
                             <header-menu>
                                 <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
                                 {% assign linkTitle = link.title | split: '#' %}
-                                <summary class="header__menu-item list-menu__item link focus-inset" style="color:#{{ linkTitle | last }}">
+                                <summary class="header__menu-item list-menu__item link focus-inset" {%- if link.title contains '#' -%}style="color:#{{ linkTitle | last }}"{% endif %}>
                                     <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ linkTitle | first | escape }}</span>
                                 </summary>
                                 <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
@@ -442,7 +442,7 @@ summary.list-menu__item {
                             </header-menu>
                             {%- else -%}
                                 {% assign linkTitle = link.title | split: '#' %}
-                                <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %} style="color:#{{ linkTitle | last }}">
+                                <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %} {%- if link.title contains '#' -%}style="color:#{{ linkTitle | last }}"{% endif %}>
                                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ linkTitle | first | escape }}</span>
                                 </a>
                             {%- endif -%}
