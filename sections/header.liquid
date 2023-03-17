@@ -398,8 +398,9 @@ summary.list-menu__item {
                             {%- if link.links != blank -%}
                             <header-menu>
                                 <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
-                                <summary class="header__menu-item list-menu__item link focus-inset">
-                                    <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                                {% assign linkTitle = link.title | split: '#' %}
+                                <summary class="header__menu-item list-menu__item link focus-inset" style="color:#{{ linkTitle | last }}">
+                                    <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ linkTitle | first | escape }}</span>
                                 </summary>
                                 <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                                     <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
@@ -440,8 +441,9 @@ summary.list-menu__item {
                                 </details>
                             </header-menu>
                             {%- else -%}
-                                <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                                    <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                                {% assign linkTitle = link.title | split: '#' %}
+                                <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %} style="color:#{{ linkTitle | last }}">
+                                    <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ linkTitle | first | escape }}</span>
                                 </a>
                             {%- endif -%}
                         </li>
