@@ -1553,6 +1553,7 @@ a.product__text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  min-height: 55px;
 }
 
 .product__price-and-inventory .product__inventory-wrapper .product__inventory {
