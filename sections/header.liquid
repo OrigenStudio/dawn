@@ -64,13 +64,12 @@ header-drawer {
 }
 
 summary.list-menu__item {
-    padding-right: 2.7rem;
 }
 
 .list-menu__item {
     display: flex;
     align-items: center;
-    line-height: calc(1 + 0.3 / var(--font-body-scale));
+    {% comment %} line-height: calc(1 + 0.3 / var(--font-body-scale)); {% endcomment %}
 }
 
 .list-menu__item.link-with-image {
@@ -428,7 +427,6 @@ summary.list-menu__item {
                                 {% assign linkTitle = link.title | split: '#' %}
                                 <summary class="header__menu-item list-menu__item link focus-inset" {%- if link.title contains '#' -%}style="color:#{{ linkTitle | last }}"{% endif %}>
                                     <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ linkTitle | first | escape }}</span>
-                                    {% render 'icon-caret' %}
                                 </summary>
                                 <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                                     <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
@@ -713,6 +711,22 @@ class StickyHeader extends HTMLElement {
     }
   </script>
 {%- endif -%}
+
+<script>
+    let items = document
+        .querySelector(".header__sticky")
+        .querySelectorAll("details");
+    items.forEach((item) => {
+        item.addEventListener("mouseover", () => {
+            item.setAttribute("open", true);
+            item.querySelector("summary").setAttribute("aria-expanded", "true");
+            item.addEventListener("mouseleave", () => {
+                item.removeAttribute("open");
+                item.querySelector("summary").setAttribute("aria-expanded", "false");
+            });
+        });
+    });
+</script>
 
 {% schema %}
 {
