@@ -714,6 +714,22 @@ class StickyHeader extends HTMLElement {
   </script>
 {%- endif -%}
 
+<script>
+    let items = document
+        .querySelector(".header__sticky")
+        .querySelectorAll("details");
+    items.forEach((item) => {
+        item.addEventListener("mouseover", () => {
+            item.setAttribute("open", true);
+            item.querySelector("summary").setAttribute("aria-expanded", "true");
+            item.addEventListener("mouseleave", () => {
+                item.removeAttribute("open");
+                item.querySelector("summary").setAttribute("aria-expanded", "false");
+            });
+        });
+    });
+</script>
+
 {% schema %}
 {
     "name": "t:sections.header.name",
