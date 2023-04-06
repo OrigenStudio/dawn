@@ -2954,6 +2954,10 @@ details-disclosure > details {
 
 /* Rebuy widget */
 
+.rebuy-product-info {
+  text-align: left;
+}
+
 .rebuy-product-title.clickable {
   font-family: var(--font-heading-family);
 }
