@@ -251,9 +251,13 @@
     transform: scale(1.03);
   }
 
+  .card-wrapper a {
+    opacity: 1;
+  }
+
   .underline-links-hover:hover a {
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
+    opacity: 0.5;
+    transition: opacity var(--duration-short) ease;
   }
 }
 

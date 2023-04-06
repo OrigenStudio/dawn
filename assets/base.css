@@ -638,12 +638,12 @@ h6:empty {
   display: inline-block;
   border: none;
   box-shadow: none;
-  text-decoration: underline;
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
   background-color: transparent;
   font-size: 1.3rem;
   font-family: inherit;
+  opacity: 1;
 }
 
 .link--text {
@@ -743,8 +743,8 @@ details > * {
 
 .underlined-link:hover,
 .customer a:hover {
-  color: rgb(var(--color-link));
-  text-decoration-thickness: 0.2rem;
+  opacity: 0.5;
+  transition: opacity var(--duration-short) ease;
 }
 
 .icon-arrow {
@@ -1507,9 +1507,9 @@ details[open] > .share-button__fallback {
   animation: animateMenuOpen var(--duration-default) ease;
 }
 
-.share-button__button:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+.share-button__button:hover {∫
+  opacity: 0.5;
+  transition: opacity var(--duration-short) ease;
 }
 
 .share-button__button,
