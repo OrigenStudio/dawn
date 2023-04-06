@@ -246,8 +246,6 @@
 
 .collage__item:hover .collage-card .content__title span::after,
 .card:hover .content__title span::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 .collage-card .media-overlay::before,

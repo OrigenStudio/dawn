@@ -437,6 +437,7 @@ noscript .localization-selector.link {
 .footer-block__details-content .list-menu__item--link,
 .copyright__content a {
   color: rgba(var(--color-foreground), 0.75);
+  opacity: 1;
 }
 
 .footer-block__details-content .list-menu__item--active {
@@ -452,8 +453,8 @@ noscript .localization-selector.link {
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
     color: rgb(var(--color-foreground));
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
+    opacity: 0.5;
+    transition: opacity var(--duration-short) ease;
   }
 
   .footer-block__details-content .list-menu__item--active:hover {
