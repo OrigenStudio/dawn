@@ -190,13 +190,19 @@
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank -%}
                     <ul class="footer-block__details-content list-unstyled">
-                      {%- for link in block.settings.menu.links -%}
+                      {% comment %}We need to change de limit value to null when onClick event is triggered{% endcomment %}
+                      {% assign limitValue = 3 %}
+                      {%- for link in block.settings.menu.links limit: limitValue -%}
                         <li>
                           <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
                             {{ link.title }}
                           </a>
                         </li>
                       {%- endfor -%}
+                      {%- if block.settings.menu.links.size > 3 -%}
+                        {% comment %}This is the button. The text has to change between Show more/Show less{% endcomment %}
+                        <button id="show_more" class="link link--expansion">Show more</button>
+                      {%- endif -%}
                     </ul>
                   {%- endif -%}
                 {%- when 'image' -%}
@@ -336,6 +342,16 @@
     </div>
   </div>
 </footer>
+
+{% comment %}This is the function that have to change the text and the limit value{% endcomment %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function onClickShowMore() {
+      const button = this.querySelector('#show_more');
+    }
+    onClickShowMore();
+  })
+</script>
 
 {% javascript %}
   class LocalizationForm extends HTMLElement {
