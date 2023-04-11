@@ -93,6 +93,8 @@
 
 .price-item--discount {
   width: 100%;
+  color: rgba(var(--color-foreground), 0.75);
+  font-size: calc(var(--font-heading-scale) * 1.3rem);
 }
 
 .unit-price {
