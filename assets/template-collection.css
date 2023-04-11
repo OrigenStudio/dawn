@@ -47,7 +47,7 @@
 .collection__title {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -65,6 +65,10 @@
 
 .collection__title h2 {
   margin-top: 0;
+}
+
+.collection__view-all {
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 990px) {
