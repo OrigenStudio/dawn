@@ -71,7 +71,9 @@
 .price--on-sale .price__sale {
   display: inline-flex;
   flex-direction: row-reverse;
+  justify-content: flex-end;
   flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .price--center {
@@ -87,6 +89,12 @@
 
 .price-item--sale {
   color: #e95144;
+}
+
+.price-item--discount {
+  width: 100%;
+  color: rgba(var(--color-foreground), 0.75);
+  font-size: calc(var(--font-heading-scale) * 1.3rem);
 }
 
 .unit-price {

@@ -326,6 +326,11 @@
 
 .card-information > .price {
   color: rgb(var(--color-foreground));
+  font-size: calc(var(--font-heading-scale) * 1.3rem);
+}
+
+.card-information > .price--on-sale .price-item--regular {
+  font-size: calc(var(--font-heading-scale) * 1.3rem);
 }
 
 .card-information > .rating {

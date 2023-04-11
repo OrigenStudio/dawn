@@ -2993,6 +2993,10 @@ a.rebuy-product-image {
   width: 6px !important;
 }
 
+.rebuy-money.sale, .rebuy-widget .rebuy-money.sale, .rebuy-cart__flyout-subtotal-final-amount {
+  color: #e95144 !important;
+}
+
 /* Swatches - Color picker */
 
 .swatch {
