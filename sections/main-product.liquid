@@ -1060,6 +1060,20 @@
   </script>
 
 
+  <script> // Kiwi Sizing Chart has child element
+    document.addEventListener('DOMContentLoaded', function () {
+      var parentDiv = document.getElementById("KiwiSizingChart");
+      var childDiv = document.querySelector(".ks-chart-container.sizing-chart-container.ks-container-with-modal");
+      childDiv.setAttribute("id", "TEST");
+      
+      if (parentDiv.contains(childDiv)) {
+        console.log('We have a match!')
+      } else {
+        console.log('No match found')
+      }
+    })
+  </script>
+
 </section>
 
 {% schema %}
