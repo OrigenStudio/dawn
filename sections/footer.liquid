@@ -191,13 +191,13 @@
                   {%- if block.settings.menu != blank -%}
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
-                        <li {% if forloop.index > 3 %}style="display:none;"{% endif %}>
+                        <li {% if forloop.index > 5 %}style="display:none;"{% endif %}>
                           <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
                             {{ link.title }}
                           </a>
                         </li>
                       {%- endfor -%}
-                      {%- if block.settings.menu.links.size > 3 -%}
+                      {%- if block.settings.menu.links.size > 5 -%}
                         <button id="show_more" class="show-more link link--expansion" onclick="showMore()">Show more</button>
                       {%- endif -%}
                     </ul>
@@ -341,7 +341,7 @@
 </footer>
 
 <script>
-  var limitValue = 3;
+  var limitValue = 5;
   var showMoreButtons = document.querySelectorAll('.show-more');
 
   function showMore() {
@@ -355,12 +355,12 @@
     });
     
     if (isShowLess) {
-      for (var i = 3; i < items.length; i++) {
+      for (var i = 5; i < items.length; i++) {
         if(!items[i].matches('.footer-block__details-content li:nth-child(-n+3)')) {
           items[i].style.display = 'none';
         }
       }
-      limitValue = 3;
+      limitValue = 5;
       showMoreButtons.forEach(function(button) {
         button.innerText = 'Show more';
       });
