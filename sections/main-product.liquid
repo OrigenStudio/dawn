@@ -1059,19 +1059,19 @@
     shippingTimeText.innerHTML = textValue;
   </script>
 
-
-  <script> // Kiwi Sizing Chart has child element
+  <script> 
+  // TODO: testing
     document.addEventListener('DOMContentLoaded', function () {
-      var parentDiv = document.getElementById("KiwiSizingChart");
-      var childDiv = document.querySelector(".ks-chart-container.sizing-chart-container.ks-container-with-modal");
-      childDiv.setAttribute("id", "TEST");
-      
-      if (parentDiv.contains(childDiv)) {
-        console.log('We have a match!')
+      window.KiwiSizing = window.KiwiSizing === undefined ? {} : window.KiwiSizing;
+      if (window.KiwiSizing.data.variants.length <= 1) {
+        console.log("No hay tallas disponibles");
+        var parentDiv = document.getElementById("KiwiSizingChart");
+        parentDiv.innerHTML = "There's no sizing for this product";
       } else {
-        console.log('No match found')
+        // No hacemos nada
+        console.log("Hay tallas disponibles");
       }
-    })
+    });
   </script>
 
 </section>
