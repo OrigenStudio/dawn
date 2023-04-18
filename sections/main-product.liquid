@@ -15,13 +15,13 @@
 </script>
 
 {% comment %} TESTING {% endcomment %}
-{% comment %} {% for store in pick_up_availabilities %}
+{% for store in pick_up_availabilities %}
   {%- assign store_name = store.location.name -%}
   <script>
     console.log("logging store");
     console.log({{ store_name | json }});
   </script>
-{% endfor %} {% endcomment %}
+{% endfor %} 
 
 
 <section
