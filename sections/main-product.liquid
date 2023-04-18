@@ -1059,6 +1059,24 @@
     shippingTimeText.innerHTML = textValue;
   </script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      window.KiwiSizing = window.KiwiSizing === undefined ? {} : window.KiwiSizing;
+      var parentDiv = document.getElementById("KiwiSizingChart");
+      if (window.KiwiSizing.data.variants.length <= 1) {
+        parentDiv.innerHTML = "There's no sizing for this product.";
+      } else {
+        setTimeout(() => {
+          const span = document.querySelector('span._ks_text');
+          if (!span) {
+            parentDiv.innerHTML = "There's no sizing for this product.";
+          } else {
+            // No hacemos nada
+          }
+        }, 2000);
+      }
+    });
+  </script>
 
 </section>
 
