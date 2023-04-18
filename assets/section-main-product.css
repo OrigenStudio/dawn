@@ -1597,6 +1597,21 @@ a.product__text {
   border: 2px solid black;
 }
 
+/* TODO: DOS OPCIONES */
+.swatch .swatch-element.color-swatch.soldout label::before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 1px;
+  background-color: rgb(189, 189, 189);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+}
+.swatch .swatch-element.color-swatch.soldout label{
+  opacity: 0.3;
+}
+
 .swatch .swatch-element:not(.color) label:after {
   border-radius: 0;
 }
