@@ -3,21 +3,26 @@
     console.log( {{ product.selected_or_first_available_variant | json }} );
 </script>
 
-{% comment %} NOT WORKING {% endcomment %}
-{%- assign pick_up_availabilities_1 = product_variant.store_availabilities -%}
+{% comment %} WORKING, I need to add | where: 'pick_up_enabled', true {% endcomment %}
+{%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities -%}
+{%- assign pick_up_availabilities_first = pick_up_availabilities | first -%}
+{%- assign pick_up_availabilities_first_location_name = pick_up_availabilities_first.location.name -%}
 
 <script>
   console.log("logging product_variant info #1");
-  console.log({{ pick_up_availabilities_1 | json }});
+  console.log({{ pick_up_availabilities | json }});
+  console.log({{ pick_up_availabilities_first_location_name | json }});
 </script>
 
-{% comment %} We add | where: 'pick_up_enabled', true and IT WORKING {% endcomment %}
-{%- assign pick_up_availabilities_2 = product_variant.store_availabilities | where: 'pick_up_enabled', true -%}
+{% comment %} TESTING {% endcomment %}
+{% comment %} {% for store in pick_up_availabilities %}
+  {%- assign store_name = store.location.name -%}
+  <script>
+    console.log("logging store");
+    console.log({{ store_name | json }});
+  </script>
+{% endfor %} {% endcomment %}
 
-<script>
-  console.log("logging product_variant info #2");
-  console.log({{ pick_up_availabilities_2 | json }});
-</script>
 
 <section
   id="MainProduct-{{ section.id }}"
