@@ -1,3 +1,24 @@
+<script>
+    console.log("logging product info");
+    console.log( {{ product.selected_or_first_available_variant | json }} );
+</script>
+
+{% comment %} NOT WORKING {% endcomment %}
+{%- assign pick_up_availabilities_1 = product_variant.store_availabilities -%}
+
+<script>
+  console.log("logging product_variant info #1");
+  console.log({{ pick_up_availabilities_1 | json }});
+</script>
+
+{% comment %} We add | where: 'pick_up_enabled', true and IT WORKING {% endcomment %}
+{%- assign pick_up_availabilities_2 = product_variant.store_availabilities | where: 'pick_up_enabled', true -%}
+
+<script>
+  console.log("logging product_variant info #2");
+  console.log({{ pick_up_availabilities_2 | json }});
+</script>
+
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
@@ -3018,3 +3039,4 @@
   ]
 }
 {% endschema %}
+
