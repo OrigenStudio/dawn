@@ -1063,13 +1063,20 @@
   // TODO: testing
     document.addEventListener('DOMContentLoaded', function () {
       window.KiwiSizing = window.KiwiSizing === undefined ? {} : window.KiwiSizing;
+      var parentDiv = document.getElementById("KiwiSizingChart");
       if (window.KiwiSizing.data.variants.length <= 1) {
         console.log("No hay tallas disponibles");
-        var parentDiv = document.getElementById("KiwiSizingChart");
         parentDiv.innerHTML = "There's no sizing for this product";
       } else {
-        // No hacemos nada
-        console.log("Hay tallas disponibles");
+        console.log("Hay tallas disponibles"); 
+        setTimeout(() => {
+          const span = document.querySelector('span._ks_text');
+          if (!span) {
+            parentDiv.innerHTML = "We have no information of the sizing for this product";
+          } else {
+            // No hacemos nada
+          }
+        }, 2000);
       }
     });
   </script>
