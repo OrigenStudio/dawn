@@ -4,7 +4,7 @@
 </script>
 
 {% comment %} WORKING, I need to add | where: 'pick_up_enabled', true {% endcomment %}
-{%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities -%}
+{%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: "available", true -%}
 {%- assign pick_up_availabilities_first = pick_up_availabilities | first -%}
 {%- assign pick_up_availabilities_first_location_name = pick_up_availabilities_first.location.name -%}
 
