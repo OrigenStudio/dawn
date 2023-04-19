@@ -1,28 +1,4 @@
-<script>
-    console.log("logging product info");
-    console.log( {{ product.selected_or_first_available_variant | json }} );
-</script>
-
-{% comment %} WORKING, I need to add | where: 'pick_up_enabled', true {% endcomment %}
-{%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: "available", true -%}
-{%- assign pick_up_availabilities_first = pick_up_availabilities | first -%}
-{%- assign pick_up_availabilities_first_location_name = pick_up_availabilities_first.location.name -%}
-
-<script>
-  console.log("logging product_variant info #1");
-  console.log({{ pick_up_availabilities | json }});
-  console.log({{ pick_up_availabilities_first_location_name | json }});
-</script>
-
-{% comment %} TESTING {% endcomment %}
-{% for store in pick_up_availabilities %}
-  {%- assign store_name = store.location.name -%}
-  <script>
-    console.log("logging store");
-    console.log({{ store_name | json }});
-  </script>
-{% endfor %} 
-
+{%- assign store_availabilities_available = product.selected_or_first_available_variant.store_availabilities | where: "available", true -%}
 
 <section
   id="MainProduct-{{ section.id }}"
@@ -1057,7 +1033,15 @@
     var diffInMinutes;
     var textValue = '{{ 'products.product.shipping_time' | t }}'; // "Default text"
 
-    if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
+    var store_availabilities_available = {{ store_availabilities_available | json }};
+
+    if(store_availabilities_available.length == 0){
+
+      textValue = '{{ 'products.product.shipping_time_warehouse' | t }}';
+      var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
+      shippingTimeCountdown.innerHTML = '48-72HRS';
+
+    } else if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
       
         textValue = '{{ 'products.product.shipping_time_monday' | t }}';
         var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
