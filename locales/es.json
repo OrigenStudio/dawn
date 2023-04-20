@@ -138,7 +138,7 @@
       "xr_button_label": "Ver en tu espacio, carga el artículo en la ventana de realidad aumentada",
       "pickup_availability": {
         "view_store_info": "Ver información de la tienda",
-        "check_other_stores": "Verificar disponibilidad en otras tiendas",
+        "check_other_stores": "Ver disponibilidad en tiendas",
         "pick_up_available": "Retiro disponible",
         "pick_up_available_at_html": "Retiro disponible en <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <span class=\"color-foreground\">{{ location_name }}<\/span>",
@@ -163,7 +163,7 @@
       "value_unavailable": "{{ option_value }}: no disponible",
       "variant_sold_out_or_unavailable": "Variante agotada o no disponible",
       "inventory_in_stock": "En existencias",
-      "inventory_in_stock_show_count": "{{ quantity }} en existencias",
+      "inventory_in_stock_show_count": "+3 unidades disponibles",
       "inventory_low_stock": "Bajas existencias",
       "inventory_low_stock_show_count": "Bajas existencias: quedan {{ quantity }}",
       "inventory_out_of_stock": "Agotado",
