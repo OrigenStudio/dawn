@@ -1031,38 +1031,49 @@
     var end;
     var diffInHours;
     var diffInMinutes;
+
     var textValue = '{{ 'products.product.shipping_time' | t }}'; // "Default text"
+    var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
 
     var store_availabilities_available = {{ store_availabilities_available | json }};
 
-    if(store_availabilities_available.length == 0){
+    if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
 
-      textValue = '{{ 'products.product.shipping_time_warehouse' | t }}';
-      var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
-      shippingTimeCountdown.innerHTML = '48-72HRS';
+      if(store_availabilities_available.length == 0){
 
-    } else if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
+        textValue = '{{ 'products.product.shipping_time_warehouse_weekend' | t }}';
+        shippingTimeCountdown.innerHTML = 'Thuesday';
+  
+      } else {
       
         textValue = '{{ 'products.product.shipping_time_monday' | t }}';
-        var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
-        shippingTimeCountdown.innerHTML = '';
+        shippingTimeCountdown.innerHTML = 'Monday';
+
+      }
 
     } else {
 
-      if (day >= 1 && day <= 5 && now.getHours() < 15) {
-        end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 15, 0, 0, 0);
+      if(store_availabilities_available.length == 0){
+
+        textValue = '{{ 'products.product.shipping_time_warehouse' | t }}';
+        shippingTimeCountdown.innerHTML = '48-72HRS';
+  
       } else {
-        end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 15, 0, 0, 0);
-        textValue = '{{ 'products.product.shipping_time_tomorrow' | t }}';
+
+        if (day >= 1 && day <= 5 && now.getHours() < 15) {
+          end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 15, 0, 0, 0);
+        } else {
+          end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 15, 0, 0, 0);
+          textValue = '{{ 'products.product.shipping_time_tomorrow' | t }}';
+        }
+
+        var timeleft = end.getTime() - now.getTime();
+
+        diffInHours = Math.floor(timeleft / (1000 * 60 * 60));
+        diffInMinutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+
+        shippingTimeCountdown.innerHTML = diffInHours + 'HRS ' + diffInMinutes + 'MIN ';
       }
-
-      var timeleft = end.getTime() - now.getTime();
-
-      diffInHours = Math.floor(timeleft / (1000 * 60 * 60));
-      diffInMinutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-
-      var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
-      shippingTimeCountdown.innerHTML = diffInHours + 'HRS ' + diffInMinutes + 'MIN ';
     }
 
     var shippingTimeText = document.getElementById('shipping-time-text');
