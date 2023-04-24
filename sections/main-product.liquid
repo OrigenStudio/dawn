@@ -1026,6 +1026,7 @@
   </script>
 
   <script> // Shipping Time Countdown
+    function updateShippintTime(){
     var now = new Date();
     var day = now.getDay();
     var end;
@@ -1035,7 +1036,8 @@
     var textValue = '{{ 'products.product.shipping_time' | t }}'; // "Default text"
     var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
 
-    var store_availabilities_available = {{ store_availabilities_available | json }};
+    var store_availabilities_available = {{ product.selected_or_first_available_variant.store_availabilities | where: "available", true | json }};
+    console.log(store_availabilities_available);
 
     if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
 
@@ -1078,6 +1080,15 @@
 
     var shippingTimeText = document.getElementById('shipping-time-text');
     shippingTimeText.innerHTML = textValue;
+    }
+    updateShippintTime();
+
+    console.log(document.getElementsByTagName('variant-radios'));
+
+    document.getElementsByTagName('variant-radios')[0].addEventListener('change', function (event) {
+        console.log('changed');
+        updateShippintTime();
+    });
   </script>
 
   <script>
