@@ -433,7 +433,7 @@ summary.list-menu__item {
                                     {%- for childlink in link.links -%}
                                         <li>
                                         {%- if childlink.title contains '|' -%}
-                                            <a href=""{{ childlink.url }} class="mega-menu__link mega-menu__link--level-2 mega-menu__link-with-image link">
+                                            <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 mega-menu__link-with-image link">
                                                 <img class="mega-menu__link--img" src="{{ childlink.title | split: '|' | last }}" alt="" width="240" loading="lazy" style="width:100%;max-width: 100%; height: auto; margin-bottom: .4rem;">
                                                 <div style="text-align: center">{{ childlink.title | split: '|' | first }}</div>
                                             </a>
@@ -447,7 +447,7 @@ summary.list-menu__item {
                                             {%- for grandchildlink in childlink.links -%}
                                                 <li>
                                                 {%- if grandchildlink.title contains '|' -%}
-                                                    <a href=""{{ grandchildlink.url }} class="mega-menu__link mega-menu__link--level-2 mega-menu__link-with-image link">
+                                                    <a href="{{ grandchildlink.url }}" class="mega-menu__link mega-menu__link--level-2 mega-menu__link-with-image link">
                                                         <img class="mega-menu__link--img" src="{{ grandchildlink.title | split: '|' | last }}" alt="" width="240" loading="lazy" style="width:100%;max-width: 100%; height: auto; margin-bottom: .4rem;">
                                                         <div style="text-align: center">{{ grandchildlink.title | split: '|' | first }}</div>
                                                     </a>
