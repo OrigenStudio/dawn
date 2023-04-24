@@ -240,7 +240,9 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
-  </head>
+  
+  {% render 'qikify-apps' %}
+</head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -327,5 +329,10 @@
         {% endif %}
       </script>
     <!-- Kiwi sizing - end -->
-  </body>
+    <!-- PickyStory code, do not modify. Safe to remove after the app is uninstalled -->
+  {% if content_for_header contains 'pickystory' %}
+    {% render 'pickystory-combos-prerender' %}
+  {% endif %}
+  <!-- PickyStory code end -->
+</body>
 </html>
