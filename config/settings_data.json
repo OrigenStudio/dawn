@@ -123,7 +123,7 @@
     "cart_drawer_collection": "pas-normal-studios-essential-bibs",
     "checkout_logo_image": "shopify:\/\/shop_images\/VelodromLogoSM_1.png",
     "checkout_logo_position": "left",
-    "checkout_logo_size": "medium",
+    "checkout_logo_size": "small",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
