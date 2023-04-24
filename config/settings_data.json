@@ -212,7 +212,7 @@
       },
       "16881471024131275657": {
         "type": "shopify:\/\/apps\/smart-search-bar-filters\/blocks\/app-embed\/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
