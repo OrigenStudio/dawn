@@ -43,6 +43,36 @@
             "show_dynamic_checkout": true
           }
         },
+        "f41fc082-2e8f-4f05-9bb6-4ded1482267e": {
+          "type": "shopify:\/\/apps\/alert-me-restock-alerts\/blocks\/product-form\/88d8595d-225a-4087-b3c0-661d0d859357",
+          "settings": {
+            "form_bg_color": "#FEFEFE",
+            "border_color": "#EEEEEE",
+            "border_width": 1,
+            "form_padding": 15,
+            "text_color": "#000000",
+            "text_size": 14,
+            "text_alignment": "center",
+            "intro_text": "Sign up for restock notifications",
+            "placeholder_text": "Enter your email for restock notifications",
+            "button_text": "Notify Me",
+            "success_text": "Thanks for signing up for restock notifications!",
+            "error_text": "There was an error signing up for restock notifications. Please try again.",
+            "input_border_color": "#000000",
+            "input_padding": 10,
+            "button_bg_color": "#000000",
+            "button_text_color": "#FFFFFF",
+            "button_text_size": 14,
+            "button_text_alignment": "center",
+            "button_padding": 10,
+            "marketing_optin_text_size": 10,
+            "marketing_optin_text_color": "#333333",
+            "alert_msg_bg_success": "#EDF7ED",
+            "alert_msg_text_color_success": "#254C27",
+            "alert_msg_bg_error": "#FDEDED",
+            "alert_msg_text_color_error": "#8E5D5C"
+          }
+        },
         "5867240e-6103-4cb1-94cc-15bff73ae412": {
           "type": "description",
           "settings": {
@@ -121,6 +151,7 @@
         "variant_picker",
         "1baf60dc-4380-44ae-abcc-3f75e9306fe8",
         "buy_buttons",
+        "f41fc082-2e8f-4f05-9bb6-4ded1482267e",
         "5867240e-6103-4cb1-94cc-15bff73ae412",
         "702dfa33-3e03-414d-92e9-df28379ef93d",
         "61663cae-fef9-4fe5-8a51-10b611701560",
