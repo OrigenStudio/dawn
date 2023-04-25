@@ -1026,7 +1026,7 @@
   </script>
 
   <script> // Shipping Time Countdown
-    function updateShippintTime(){
+    function updateShippingTime(){
     var now = new Date();
     var day = now.getDay();
     var end;
@@ -1081,13 +1081,13 @@
     var shippingTimeText = document.getElementById('shipping-time-text');
     shippingTimeText.innerHTML = textValue;
     }
-    updateShippintTime();
+    updateShippingTime();
 
     console.log(document.getElementsByTagName('variant-radios'));
 
     document.getElementsByTagName('variant-radios')[0].addEventListener('change', function (event) {
         console.log('changed');
-        updateShippintTime();
+        updateShippingTime();
     });
   </script>
 
