@@ -536,9 +536,13 @@ summary.list-menu__item {
                                                 <div style="text-align: center">{{ childlink.title | split: '|' | first }}</div>
                                             </a>
                                         {%- else -%}
-                                            <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link {% if childlink.current %} mega-menu__link--active {% endif %}{%- if childlink.title contains 'hidden' -%} hidden{%- endif -%}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                                {{ childlink.title | escape }}
-                                            </a>
+                                            {%- if childlink.url contains '#' -%}
+                                                <span class="mega-menu__link menu__link-no-hover mega-menu__link--level-2 link">{{ childlink.title | escape }}</span>
+                                            {%- else -%}
+                                                <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link {% if childlink.current %} mega-menu__link--active {% endif %}{%- if childlink.title contains 'hidden' -%} hidden{%- endif -%}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                                    {{ childlink.title | escape }}
+                                                </a>
+                                            {%- endif -%}
                                         {%- endif -%}
                                         {%- if childlink.links != blank -%}
                                             <ul class="list-unstyled" role="list">
