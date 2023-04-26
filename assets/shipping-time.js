@@ -54,10 +54,9 @@ if (!customElements.get("shipping-time")) {
             console.warn('Error fetching pickup availability', e);
           });
 
-        fetch(variantId)
       }
 
-      updateShippingText(text) { // se está pasando la variantId no text
+      updateShippingText(text) {
         console.log("====================================");
         console.log("updateShippingText", text);
         console.log("====================================");
@@ -71,47 +70,69 @@ if (!customElements.get("shipping-time")) {
         var textValue = this.dataset.shippingTime; // "Default text"
         var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
     
-        // var store_availabilities_available = {{ store_availabilities_available | json }};
-        var store_availabilities_available = text != '\n' ? true : false;
-        console.log('LLORO: ', store_availabilities_available);
-        console.log('LLORO2: ', !store_availabilities_available);
-    
-        if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
-    
-          if(!store_availabilities_available){
-    
-            textValue = this.dataset.shippingTimeWarehouseWeekend;
-            shippingTimeCountdown.innerHTML = 'Thuesday';
-      
-          } else {
-          
-            textValue = this.dataset.shippingTimeMonday;
-            shippingTimeCountdown.innerHTML = 'Monday';
-    
-          }
-    
+        // Walkaround because the JS functions to know if it has childs or not, doesn't work
+        var store_availabilities_available = text != '\n' ? true : false; // If there is no stock, we get a div with a line break
+
+        // TODO: necesario añadir comprobación si hay stock o no
+        /*  
+          2 opciones (se me ocurren):
+            - fetch (he probado pero no me ha salido)
+            - buscar si esta escrito lo del "Out of stock" en la web
+        */
+        
+        // Lo localiza, pero como va muy rápido nos dice el del antiguo... ya que no hay reload del dom
+        // quizá poner un event listener que este pendiente del div class=product__inventory en main-product.liquid y que si cambia, cambie el texto? o lo quite
+        var hasStock = !document.querySelector('.product__inventory').innerHTML.includes('Out of stock');
+        console.log('hasStock', hasStock);
+        
+        // var hasStock = true; // TODO: quitar esta linea, solo está para que no pete ahora
+
+        // TODO: end TODO
+
+
+        if (!hasStock) {
+
+          textValue = '';
+          shippingTimeCountdown.innerHTML = '';
+
         } else {
-    
-          if(!store_availabilities_available){
-    
-            textValue = this.dataset.shippingTimeWarehouse;
-            shippingTimeCountdown.innerHTML = '48-72HRS';
+          if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
+      
+            if(!store_availabilities_available){
+      
+              textValue = this.dataset.shippingTimeWarehouseWeekend;
+              shippingTimeCountdown.innerHTML = 'Thuesday';
+        
+            } else {
+            
+              textValue = this.dataset.shippingTimeMonday;
+              shippingTimeCountdown.innerHTML = 'Monday';
+      
+            }
       
           } else {
-    
-            if (day >= 1 && day <= 5 && now.getHours() < 15) {
-              end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 15, 0, 0, 0);
+      
+            if(!store_availabilities_available){
+      
+              textValue = this.dataset.shippingTimeWarehouse;
+              shippingTimeCountdown.innerHTML = '48-72HRS';
+        
             } else {
-              end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 15, 0, 0, 0);
-              textValue = this.dataset.shippingTimeTomorrow;
+      
+              if (day >= 1 && day <= 5 && now.getHours() < 15) {
+                end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 15, 0, 0, 0);
+              } else {
+                end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 15, 0, 0, 0);
+                textValue = this.dataset.shippingTimeTomorrow;
+              }
+      
+              var timeleft = end.getTime() - now.getTime();
+      
+              diffInHours = Math.floor(timeleft / (1000 * 60 * 60));
+              diffInMinutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+      
+              shippingTimeCountdown.innerHTML = diffInHours + 'HRS ' + diffInMinutes + 'MIN ';
             }
-    
-            var timeleft = end.getTime() - now.getTime();
-    
-            diffInHours = Math.floor(timeleft / (1000 * 60 * 60));
-            diffInMinutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    
-            shippingTimeCountdown.innerHTML = diffInHours + 'HRS ' + diffInMinutes + 'MIN ';
           }
         }
     

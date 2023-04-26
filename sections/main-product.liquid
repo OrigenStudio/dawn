@@ -806,8 +806,9 @@
               </div>
             {%- when 'shipping-time' -%}
 
-
-              {% comment %} {%- if product.selected_or_first_available_variant.available -%}
+              {% comment %} TODO: ESTO NO FUNCIONA PORQUE SE QUEDA EL ESTADO DE FUERA {% endcomment %}
+              {% comment %}
+              {%- if product.selected_or_first_available_variant.available -%}
                 
               {%- else -%}
                 <p class="shipping-time">{{ 'products.product.shipping_time_not_available' | t }}</p>
@@ -1043,12 +1044,6 @@
     }
   </script>
 
-  {% comment %} TODO: ELIMINAR SCRIPT {% endcomment %}
-  <script>
-    var test = {{ product.selected_or_first_available_variant.store_availabilities | where: "available", true | json }};
-    console.log('test', test);
-  </script>
-
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       window.KiwiSizing = window.KiwiSizing === undefined ? {} : window.KiwiSizing;
@@ -1066,6 +1061,12 @@
         }, 2000);
       }
     });
+  </script>
+
+  {% comment %} TODO: preba {% endcomment %}
+  <script>
+    // eventListener, si cambia el valor de la clase product__inventory en el DOM, dice hola
+    document.addEventListener()
   </script>
 
 </section>
