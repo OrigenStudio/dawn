@@ -805,10 +805,23 @@
                 </div>
               </div>
             {%- when 'shipping-time' -%}
+
+
+              {% comment %} {%- if product.selected_or_first_available_variant.available -%}
+                
+              {%- else -%}
+                <p class="shipping-time">{{ 'products.product.shipping_time_not_available' | t }}</p>
+              {%- endif -%} {% endcomment %}
+
               <shipping-time 
                 data-root-url="{{ routes.root_url }}"
                 data-variant-id="{{ product.selected_or_first_available_variant.id }}"
                 data-has-only-default-variant="{{ product.has_only_default_variant }}"
+                data-shipping-time="{{ 'products.product.shipping_time' | t }}"
+                data-shipping-time-warehouse-weekend="{{ 'products.product.shipping_time_warehouse_weekend' | t }}"
+                data-shipping-time-warehouse="{{ 'products.product.shipping_time_warehouse' | t }}"
+                data-shipping-time-monday="{{ 'products.product.shipping_time_monday' | t }}"
+                data-shipping-time-tomorrow="{{ 'products.product.shipping_time_tomorrow' | t }}"
               >
                 <div class="product__shipping-time" {{ block.shopify_attributes }}>
                   <p class="shipping-time">
@@ -1030,6 +1043,11 @@
     }
   </script>
 
+  {% comment %} TODO: ELIMINAR SCRIPT {% endcomment %}
+  <script>
+    var test = {{ product.selected_or_first_available_variant.store_availabilities | where: "available", true | json }};
+    console.log('test', test);
+  </script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
