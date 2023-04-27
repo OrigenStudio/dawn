@@ -124,6 +124,10 @@ summary.list-menu__item {
   </symbol>
 </svg>
 
+{%- if shop.locale == 'es' -%}
+    {% assign iso_code = shop.locale | append: '/' %}
+{% endif %}
+
 <sticky-header class="header-wrapper gradient">
 <header class="header header--custom-align header--mobile{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     <div class="header__common">
@@ -232,9 +236,9 @@ summary.list-menu__item {
                             <div class="menu-drawer__navigation-secondary">
                                 <ul class="menu-drawer__menu has-submenu list-menu" role="list">
                                     <li><a href="" title={{ 'general.common_header.ecommerce' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.ecommerce' | t }}</a></li>
-                                    <li><a href="https://global.velodrom.cc/" title={{ 'general.common_header.locations' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.locations' | t }}</a></li>
-                                    <li><a href="https://global.velodrom.cc/stories" title={{ 'general.common_header.stories' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.stories' | t }}</a></li>
-                                    <li><a href="https://global.velodrom.cc/velodrom-travel" title={{ 'general.common_header.tours' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.tours' | t }}</a></li>
+                                    <li><a href="https://global.velodrom.cc/{{ iso_code }}" title={{ 'general.common_header.locations' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.locations' | t }}</a></li>
+                                    <li><a href="https://global.velodrom.cc/{{ iso_code }}stories" title={{ 'general.common_header.stories' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.stories' | t }}</a></li>
+                                    <li><a href="https://global.velodrom.cc/{{ iso_code }}velodrom-travel" title={{ 'general.common_header.tours' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.tours' | t }}</a></li>
                                     <li><a href="https://velodrom.dreambikebuilder.com/" title={{ 'general.common_header.bike_builder' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.bike_builder' | t }}</a></li>
                                     <li><a href="/pages/contact" title={{ 'general.common_header.contact' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.contact' | t }}</a></li>
                                 </ul>
@@ -360,9 +364,9 @@ summary.list-menu__item {
         <nav class="header__common-navigation">
             <ul class="navigation-list" role="list">
                 <li><a href="" title={{ 'general.common_header.ecommerce' | t }} class="navigation-list__item">{{ 'general.common_header.ecommerce' | t }}</a></li>
-                <li><a href="https://global.velodrom.cc/" title={{ 'general.common_header.locations' | t }} class="navigation-list__item">{{ 'general.common_header.locations' | t }}</a></li>
-                <li><a href="https://global.velodrom.cc/stories" title={{ 'general.common_header.stories' | t }} class="navigation-list__item">{{ 'general.common_header.stories' | t }}</a></li>
-                <li><a href="https://global.velodrom.cc/velodrom-travel" title={{ 'general.common_header.tours' | t }} class="navigation-list__item">{{ 'general.common_header.tours' | t }}</a></li>
+                <li><a href="https://global.velodrom.cc/{{ iso_code }}" title={{ 'general.common_header.locations' | t }} class="navigation-list__item">{{ 'general.common_header.locations' | t }}</a></li>
+                <li><a href="https://global.velodrom.cc/{{ iso_code }}stories" title={{ 'general.common_header.stories' | t }} class="navigation-list__item">{{ 'general.common_header.stories' | t }}</a></li>
+                <li><a href="https://global.velodrom.cc/{{ iso_code }}velodrom-travel" title={{ 'general.common_header.tours' | t }} class="navigation-list__item">{{ 'general.common_header.tours' | t }}</a></li>
                 <li><a href="https://velodrom.dreambikebuilder.com/" title={{ 'general.common_header.bike_builder' | t }} class="navigation-list__item">{{ 'general.common_header.bike_builder' | t }}</a></li>
                 <li><a href="/pages/contact" title={{ 'general.common_header.contact' | t }} class="navigation-list__item">{{ 'general.common_header.contact' | t }}</a></li>
             </ul>
