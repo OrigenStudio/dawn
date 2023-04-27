@@ -146,7 +146,7 @@
                           <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(62,214,96)"/>
                         </svg>
                         {{- 'products.product.inventory_out_of_stock_continue_selling' | t -}}
-                      {%- else -%}
+                      {%- else -%} 
                         <svg width="15" height="15" aria-hidden="true">
                           <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(200,200,200, 0.3)"/>
                           <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(200,200,200)"/>
@@ -805,15 +805,6 @@
                 </div>
               </div>
             {%- when 'shipping-time' -%}
-
-              {% comment %} TODO: ESTO NO FUNCIONA PORQUE SE QUEDA EL ESTADO DE FUERA {% endcomment %}
-              {% comment %}
-              {%- if product.selected_or_first_available_variant.available -%}
-                
-              {%- else -%}
-                <p class="shipping-time">{{ 'products.product.shipping_time_not_available' | t }}</p>
-              {%- endif -%} {% endcomment %}
-
               <shipping-time 
                 data-root-url="{{ routes.root_url }}"
                 data-variant-id="{{ product.selected_or_first_available_variant.id }}"
@@ -823,6 +814,7 @@
                 data-shipping-time-warehouse="{{ 'products.product.shipping_time_warehouse' | t }}"
                 data-shipping-time-monday="{{ 'products.product.shipping_time_monday' | t }}"
                 data-shipping-time-tomorrow="{{ 'products.product.shipping_time_tomorrow' | t }}"
+                data-out-of-stock="{{ 'products.product.inventory_out_of_stock' | t }}"
               >
                 <div class="product__shipping-time" {{ block.shopify_attributes }}>
                   <p class="shipping-time">
@@ -1062,13 +1054,6 @@
       }
     });
   </script>
-
-  {% comment %} TODO: preba {% endcomment %}
-  <script>
-    // eventListener, si cambia el valor de la clase product__inventory en el DOM, dice hola
-    document.addEventListener()
-  </script>
-
 </section>
 
 {% schema %}
