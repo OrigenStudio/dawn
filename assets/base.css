@@ -2506,13 +2506,28 @@ details[open] .modal-overlay::after {
   height: 100%;
 }
 
+@media screen and (max-width: 749px) {
+  .search-modal {
+    top: 44px;
+  }
+  .search-modal .field:before, .search-modal .field:after{
+    box-shadow: none;
+  }
+  .search-modal .field:hover.field:after {
+    box-shadow: none;
+  }
+  .search-modal .field__input:focus {
+    box-shadow: none;
+  }
+}
+
 .search-modal__content {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 0 5rem 0 1rem;
+  padding: 0 5rem 0 0;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   position: relative;
 }
@@ -2818,7 +2833,7 @@ details-disclosure > details {
   border-radius: 0;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: ©) {
   .content-container--full-width-mobile {
     border-left: none;
     border-right: none;
