@@ -16,16 +16,10 @@ if (!customElements.get('pickup-availability')) {
         rootUrl = rootUrl + "/";
       }
       const variantSectionUrl = `${rootUrl}variants/${variantId}/?section_id=pickup-availability`;
-      // console.log('====================================');
-      // console.log('variantSectionUrl', variantSectionUrl);
-      // console.log('====================================');
 
       fetch(variantSectionUrl)
         .then(response => response.text())
         .then(text => {
-          // console.log('====================================');
-          // console.log('text', text);
-          // console.log('====================================');
           const sectionInnerHTML = new DOMParser()
             .parseFromString(text, 'text/html')
             .querySelector('.shopify-section');
