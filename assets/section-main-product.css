@@ -912,8 +912,10 @@ a.product__text {
   padding: 1.2rem;
   position: fixed;
   z-index: 2;
-  top: 2rem;
   width: 4rem;
+
+  bottom: 2rem;
+  top: unset;
 }
 
 .product-media-modal__content .deferred-media {
@@ -936,6 +938,7 @@ a.product__text {
   .product-media-modal__toggle {
     right: 5rem;
     top: 2.2rem;
+    bottom: unset;
   }
 }
 
