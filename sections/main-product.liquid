@@ -806,7 +806,7 @@
                 </div>
               </div>
             {%- when 'shipping-time' -%}
-              <div class="product__shipping-time" {{ block.shopify_attributes }} visible="false">
+              <div class="product__shipping-time" {{ block.shopify_attributes }} >
                 <p class="shipping-time">
                   <span id="shipping-time-text">{{ 'products.product.shipping_time' | t }}</span>
                   <strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong>
