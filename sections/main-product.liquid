@@ -806,13 +806,12 @@
                 </div>
               </div>
             {%- when 'shipping-time' -%}
-             {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
               <div class="product__shipping-time" {{ block.shopify_attributes }} >
                 <p class="shipping-time">
                   <span id="shipping-time-text">{{ 'products.product.shipping_time' | t }}</span>
                   <strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong>
                 </p>
-              </div> {% endif %}
+              </div>
             {%- when 'color-picker' -%}
               <div class="product__color-swatches" {{ block.shopify_attributes }}>
                 {% render 'color-swatches' %}
