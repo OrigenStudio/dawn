@@ -160,7 +160,7 @@
       "shipping_time": "We ship it today if you order it within ",
       "shipping_time_tomorrow": "We ship it tomorrow if you order it within ",
       "shipping_time_day": "We will ship it next business day which is",
-      "shipping_time_warehouse": "Shipping time in",
+      "shipping_time_warehouse": "Product in external warehouse. We will ship it in",
       "shipping_time_warehouse_weekend": "We will ship it next ",
       "ship_day_tuesday": "Tuesday",
       "ship_day_monday": "Monday",
