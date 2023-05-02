@@ -864,7 +864,7 @@ class VariantSelects extends HTMLElement {
     if (!shippingTime) return;
 
     if (this.currentVariant) {
-      shippingTime.fetchAvailability(this.currentVariant.id);
+      shippingTime.fetchVariantInfo(this.currentVariant.id);
     }
   }
 
