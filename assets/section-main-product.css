@@ -1559,6 +1559,13 @@ a.product__text {
   min-height: 62px;
 }
 
+@media screen and (min-width: 750px) {
+  .shipping-time {
+    min-height: 20px;
+  }
+}
+
+
 .product__price-and-inventory .product__inventory-wrapper .product__inventory {
   margin: 0;
 }

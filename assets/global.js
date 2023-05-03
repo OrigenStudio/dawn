@@ -766,6 +766,7 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
     this.updateVariantStatuses();
+    this.updateShippingTime();
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
@@ -855,6 +856,15 @@ class VariantSelects extends HTMLElement {
     } else {
       pickUpAvailability.removeAttribute('available');
       pickUpAvailability.innerHTML = '';
+    }
+  }
+
+  updateShippingTime() {
+    const shippingTime = document.querySelector('shipping-time');
+    if (!shippingTime) return;
+
+    if (this.currentVariant) {
+      shippingTime.fetchVariantInfo(this.currentVariant.id);
     }
   }
 

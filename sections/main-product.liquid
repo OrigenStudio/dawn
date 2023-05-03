@@ -1,5 +1,3 @@
-{%- assign store_availabilities_available = product.selected_or_first_available_variant.store_availabilities | where: "available", true -%}
-
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
@@ -37,6 +35,7 @@
   {%- endif -%}
 
   <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'shipping-time.js' | asset_url }}" defer="defer"></script>
 
   {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
   {%- if first_3d_model -%}
@@ -147,7 +146,7 @@
                           <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(62,214,96)"/>
                         </svg>
                         {{- 'products.product.inventory_out_of_stock_continue_selling' | t -}}
-                      {%- else -%}
+                      {%- else -%} 
                         <svg width="15" height="15" aria-hidden="true">
                           <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(200,200,200, 0.3)"/>
                           <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(200,200,200)"/>
@@ -806,12 +805,24 @@
                 </div>
               </div>
             {%- when 'shipping-time' -%}
-              <div class="product__shipping-time" {{ block.shopify_attributes }} >
-                <p class="shipping-time">
-                  <span id="shipping-time-text">{{ 'products.product.shipping_time' | t }}</span>
-                  <strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong>
-                </p>
-              </div>
+              <shipping-time 
+                data-root-url="{{ routes.root_url }}"
+                data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                data-has-only-default-variant="{{ product.has_only_default_variant }}"
+                data-shipping-time="{{ 'products.product.shipping_time' | t }}"
+                data-shipping-time-warehouse-weekend="{{ 'products.product.shipping_time_warehouse_weekend' | t }}"
+                data-shipping-time-warehouse="{{ 'products.product.shipping_time_warehouse' | t }}"
+                data-shipping-time-monday="{{ 'products.product.shipping_time_monday' | t }}"
+                data-shipping-time-tomorrow="{{ 'products.product.shipping_time_tomorrow' | t }}"
+                data-out-of-stock="{{ 'products.product.inventory_out_of_stock' | t }}"
+              >
+                <div class="product__shipping-time" {{ block.shopify_attributes }}>
+                  <p class="shipping-time">
+                    <span id="shipping-time-text">{{ 'products.product.shipping_time' | t }}</span>
+                    <strong><span id="shipping-time-countdown">2HRS 31MIN</span></strong>
+                  </p>
+                </div>
+              </shipping-time>
             {%- when 'color-picker' -%}
               <div class="product__color-swatches" {{ block.shopify_attributes }}>
                 {% render 'color-swatches' %}
@@ -1025,61 +1036,6 @@
     }
   </script>
 
-  <script> // Shipping Time Countdown
-    var now = new Date();
-    var day = now.getDay();
-    var end;
-    var diffInHours;
-    var diffInMinutes;
-
-    var textValue = '{{ 'products.product.shipping_time' | t }}'; // "Default text"
-    var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
-
-    var store_availabilities_available = {{ store_availabilities_available | json }};
-
-    if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
-
-      if(store_availabilities_available.length == 0){
-
-        textValue = '{{ 'products.product.shipping_time_warehouse_weekend' | t }}';
-        shippingTimeCountdown.innerHTML = '{{ 'products.product.ship_day_tuesday' | t }}';
-  
-      } else {
-      
-        textValue = '{{ 'products.product.shipping_time_day' | t }}';
-        shippingTimeCountdown.innerHTML = '{{ 'products.product.ship_day_monday' | t }}';
-
-      }
-
-    } else {
-
-      if(store_availabilities_available.length == 0){
-
-        textValue = '{{ 'products.product.shipping_time_warehouse' | t }}';
-        shippingTimeCountdown.innerHTML = '48-72HRS';
-  
-      } else {
-
-        if (day >= 1 && day <= 5 && now.getHours() < 15) {
-          end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 15, 0, 0, 0);
-        } else {
-          end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 15, 0, 0, 0);
-          textValue = '{{ 'products.product.shipping_time_tomorrow' | t }}';
-        }
-
-        var timeleft = end.getTime() - now.getTime();
-
-        diffInHours = Math.floor(timeleft / (1000 * 60 * 60));
-        diffInMinutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-
-        shippingTimeCountdown.innerHTML = diffInHours + 'HRS ' + diffInMinutes + 'MIN ';
-      }
-    }
-
-    var shippingTimeText = document.getElementById('shipping-time-text');
-    shippingTimeText.innerHTML = textValue;
-  </script>
-
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       window.KiwiSizing = window.KiwiSizing === undefined ? {} : window.KiwiSizing;
@@ -1098,7 +1054,6 @@
       }
     });
   </script>
-
 </section>
 
 {% schema %}
