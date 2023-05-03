@@ -29,6 +29,16 @@
 
     {% render 'meta-tags' %}
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-M28XBSQ');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
@@ -232,21 +242,27 @@
     {%- endunless -%}
 
     {%- if settings.predictive_search_enabled -%}
-      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+      <link
+        rel="stylesheet"
+        href="{{ 'component-predictive-search.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
     {%- endif -%}
 
-    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    if (Shopify.designMode) {
-      document.documentElement.classList.add('shopify-design-mode');
-    }
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      if (Shopify.designMode) {
+        document.documentElement.classList.add('shopify-design-mode');
+      }
     </script>
-  
-  {% render 'qikify-apps' %}
-</head>
+
+    {% render 'qikify-apps' %}
+  </head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-      {{ "accessibility.skip_to_text" | t }}
+      {{ 'accessibility.skip_to_text' | t }}
     </a>
 
     {%- if settings.cart_type == 'drawer' -%}
@@ -267,6 +283,8 @@
     </ul>
 
     <script>
+      
+      
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
@@ -294,45 +312,58 @@
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
+
+
     </script>
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M28XBSQ"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Klarna integration -->
-      <script
+    <script
       async
       data-environment="production"
       src="https://osm.klarnaservices.com/lib.js"
       data-client-id="133f7ab1-968f-5866-aa4e-68cccdf9c51f"
-      ></script>
+    ></script>
     <!-- Klarna integration - end -->
 
     <!-- Kiwi sizing -->
-      <script>
-        window.KiwiSizing = window.KiwiSizing === undefined ? {} : window.KiwiSizing;
-        KiwiSizing.shop = "{{ shop.permanent_domain }}";
-        {% assign t = template | prepend: '/' | append: '.' %}
-        {% if t contains '/product.' %}
-          KiwiSizing.data = {
-            collections: "{{ product.collections | map: 'id' | join: ','}}",
-            tags: {{ product.tags | join: ',' | json}},
-            product: "{{product.id}}",
-            vendor: {{product.vendor | json}},
-            type: {{product.type | json}},
-            title: {{product.title | json}},
-            images: {{product.images | json}},
-            options: {{product.options_with_values | json}},
-            variants: {{product.variants | json}},
-          };
-        {% endif %}
-      </script>
+    <script>
+      window.KiwiSizing = window.KiwiSizing === undefined ? {} : window.KiwiSizing;
+      KiwiSizing.shop = "{{ shop.permanent_domain }}";
+      {% assign t = template | prepend: '/' | append: '.' %}
+      {% if t contains '/product.' %}
+        KiwiSizing.data = {
+          collections: "{{ product.collections | map: 'id' | join: ','}}",
+          tags: {{ product.tags | join: ',' | json}},
+          product: "{{product.id}}",
+          vendor: {{product.vendor | json}},
+          type: {{product.type | json}},
+          title: {{product.title | json}},
+          images: {{product.images | json}},
+          options: {{product.options_with_values | json}},
+          variants: {{product.variants | json}},
+        };
+      {% endif %}
+    </script>
     <!-- Kiwi sizing - end -->
     <!-- PickyStory code, do not modify. Safe to remove after the app is uninstalled -->
-  {% if content_for_header contains 'pickystory' %}
-    {% render 'pickystory-combos-prerender' %}
-  {% endif %}
-  <!-- PickyStory code end -->
-</body>
+    {% if content_for_header contains 'pickystory' %}
+      {% render 'pickystory-combos-prerender' %}
+    {% endif %}
+    <!-- PickyStory code end -->
+  </body>
 </html>

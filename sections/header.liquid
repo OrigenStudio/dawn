@@ -42,8 +42,24 @@ header-drawer {
     max-width: 200px;
 }
 
+.header__common-account {
+    display: none;
+}
+
+.header__common-actions__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 @media screen and (min-width: 990px) {
     header-drawer {
+        display: none;
+    }
+    .header__common-account {
+        display: block;
+    }
+    .header__common-actions__mobile {
         display: none;
     }
 }
@@ -107,6 +123,10 @@ summary.list-menu__item {
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
   </symbol>
 </svg>
+
+{%- if shop.locale == 'es' -%}
+    {% assign iso_code = shop.locale | append: '/' %}
+{% endif %}
 
 <sticky-header class="header-wrapper gradient">
 <header class="header header--custom-align header--mobile{% if section.settings.menu != blank %} header--has-menu{% endif %}">
@@ -216,9 +236,9 @@ summary.list-menu__item {
                             <div class="menu-drawer__navigation-secondary">
                                 <ul class="menu-drawer__menu has-submenu list-menu" role="list">
                                     <li><a href="" title={{ 'general.common_header.ecommerce' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.ecommerce' | t }}</a></li>
-                                    <li><a href="https://global.velodrom.cc/" title={{ 'general.common_header.locations' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.locations' | t }}</a></li>
-                                    <li><a href="https://global.velodrom.cc/stories" title={{ 'general.common_header.stories' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.stories' | t }}</a></li>
-                                    <li><a href="https://global.velodrom.cc/velodrom-travel" title={{ 'general.common_header.tours' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.tours' | t }}</a></li>
+                                    <li><a href="https://global.velodrom.cc/{{ iso_code }}" title={{ 'general.common_header.locations' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.locations' | t }}</a></li>
+                                    <li><a href="https://global.velodrom.cc/{{ iso_code }}stories" title={{ 'general.common_header.stories' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.stories' | t }}</a></li>
+                                    <li><a href="https://global.velodrom.cc/{{ iso_code }}velodrom-travel" title={{ 'general.common_header.tours' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.tours' | t }}</a></li>
                                     <li><a href="https://velodrom.dreambikebuilder.com/" title={{ 'general.common_header.bike_builder' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.bike_builder' | t }}</a></li>
                                     <li><a href="/pages/contact" title={{ 'general.common_header.contact' | t }} class="menu-drawer__menu-item link link--text list-menu__item focus-inset">{{ 'general.common_header.contact' | t }}</a></li>
                                 </ul>
@@ -344,9 +364,9 @@ summary.list-menu__item {
         <nav class="header__common-navigation">
             <ul class="navigation-list" role="list">
                 <li><a href="" title={{ 'general.common_header.ecommerce' | t }} class="navigation-list__item">{{ 'general.common_header.ecommerce' | t }}</a></li>
-                <li><a href="https://global.velodrom.cc/" title={{ 'general.common_header.locations' | t }} class="navigation-list__item">{{ 'general.common_header.locations' | t }}</a></li>
-                <li><a href="https://global.velodrom.cc/stories" title={{ 'general.common_header.stories' | t }} class="navigation-list__item">{{ 'general.common_header.stories' | t }}</a></li>
-                <li><a href="https://global.velodrom.cc/velodrom-travel" title={{ 'general.common_header.tours' | t }} class="navigation-list__item">{{ 'general.common_header.tours' | t }}</a></li>
+                <li><a href="https://global.velodrom.cc/{{ iso_code }}" title={{ 'general.common_header.locations' | t }} class="navigation-list__item">{{ 'general.common_header.locations' | t }}</a></li>
+                <li><a href="https://global.velodrom.cc/{{ iso_code }}stories" title={{ 'general.common_header.stories' | t }} class="navigation-list__item">{{ 'general.common_header.stories' | t }}</a></li>
+                <li><a href="https://global.velodrom.cc/{{ iso_code }}velodrom-travel" title={{ 'general.common_header.tours' | t }} class="navigation-list__item">{{ 'general.common_header.tours' | t }}</a></li>
                 <li><a href="https://velodrom.dreambikebuilder.com/" title={{ 'general.common_header.bike_builder' | t }} class="navigation-list__item">{{ 'general.common_header.bike_builder' | t }}</a></li>
                 <li><a href="/pages/contact" title={{ 'general.common_header.contact' | t }} class="navigation-list__item">{{ 'general.common_header.contact' | t }}</a></li>
             </ul>
@@ -362,6 +382,88 @@ summary.list-menu__item {
                 endif-%}
             </span>
         </a>
+
+        <div class="header__common-actions__mobile">
+            <details-modal class="header__search">
+                <details>
+                <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+                    <span>
+                    <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
+                        <use href="#icon-search">
+                    </svg>
+                    <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false">
+                        <use href="#icon-close">
+                    </svg>
+                    </span>
+                </summary>
+                <div class="search-modal modal__content gradient" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
+                    <div class="modal-overlay"></div>
+                    <div class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}" tabindex="-1">
+                    {%- if settings.predictive_search_enabled -%}
+                        <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+                    {%- endif -%}
+                        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+                        <div class="field">
+                            <input class="search__input field__input"
+                            id="Search-In-Modal"
+                            type="search"
+                            name="q"
+                            value=""
+                            placeholder="{{ 'general.search.search' | t }}"
+                            {%- if settings.predictive_search_enabled -%}
+                                role="combobox"
+                                aria-expanded="false"
+                                aria-owns="predictive-search-results-list"
+                                aria-controls="predictive-search-results-list"
+                                aria-haspopup="listbox"
+                                aria-autocomplete="list"
+                                autocorrect="off"
+                                autocomplete="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                            {%- endif -%}
+                            >
+                            <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+                            <input type="hidden" name="options[prefix]" value="last">
+                            <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                            <svg class="icon icon-search" aria-hidden="true" focusable="false">
+                                <use href="#icon-search">
+                            </svg>
+                            </button>
+                        </div>
+                        </form>
+                    {%- if settings.predictive_search_enabled -%}
+                        </predictive-search>
+                    {%- endif -%}
+                    <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
+                        <svg class="icon icon-close" aria-hidden="true" focusable="false">
+                        <use href="#icon-close">
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                </details>
+            </details-modal>
+
+            <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+                {%- liquid
+                if cart == empty
+                    render 'icon-cart-empty'
+                else
+                    render 'icon-cart'
+                endif
+                -%}
+                <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+                {%- if cart != empty -%}
+                <div class="cart-count-bubble">
+                    {%- if cart.item_count < 100 -%}
+                    <span aria-hidden="true">{{ cart.item_count }}</span>
+                    {%- endif -%}
+                    <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+                </div>
+                {%- endif -%}
+            </a>
+        </div>
     </div>
     <div class="header__sticky">
         <div class="header__sticky-navigation">
@@ -438,9 +540,13 @@ summary.list-menu__item {
                                                 <div style="text-align: center">{{ childlink.title | split: '|' | first }}</div>
                                             </a>
                                         {%- else -%}
-                                            <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link {% if childlink.current %} mega-menu__link--active {% endif %}{%- if childlink.title contains 'hidden' -%} hidden{%- endif -%}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                                {{ childlink.title | escape }}
-                                            </a>
+                                            {%- if childlink.url contains '#' -%}
+                                                <span class="mega-menu__link menu__link-no-hover mega-menu__link--level-2 link">{{ childlink.title | escape }}</span>
+                                            {%- else -%}
+                                                <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link {% if childlink.current %} mega-menu__link--active {% endif %}{%- if childlink.title contains 'hidden' -%} hidden{%- endif -%}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                                    {{ childlink.title | escape }}
+                                                </a>
+                                            {%- endif -%}
                                         {%- endif -%}
                                         {%- if childlink.links != blank -%}
                                             <ul class="list-unstyled" role="list">

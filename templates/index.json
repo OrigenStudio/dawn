@@ -3,17 +3,17 @@
     "e0911e38-e306-463a-9877-cdf1960a5028": {
       "type": "slideshow",
       "blocks": {
-        "0f7b703a-7798-417b-aa4a-5030c3773521": {
+        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pasnormalstudiosmechanismss23.webp",
-            "heading": "MECHANISM SS23",
+            "image": "shopify:\/\/shop_images\/PAS-NORMAL_19.04_12_-hd.webp",
+            "heading": "MECHANISM PRO",
             "heading_size": "h0",
-            "subheading": "PAS NORMAL STUDIOS",
-            "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/pas-normal-studios-mechanism-ss23",
+            "subheading": "A NEW CALIBRE FROM PAS NORMAL STUDIOS",
+            "button_label": "Shop Collection",
+            "link": "shopify:\/\/collections\/pas-normal-studios-mechanism-pro",
             "button_style_secondary": false,
-            "box_align": "middle-right",
+            "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 10,
@@ -39,6 +39,24 @@
             "text_alignment_mobile": "center"
           }
         },
+        "0f7b703a-7798-417b-aa4a-5030c3773521": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pasnormalstudiosmechanismss23.webp",
+            "heading": "MECHANISM SS23",
+            "heading_size": "h0",
+            "subheading": "PAS NORMAL STUDIOS",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/pas-normal-studios-mechanism-ss23",
+            "button_style_secondary": false,
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "97e73aef-1ac7-4d7c-babc-783ca2d37e4f": {
           "type": "slide",
           "settings": {
@@ -50,25 +68,6 @@
             "link": "shopify:\/\/collections\/pas-normal-studios-escapism-collection",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 10,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Essential_2.jpg",
-            "heading": "ESSENTIAL",
-            "heading_size": "h0",
-            "subheading": "PAS NORMAL STUDIO",
-            "button_label": "Shop Collection",
-            "link": "shopify:\/\/collections\/essential-bib",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 10,
@@ -97,10 +96,10 @@
         }
       },
       "block_order": [
-        "0f7b703a-7798-417b-aa4a-5030c3773521",
-        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf",
-        "97e73aef-1ac7-4d7c-babc-783ca2d37e4f",
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0",
+        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf",
+        "0f7b703a-7798-417b-aa4a-5030c3773521",
+        "97e73aef-1ac7-4d7c-babc-783ca2d37e4f",
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1"
       ],
       "settings": {
@@ -166,7 +165,7 @@
         "a3d944b9-fa26-4108-9436-81a02fa69695": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BTKA_1643190396156627_872c2501bc680a6a63b7a75f0cc306.jpg",
+            "image": "shopify:\/\/shop_images\/K1-01.webp",
             "title": "",
             "description": "",
             "image_link": "shopify:\/\/collections\/pas-normal-studios",
@@ -176,7 +175,7 @@
         "923923a4-5f8a-4304-9d9d-52df5ac780a1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/233.2.jpg",
+            "image": "shopify:\/\/shop_images\/Q2-01.webp",
             "title": "",
             "description": "",
             "image_link": "shopify:\/\/collections\/brandblack",
@@ -186,7 +185,7 @@
         "409b7e7b-86a7-4693-9d12-f3e127eb9eb3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/laser.jpg",
+            "image": "shopify:\/\/shop_images\/lasercap.01.webp",
             "title": "",
             "description": "",
             "image_link": "shopify:\/\/collections\/laser-barcelona",
@@ -228,7 +227,7 @@
         "4eb853ee-52af-4bd2-9f38-db95856df3ac": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/236.2_f0657422-af8b-4fda-8f7b-16079ed78cfa.jpg",
+            "image": "shopify:\/\/shop_images\/Lasers-MENU.webp",
             "title": "LASER IN STORE",
             "description": "",
             "image_link": "shopify:\/\/collections\/laser-barcelona",
@@ -246,7 +245,7 @@
         "60ca8f96-d519-40d3-b398-9c36b6b563ea": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/filantev2_600x_crop_center_f12bcae7-56ad-4726-8247-ffa56f60dde6.jpg",
+            "image": "shopify:\/\/shop_images\/FESTKA-MENU_26afe031-0b46-4921-a206-757c3b5b5a71.webp",
             "title": "BUILD YOUR DREAM BIKE",
             "description": "",
             "image_link": "https:\/\/velodrom.dreambikebuilder.com\/",
@@ -286,7 +285,7 @@
         "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pexels-aleksandar-pasaric-1388030_1.jpg",
+            "image": "shopify:\/\/shop_images\/ICON-001.png",
             "title": "FAST NATIONAL SHIPPING",
             "text": "<p>24-48h shipping to Spain<br\/>Pick-up available at out stores<\/p>",
             "link_label": "",
@@ -296,7 +295,7 @@
         "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pexels-kelly-12530465.jpg",
+            "image": "shopify:\/\/shop_images\/ICON-003.webp",
             "title": "INTERNATIONAL SHIPPING",
             "text": "<p>Shipping to anywhere in the world with express options at checkout<\/p>",
             "link_label": "",
@@ -306,7 +305,7 @@
         "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pexels-kindel-media-6994138.jpg",
+            "image": "shopify:\/\/shop_images\/ICON-002.webp",
             "title": "FREE SIZE EXCHANGE",
             "text": "<p>Free size exhange when shipping to\/from Europe<\/p>",
             "link_label": "",
@@ -331,7 +330,7 @@
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }

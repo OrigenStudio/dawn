@@ -96,3 +96,9 @@
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
 }
+
+.menu__link-no-hover {
+  opacity: 1 !important;
+  transition: none !important;
+  pointer-events: none;
+}

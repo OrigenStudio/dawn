@@ -17,7 +17,7 @@
           "type": "price-and-inventory",
           "settings": {
             "text_style": "body",
-            "inventory_threshold": 10,
+            "inventory_threshold": 3,
             "show_inventory_quantity": true
           }
         },
