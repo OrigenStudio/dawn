@@ -63,9 +63,12 @@ if (!customElements.get("shipping-time")) {
         var store_availabilities_available = data.storeAvailability.nodes.length > 0;          
 
         if (!hasStock) {
-
+       
           textValue = '';
           shippingTimeCountdown.innerHTML = '';
+
+          var shippingTimeText = document.querySelector('.shipping-time');
+          shippingTimeText.style.minHeight = '0px';
 
         } else {
           if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
