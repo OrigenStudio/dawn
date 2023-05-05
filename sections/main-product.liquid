@@ -783,6 +783,12 @@
                     | where: 'pick_up_enabled', true
                   -%}
 
+                  {% if pick_up_availabilities.size == 0 %}
+                    <p class="custom-pickup-availability-text">
+                      {{- 'products.product.inventory_only_on_warehouse' | t -}}
+                    </p>
+                  {%- endif -%}
+
                   <pickup-availability
                     class="product__pickup-availabilities no-js-hidden quick-add-hidden"
                     {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %}
