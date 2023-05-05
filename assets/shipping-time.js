@@ -76,12 +76,12 @@ if (!customElements.get("shipping-time")) {
             if(!store_availabilities_available){
         
               textValue = this.dataset.shippingTimeWarehouseWeekend;
-              shippingTimeCountdown.innerHTML = 'Thuesday';
+              shippingTimeCountdown.innerHTML = this.dataset.shippingTimeTuesday;
           
             } else {
               
-              textValue = this.dataset.shippingTimeMonday;
-              shippingTimeCountdown.innerHTML = 'Monday';
+              textValue = this.dataset.shippingTimeDay;
+              shippingTimeCountdown.innerHTML = this.dataset.shippingTimeMonday;
         
             }
         
