@@ -1689,3 +1689,9 @@ a.product__text {
     justify-content: center;
   }
 }
+
+.custom-pickup-availability-text {
+  font-size: 1.3rem;
+  font-family: inherit;
+  margin: 0;
+}

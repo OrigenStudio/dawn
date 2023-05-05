@@ -175,6 +175,7 @@
       "inventory_low_stock_show_count": "Bajas existencias: quedan {{ quantity }}",
       "inventory_out_of_stock": "Agotado",
       "inventory_out_of_stock_continue_selling": "En existencias",
+      "inventory_only_on_warehouse": "Producto no disponible para recoger en tienda",
       "sku": "SKU"
     },
     "modal": {
