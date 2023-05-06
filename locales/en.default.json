@@ -143,7 +143,7 @@
         "decrease": "Decrease quantity for {{ product }}"
       },
       "pickup_availability": {
-        "view_store_info": "View store information",
+        "view_store_info": "Check in-store availability",
         "check_other_stores": "Check in-store availability",
         "pick_up_available": "Pickup available",
         "pick_up_available_at_html": "Pickup available at <span class=\"color-foreground\">{{ location_name }}<\/span>",
