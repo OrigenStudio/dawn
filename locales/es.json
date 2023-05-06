@@ -144,7 +144,7 @@
       "xr_button": "Ver en tu espacio",
       "xr_button_label": "Ver en tu espacio, carga el artículo en la ventana de realidad aumentada",
       "pickup_availability": {
-        "view_store_info": "Ver información de la tienda",
+        "view_store_info": "Ver disponibilidad en tiendas",
         "check_other_stores": "Ver disponibilidad en tiendas",
         "pick_up_available": "Retiro disponible",
         "pick_up_available_at_html": "Retiro disponible en <span class=\"color-foreground\">{{ location_name }}<\/span>",
