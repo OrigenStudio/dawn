@@ -159,7 +159,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Velodrom",
-              "menu": "footer"
+              "menu": "menu-velodrom"
             }
           },
           "footer-1": {
