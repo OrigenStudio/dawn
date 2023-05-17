@@ -453,6 +453,7 @@ noscript .localization-selector.link {
 .footer-block__details-content .list-menu__item--active {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
+  text-decoration: none;
 }
 
 .footer-block__details-content p {
