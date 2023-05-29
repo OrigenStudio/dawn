@@ -127,6 +127,20 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
+        "blocks": {
+          "127d21ed-09e3-43b4-93ba-5e568ed753de": {
+            "type": "announcement",
+            "settings": {
+              "text": "Only for limited time 20% of Rapha products: USE THE CODE SAVE20RAPHA",
+              "text_alignment": "center",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/collections\/rapha"
+            }
+          }
+        },
+        "block_order": [
+          "127d21ed-09e3-43b4-93ba-5e568ed753de"
+        ],
         "settings": {
         }
       },
