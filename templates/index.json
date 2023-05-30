@@ -77,14 +77,13 @@
         },
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/258.2.jpg",
-            "heading": "Training Collection",
+            "image": "shopify:\/\/shop_images\/sliderhomesolitude2.webp",
+            "heading": "SOLITUDE SS23",
             "heading_size": "h0",
-            "subheading": "MAAP",
+            "subheading": "PAS NORMAL STUDIOS",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/products\/enve-melee-bike-frameset",
+            "link": "shopify:\/\/collections\/pas-normal-studios-solitude-ss23",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
