@@ -88,8 +88,8 @@
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 10,
-            "color_scheme": "background-1",
+            "image_overlay_opacity": 60,
+            "color_scheme": "accent-1",
             "text_alignment_mobile": "center"
           }
         }
