@@ -105,7 +105,7 @@
             "heading": "AVAILABLE BUNDLES",
             "icon": "none",
             "content": "",
-            "liquid": "<div id=\"mbcBundleWidgetMixAndMath\"><\/div>",
+            "liquid": "<div id=\"mbcBundleItemsWidget\"><\/div>",
             "page": ""
           }
         },
