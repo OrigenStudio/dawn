@@ -80,6 +80,17 @@
             "icon": "none"
           }
         },
+        "dd0559f3-80fa-4b4e-b353-559dcb32aaaf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open": false,
+            "heading": "AVAILABLE BUNDLES",
+            "icon": "none",
+            "content": "",
+            "liquid": "<div id=\"mbcBundleItemsWidget\"><\/div>",
+            "page": ""
+          }
+        },
         "702dfa33-3e03-414d-92e9-df28379ef93d": {
           "type": "kiwi-sizing",
           "settings": {
@@ -95,17 +106,6 @@
             "icon": "none",
             "content": "",
             "liquid": "<div data-rebuy-id=\"78188\" data-rebuy-shopify-product-ids=\"{{ product.id }}\"><\/div>",
-            "page": ""
-          }
-        },
-        "dd0559f3-80fa-4b4e-b353-559dcb32aaaf": {
-          "type": "collapsible_tab",
-          "settings": {
-            "open": false,
-            "heading": "AVAILABLE BUNDLES",
-            "icon": "none",
-            "content": "",
-            "liquid": "<div id=\"mbcBundleItemsWidget\"><\/div>",
             "page": ""
           }
         },
@@ -169,9 +169,9 @@
         "f41fc082-2e8f-4f05-9bb6-4ded1482267e",
         "buy_buttons",
         "5867240e-6103-4cb1-94cc-15bff73ae412",
+        "dd0559f3-80fa-4b4e-b353-559dcb32aaaf",
         "702dfa33-3e03-414d-92e9-df28379ef93d",
         "61663cae-fef9-4fe5-8a51-10b611701560",
-        "dd0559f3-80fa-4b4e-b353-559dcb32aaaf",
         "collapsible-row-1",
         "collapsible-row-0",
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d",
