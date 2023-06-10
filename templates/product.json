@@ -98,6 +98,17 @@
             "page": ""
           }
         },
+        "dd0559f3-80fa-4b4e-b353-559dcb32aaaf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open": false,
+            "heading": "AVAILABLE BUNDLES",
+            "icon": "none",
+            "content": "",
+            "liquid": "",
+            "page": ""
+          }
+        },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
@@ -155,6 +166,7 @@
         "5867240e-6103-4cb1-94cc-15bff73ae412",
         "702dfa33-3e03-414d-92e9-df28379ef93d",
         "61663cae-fef9-4fe5-8a51-10b611701560",
+        "dd0559f3-80fa-4b4e-b353-559dcb32aaaf",
         "collapsible-row-1",
         "collapsible-row-0",
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d",
