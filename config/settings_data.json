@@ -232,6 +232,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "1909789295049107559": {
+        "type": "shopify:\/\/apps\/mbc-bundle-products\/blocks\/mbc-bundles-core-snippet\/57c94b78-e464-47f4-9403-7ffcfcddb33f",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
