@@ -86,8 +86,8 @@
             "open": false,
             "heading": "SPECIAL DISCOUNT",
             "icon": "none",
-            "content": "<p>There are no special discounts for this product.<\/p>",
-            "liquid": "<div id=\"mbcBundleItemsWidget\"><\/div>",
+            "content": "",
+            "liquid": "<div id=\"mbcBundleItemsWidget\">There are no special discounts for this product<\/div>",
             "page": ""
           }
         },
