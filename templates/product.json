@@ -84,7 +84,7 @@
           "type": "collapsible_tab",
           "settings": {
             "open": false,
-            "heading": "SPECIAL DISCOUNT",
+            "heading": "SPECIAL DISCOUNTS",
             "icon": "none",
             "content": "",
             "liquid": "<div id=\"mbcBundleItemsWidget\"><\/div>",
