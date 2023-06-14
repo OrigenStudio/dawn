@@ -13,7 +13,7 @@
             "button_label": "Shop Now",
             "link": "shopify:\/\/collections\/pas-normal-studios-midsummer-ss23",
             "button_style_secondary": false,
-            "box_align": "middle-right",
+            "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 10,
