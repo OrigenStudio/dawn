@@ -2038,6 +2038,9 @@
         "kiwi_sizing": {
           "name": "Kiwi sizing"
         },
+        "product_bundle": {
+          "name": "Product Bundle"
+        },
         "price_and_inventory": {
           "name": "Price and Inventory"
         },
