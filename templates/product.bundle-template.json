@@ -132,12 +132,6 @@
             "product_id_enabled": true,
             "collection_id_enabled": false
           }
-        },
-        "f57b8618-0949-4b1a-8c3e-e6b02651a179": {
-          "type": "shopify:\/\/apps\/mbc-bundle-products\/blocks\/mbc-bundles-shortcode-widget-for-product-page\/57c94b78-e464-47f4-9403-7ffcfcddb33f",
-          "disabled": true,
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -155,8 +149,7 @@
         "collapsible-row-1",
         "collapsible-row-0",
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d",
-        "c4ab42d0-a4e9-49c0-832f-7ba9eb03db2d",
-        "f57b8618-0949-4b1a-8c3e-e6b02651a179"
+        "c4ab42d0-a4e9-49c0-832f-7ba9eb03db2d"
       ],
       "settings": {
         "enable_sticky_info": true,
