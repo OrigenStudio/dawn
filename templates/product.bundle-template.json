@@ -13,6 +13,12 @@
           "settings": {
           }
         },
+        "0ad9c210-a925-45d4-b6a3-c7008d867e6b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"mbcBundleItemsWidget\"><\/div>"
+          }
+        },
         "56bde6a2-190e-4efb-84e2-23f801c5e9dc": {
           "type": "shopify:\/\/apps\/mbc-bundle-products\/blocks\/mbc-bundles-shortcode-widget-for-product-page\/57c94b78-e464-47f4-9403-7ffcfcddb33f",
           "settings": {
@@ -126,6 +132,7 @@
       "block_order": [
         "title",
         "627f1748-12cf-4f88-806a-fb965b548569",
+        "0ad9c210-a925-45d4-b6a3-c7008d867e6b",
         "56bde6a2-190e-4efb-84e2-23f801c5e9dc",
         "368899bd-d2da-4493-adf0-e55a2be77906",
         "1baf60dc-4380-44ae-abcc-3f75e9306fe8",
