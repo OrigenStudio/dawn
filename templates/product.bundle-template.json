@@ -13,23 +13,14 @@
           "settings": {
           }
         },
-        "8e6f5573-f833-4396-8ff6-b51ad5577669": {
-          "type": "price-and-inventory",
+        "56bde6a2-190e-4efb-84e2-23f801c5e9dc": {
+          "type": "shopify:\/\/apps\/mbc-bundle-products\/blocks\/mbc-bundles-shortcode-widget-for-product-page\/57c94b78-e464-47f4-9403-7ffcfcddb33f",
           "settings": {
-            "text_style": "body",
-            "inventory_threshold": 3,
-            "show_inventory_quantity": true
           }
         },
         "368899bd-d2da-4493-adf0-e55a2be77906": {
           "type": "color-picker",
           "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
           }
         },
         "1baf60dc-4380-44ae-abcc-3f75e9306fe8": {
@@ -67,12 +58,6 @@
             "alert_msg_text_color_error": "#8e5d5c"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
         "5867240e-6103-4cb1-94cc-15bff73ae412": {
           "type": "description",
           "settings": {
@@ -80,33 +65,11 @@
             "icon": "none"
           }
         },
-        "dd0559f3-80fa-4b4e-b353-559dcb32aaaf": {
-          "type": "collapsible_tab",
-          "settings": {
-            "open": false,
-            "heading": "SPECIAL DISCOUNTS",
-            "icon": "none",
-            "content": "",
-            "liquid": "<div id=\"mbcBundleItemsWidget\"><\/div>",
-            "page": ""
-          }
-        },
         "702dfa33-3e03-414d-92e9-df28379ef93d": {
           "type": "kiwi-sizing",
           "settings": {
             "heading": "SIZING",
             "icon": "none"
-          }
-        },
-        "61663cae-fef9-4fe5-8a51-10b611701560": {
-          "type": "collapsible_tab",
-          "settings": {
-            "open": true,
-            "heading": "COMPLETE YOUR LOOK",
-            "icon": "none",
-            "content": "",
-            "liquid": "<div data-rebuy-id=\"78188\" data-rebuy-shopify-product-ids=\"{{ product.id }}\"><\/div>",
-            "page": ""
           }
         },
         "collapsible-row-1": {
@@ -163,16 +126,12 @@
       "block_order": [
         "title",
         "627f1748-12cf-4f88-806a-fb965b548569",
-        "8e6f5573-f833-4396-8ff6-b51ad5577669",
+        "56bde6a2-190e-4efb-84e2-23f801c5e9dc",
         "368899bd-d2da-4493-adf0-e55a2be77906",
-        "variant_picker",
         "1baf60dc-4380-44ae-abcc-3f75e9306fe8",
         "f41fc082-2e8f-4f05-9bb6-4ded1482267e",
-        "buy_buttons",
         "5867240e-6103-4cb1-94cc-15bff73ae412",
-        "dd0559f3-80fa-4b4e-b353-559dcb32aaaf",
         "702dfa33-3e03-414d-92e9-df28379ef93d",
-        "61663cae-fef9-4fe5-8a51-10b611701560",
         "collapsible-row-1",
         "collapsible-row-0",
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d",
