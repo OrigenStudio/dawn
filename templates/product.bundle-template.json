@@ -13,6 +13,11 @@
           "settings": {
           }
         },
+        "1baf60dc-4380-44ae-abcc-3f75e9306fe8": {
+          "type": "shipping-time",
+          "settings": {
+          }
+        },
         "0ad9c210-a925-45d4-b6a3-c7008d867e6b": {
           "type": "custom_liquid",
           "settings": {
@@ -31,11 +36,6 @@
         },
         "368899bd-d2da-4493-adf0-e55a2be77906": {
           "type": "color-picker",
-          "settings": {
-          }
-        },
-        "1baf60dc-4380-44ae-abcc-3f75e9306fe8": {
-          "type": "shipping-time",
           "settings": {
           }
         },
@@ -131,11 +131,11 @@
       "block_order": [
         "title",
         "627f1748-12cf-4f88-806a-fb965b548569",
+        "1baf60dc-4380-44ae-abcc-3f75e9306fe8",
         "0ad9c210-a925-45d4-b6a3-c7008d867e6b",
         "56bde6a2-190e-4efb-84e2-23f801c5e9dc",
         "c35a7e8a-34da-4391-b99a-59a2dd6fbe1b",
         "368899bd-d2da-4493-adf0-e55a2be77906",
-        "1baf60dc-4380-44ae-abcc-3f75e9306fe8",
         "f41fc082-2e8f-4f05-9bb6-4ded1482267e",
         "5867240e-6103-4cb1-94cc-15bff73ae412",
         "702dfa33-3e03-414d-92e9-df28379ef93d",
