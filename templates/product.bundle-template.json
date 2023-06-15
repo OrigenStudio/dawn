@@ -13,6 +13,12 @@
           "settings": {
           }
         },
+        "69096e9a-f4c3-459c-b234-5b83a3c1d1aa": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
         "0ad9c210-a925-45d4-b6a3-c7008d867e6b": {
           "type": "custom_liquid",
           "settings": {
@@ -132,6 +138,7 @@
       "block_order": [
         "title",
         "627f1748-12cf-4f88-806a-fb965b548569",
+        "69096e9a-f4c3-459c-b234-5b83a3c1d1aa",
         "0ad9c210-a925-45d4-b6a3-c7008d867e6b",
         "56bde6a2-190e-4efb-84e2-23f801c5e9dc",
         "368899bd-d2da-4493-adf0-e55a2be77906",
