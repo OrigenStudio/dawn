@@ -6,10 +6,10 @@ if (!customElements.get("shipping-time")) {
       constructor() {
         super();
         this.fetchVariantInfo(this.dataset.variantId);
-        this.errorHtml =
-          this.querySelector("template").content.firstElementChild.cloneNode(
-            true
-          );
+        // this.errorHtml =
+        //   this.querySelector("template").content.firstElementChild.cloneNode(
+        //     true
+        //   );
       }
 
       fetchVariantInfo(variantId) {
@@ -21,6 +21,10 @@ if (!customElements.get("shipping-time")) {
               ... on ProductVariant {
                 title
                 availableForSale
+                selectedOptions {
+                  name
+                  value
+                }
                 storeAvailability (first: 5) {
                   nodes {
                     available
@@ -29,10 +33,19 @@ if (!customElements.get("shipping-time")) {
                     }
                   }
                 }
+                product {
+                  metafield (namespace: "custom", key: "lead_time") {
+                    value
+                  }
+                }
               }
             }
           }
         `;
+
+        // metafield (namespace: "custom", key: "lead_time") {
+        //   value
+        // }
         
         fetch('https://velodrom-barcelona.myshopify.com/api/2023-04/graphql.json', {
           method: 'POST',
@@ -45,6 +58,7 @@ if (!customElements.get("shipping-time")) {
           .then(response => response.json())
           .then(data => {
             this.updateShippingText(data.data.node);
+            console.log('data', data)
           })
           .catch(error => console.error(error));
       }
@@ -60,9 +74,20 @@ if (!customElements.get("shipping-time")) {
         var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
   
         var hasStock = data.availableForSale;
-        var store_availabilities_available = data.storeAvailability.nodes.length > 0;          
+        var store_availabilities_available = data.storeAvailability.nodes.length > 0;
 
-        if (!hasStock) {
+        var isPreOrder = () => {
+          var availabilityOption = data.selectedOptions.find(option => option.name === 'Availability');
+          return !!availabilityOption && availabilityOption.value === 'Pre-Order';
+        }
+
+
+        if (isPreOrder()) {
+
+          textValue = this.dataset.shippingPreOrderText;
+          shippingTimeCountdown.innerHTML = data.product.metafield.value + ' ' + this.dataset.shippingPreOrderTime;
+
+        } else if (!hasStock) {
        
           textValue = '';
           shippingTimeCountdown.innerHTML = '';
@@ -113,7 +138,6 @@ if (!customElements.get("shipping-time")) {
       
         var shippingTimeText = document.getElementById('shipping-time-text');
         shippingTimeText.innerHTML = textValue;
-        // }, 500);
       }
     }    
   );

@@ -137,6 +137,8 @@
       "shipping_time_warehouse_weekend": "Producto en almacen externo. Lo enviaremos el próximo ",
       "ship_day_tuesday": "martes",
       "ship_day_monday": "lunes",
+      "shipping_text_pre_order": "Pre-ordenar ahora para recibirlo en",
+      "shipping_time_pre_order": "semanas",
       "sold_out": "Agotado",
       "unavailable": "No disponible",
       "vendor": "Proveedor",

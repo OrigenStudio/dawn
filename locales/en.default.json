@@ -165,6 +165,8 @@
       "shipping_time_warehouse_weekend": "Product in external warehouse. We will ship it next ",
       "ship_day_tuesday": "Tuesday",
       "ship_day_monday": "Monday",
+      "shipping_text_pre_order": "Pre-order now to get it in",
+      "shipping_time_pre_order": "weeks",
       "sold_out": "SOLD OUT",
       "unavailable": "Unavailable",
       "vendor": "Vendor",
