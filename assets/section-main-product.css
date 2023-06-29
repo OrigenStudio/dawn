@@ -1557,6 +1557,7 @@ a.product__text {
   flex-direction: column;
   align-items: flex-end;
   min-height: 62px;
+  text-align: right;
 }
 
 @media screen and (min-width: 750px) {
