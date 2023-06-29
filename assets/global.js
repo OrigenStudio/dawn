@@ -793,9 +793,9 @@ class VariantSelects extends HTMLElement {
   
     if (currentVariant && currentVariant.available === false){
       this.currentVariant = this.getVariantData().find((variant) => {
-        return variant.option1 === currentVariant.option1 && variant.option2 === "Pre-Order";
+        return variant.option1 === currentVariant.option1 && variant.option2 === "Deposit";
       });
-    } else if (currentVariant && currentVariant.option2 === "Pre-Order"){ 
+    } else if (currentVariant && currentVariant.option2 === "Deposit"){ 
       const variantWithReadyToShip = this.getVariantData().find((variant) => {
         return variant.option1 === currentVariant.option1 && variant.option2 === "Ready to ship" && variant.available === true;
       });

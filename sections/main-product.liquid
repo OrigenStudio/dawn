@@ -62,10 +62,10 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-  {% assign isPreOrder = false %}
+  {% assign isDeposit = false %}
   {% for option in product.selected_or_first_available_variant.options %}
-    {% if option == 'Pre-Order' %}
-      {% assign isPreOrder = true %}
+    {% if option == 'Deposit' %}
+      {% assign isDeposit = true %}
       {% break %}
     {% endif %}
   {% endfor %}
@@ -475,7 +475,7 @@
                       >
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
-                            {%- if isPreOrder -%}
+                            {%- if isDeposit -%}
                               {{ 'products.product.pay_deposit' | t }}
                             {%- else -%}
                               {{ 'products.product.add_to_cart' | t }}
@@ -752,7 +752,7 @@
                   -%}
                 </div>
                 <div class="product__inventory-wrapper">                  
-                  <p class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}{% if isPreOrder %} hidden {% endif %}">
+                  <p class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}{% if isDeposit %} hidden {% endif %}">
                     {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
                       {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
                         {%- if product.selected_or_first_available_variant.inventory_quantity <= block.settings.inventory_threshold -%}

@@ -22,10 +22,10 @@
     data-type: 'add-to-cart-form'
     -%}
     
-    {% assign isPreOrder = false %}
+    {% assign isDeposit = false %}
     {% for option in product.selected_or_first_available_variant.options %}
-      {% if option == 'Pre-Order' %}
-        {% assign isPreOrder = true %}
+      {% if option == 'Deposit' %}
+        {% assign isDeposit = true %}
         {% break %}
       {% endif %}
     {% endfor %}
@@ -47,7 +47,7 @@
         >
         <span>
             {%- if product.selected_or_first_available_variant.available -%}
-                {%- if isPreOrder -%}
+                {%- if isDeposit -%}
                     {{ 'products.product.pay_deposit' | t }}
                   {%- else -%}
                     {{ 'products.product.add_to_cart' | t }}

@@ -74,13 +74,13 @@ if (!customElements.get("shipping-time")) {
         var hasStock = data.availableForSale;
         var store_availabilities_available = data.storeAvailability.nodes.length > 0;
 
-        var isPreOrder = () => {
+        var isDeposit = () => {
           var availabilityOption = data.selectedOptions.find(option => option.name === 'Availability');
-          return !!availabilityOption && availabilityOption.value === 'Pre-Order';
+          return !!availabilityOption && availabilityOption.value === 'Deposit';
         }
 
 
-        if (isPreOrder()) {
+        if (isDeposit()) {
 
           textValue = this.dataset.shippingPreOrderText;
           shippingTimeCountdown.innerHTML = data.product.metafield.value + ' ' + this.dataset.shippingPreOrderTime;

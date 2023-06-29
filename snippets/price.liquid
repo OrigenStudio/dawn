@@ -29,10 +29,10 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 
-  assign isPreOrder = false
+  assign isDeposit = false
   for option in product.selected_or_first_available_variant.options
-    if option == 'Pre-Order'
-      assign isPreOrder = true
+    if option == 'Deposit'
+      assign isDeposit = true
       assign fullPrice = product.price_max
       break
     endif
@@ -62,7 +62,7 @@
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
-        {%- if isPreOrder == true -%}
+        {%- if isDeposit == true -%}
           <span>
             {{ 'products.product.deposit' | t }}
           </span>
@@ -107,13 +107,11 @@
         </span>
       </span>
     </small>
-    {%- if isPreOrder == true -%}
+    {%- if isDeposit == true -%}
       <small>
         <span>{{ 'products.product.full_price' | t }}{{ fullPrice | money }}</span>
         <div>
-          <small
-            class="deposit-note"
-          >{{ 'products.product.deposit_note' | t }}</small>
+          <small class="deposit-note">{{ 'products.product.deposit_note' | t }}</small>
         </div>
       </small>
     {%- endif -%}
