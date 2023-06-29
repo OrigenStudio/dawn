@@ -13,7 +13,6 @@ if (!customElements.get("shipping-time")) {
       }
 
       fetchVariantInfo(variantId) {
-        console.log('fetchVariantInfo', variantId)
         const gid = "gid://shopify/ProductVariant/" + variantId
         const query = `
           query getProductVariant($id: ID!){
@@ -58,7 +57,6 @@ if (!customElements.get("shipping-time")) {
           .then(response => response.json())
           .then(data => {
             this.updateShippingText(data.data.node);
-            console.log('data', data)
           })
           .catch(error => console.error(error));
       }

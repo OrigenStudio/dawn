@@ -21,6 +21,15 @@
     novalidate: 'novalidate',
     data-type: 'add-to-cart-form'
     -%}
+    
+    {% assign isPreOrder = false %}
+    {% for option in product.selected_or_first_available_variant.options %}
+      {% if option == 'Pre-Order' %}
+        {% assign isPreOrder = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
     <input
         type="hidden"
         name="id"
@@ -38,9 +47,13 @@
         >
         <span>
             {%- if product.selected_or_first_available_variant.available -%}
-            {{ 'products.product.add_to_cart' | t }}
+                {%- if isPreOrder -%}
+                    {{ 'products.product.pay_deposit' | t }}
+                  {%- else -%}
+                    {{ 'products.product.add_to_cart' | t }}
+                  {%- endif -%}
             {%- else -%}
-            {{ 'products.product.sold_out' | t }}
+                {{ 'products.product.sold_out' | t }}
             {%- endif -%}
         </span>
         <div class="loading-overlay__spinner hidden">

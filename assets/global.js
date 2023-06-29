@@ -785,11 +785,24 @@ class VariantSelects extends HTMLElement {
   }
 
   updateMasterId() {
-    this.currentVariant = this.getVariantData().find((variant) => {
+    const currentVariant = this.getVariantData().find((variant) => {
       return !variant.options.map((option, index) => {
         return this.options[index] === option;
       }).includes(false);
     });
+  
+    if (currentVariant && currentVariant.available === false){
+      this.currentVariant = this.getVariantData().find((variant) => {
+        return variant.option1 === currentVariant.option1 && variant.option2 === "Pre-Order";
+      });
+    } else if (currentVariant && currentVariant.option2 === "Pre-Order"){ 
+      const variantWithReadyToShip = this.getVariantData().find((variant) => {
+        return variant.option1 === currentVariant.option1 && variant.option2 === "Ready to ship" && variant.available === true;
+      });
+      this.currentVariant = variantWithReadyToShip || currentVariant;
+    } else {
+      this.currentVariant = currentVariant;
+    }
   }
 
   updateMedia() {

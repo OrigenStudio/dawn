@@ -113,6 +113,10 @@
   "products": {
     "product": {
       "add_to_cart": "ADD TO CART",
+      "pay_deposit": "PAY DEPOSIT",
+      "deposit": "Deposit: ",
+      "full_price": "Full price: ",
+      "deposit_note": "Please note that the payment is a pre-order deposit, the full price of the product will be due later.",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
