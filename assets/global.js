@@ -925,17 +925,43 @@ class VariantSelects extends HTMLElement {
 
   toggleAddButton(disable = true, text, modifyClass = true) {
     const productForm = document.getElementById(`product-form-${this.dataset.section}`);
+
     if (!productForm) return;
+
     const addButton = productForm.querySelector('[name="add"]');
     const addButtonText = productForm.querySelector('[name="add"] > span');
+    const footerBuyButton = document.getElementById('footer-buy-button');
+    const footerBuyButtonText = footerBuyButton.querySelector('[name="add"] > span');
+
     if (!addButton) return;
+    if(!footerBuyButton) return;
 
     if (disable) {
       addButton.setAttribute('disabled', 'disabled');
       if (text) addButtonText.textContent = text;
     } else {
       addButton.removeAttribute('disabled');
-      addButtonText.textContent = window.variantStrings.addToCart;
+
+      const depositMessageDiv = document.getElementById('deposit-note');
+
+      if (this.currentVariant.option2 === "Deposit"){
+        
+        if (depositMessageDiv) {
+          depositMessageDiv.classList.remove('hidden');
+        }
+
+        addButtonText.textContent = window.variantStrings.payDeposit;
+        footerBuyButtonText.textContent = window.variantStrings.payDeposit;
+
+      } else {
+
+        if (depositMessageDiv) {
+          depositMessageDiv.classList.add('hidden');
+        }
+
+        addButtonText.textContent = window.variantStrings.addToCart;
+        footerBuyButtonText.textContent = window.variantStrings.addToCart;
+      }
     }
 
     if (!modifyClass) return;

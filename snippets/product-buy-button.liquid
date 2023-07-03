@@ -21,7 +21,7 @@
     novalidate: 'novalidate',
     data-type: 'add-to-cart-form'
     -%}
-    
+
     {% assign isDeposit = false %}
     {% for option in product.selected_or_first_available_variant.options %}
       {% if option == 'Deposit' %}
@@ -38,6 +38,7 @@
     >
     <div class="product-form__buttons">
         <button
+        id="footer-buy-button"
         type="submit"
         name="add"
         class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"

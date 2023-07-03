@@ -512,6 +512,14 @@
                   ></klarna-placement>
                 <!-- Klarna integration - end Placement -->
               </div>
+              {% comment %} {%- if isDeposit == true -%} {%- endif -%} {% endcomment %}
+              <div
+                id="deposit-note"
+                class="deposit-note {% if isDeposit == false %} hidden {% endif %}"
+              >
+                {{ 'products.product.deposit_note' | t }}
+              </div>
+              
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -799,14 +807,14 @@
                     | where: 'pick_up_enabled', true
                   -%}
 
-                  {% if pick_up_availabilities.size == 0 %}
+                  {% if pick_up_availabilities.size == 0 or isDeposit == true %}
                     <p class="custom-pickup-availability-text">
                       {{- 'products.product.inventory_only_on_warehouse' | t -}}
                     </p>
                   {%- endif -%}
 
                   <pickup-availability
-                    class="product__pickup-availabilities no-js-hidden quick-add-hidden"
+                    class="product__pickup-availabilities no-js-hidden quick-add-hidden {% if isDeposit == true %} hidden {% endif %}"
                     {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %}
                       available
                     {% endif %}
