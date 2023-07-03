@@ -113,6 +113,10 @@
   "products": {
     "product": {
       "add_to_cart": "ADD TO CART",
+      "pay_deposit": "PAY DEPOSIT",
+      "deposit": "Deposit: ",
+      "full_price": "Full price: ",
+      "deposit_note": "DEPOSIT NOTE: You are paying for a deposit for this bike. Our team will contact you and order the bike after receiving the deposit. The full price will be paid upon the reception of the bike at our warehouse.",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
@@ -165,6 +169,8 @@
       "shipping_time_warehouse_weekend": "Product in external warehouse. We will ship it next ",
       "ship_day_tuesday": "Tuesday",
       "ship_day_monday": "Monday",
+      "shipping_text_pre_order": "Pre-order now to get it in",
+      "shipping_time_pre_order": "weeks",
       "sold_out": "SOLD OUT",
       "unavailable": "Unavailable",
       "vendor": "Vendor",

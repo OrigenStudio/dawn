@@ -1550,6 +1550,7 @@ a.product__text {
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  min-height: 65px;
 }
 
 .product__price-and-inventory .product__inventory-wrapper {
@@ -1557,6 +1558,7 @@ a.product__text {
   flex-direction: column;
   align-items: flex-end;
   min-height: 62px;
+  text-align: right;
 }
 
 @media screen and (min-width: 750px) {
@@ -1607,7 +1609,6 @@ a.product__text {
   border: 2px solid black;
 }
 
-/* TODO: DOS OPCIONES */
 .swatch .swatch-element.color-swatch.soldout label::before {
   content: '';
   position: absolute;

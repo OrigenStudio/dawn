@@ -62,6 +62,14 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
+  {% assign isDeposit = false %}
+  {% for option in product.selected_or_first_available_variant.options %}
+    {% if option == 'Deposit' %}
+      {% assign isDeposit = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
@@ -343,13 +351,13 @@
                     {{ block.shopify_attributes }}
                   >
                     {%- for option in product.options_with_values -%}
-                      <fieldset class="js product-form__input fullbleed">
+                      <fieldset class="js product-form__input fullbleed {% if option.name == 'Availability' %} hidden {% endif %}" >
                         {% render 'product-variant-options',
                           product: product,
                           option: option,
-                          block: block
+                          block: block,
                         %}
-                      </fieldset>
+                      </fieldset>  
                     {%- endfor -%}
                     <script type="application/json">
                       {{ product.variants | json }}
@@ -467,7 +475,11 @@
                       >
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
+                            {%- if isDeposit -%}
+                              {{ 'products.product.pay_deposit' | t }}
+                            {%- else -%}
+                              {{ 'products.product.add_to_cart' | t }}
+                            {%- endif -%}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
                           {%- endif -%}
@@ -500,6 +512,13 @@
                   ></klarna-placement>
                 <!-- Klarna integration - end Placement -->
               </div>
+              <div
+                id="deposit-note"
+                class="deposit-note {% if isDeposit == false %} hidden {% endif %}"
+              >
+                {{ 'products.product.deposit_note' | t }}
+              </div>
+              
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -739,8 +758,8 @@
                   price_class: 'price--large'
                   -%}
                 </div>
-                <div class="product__inventory-wrapper">
-                  <p class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}">
+                <div class="product__inventory-wrapper">                  
+                  <p class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}{% if isDeposit %} hidden {% endif %}">
                     {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
                       {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
                         {%- if product.selected_or_first_available_variant.inventory_quantity <= block.settings.inventory_threshold -%}
@@ -787,14 +806,14 @@
                     | where: 'pick_up_enabled', true
                   -%}
 
-                  {% if pick_up_availabilities.size == 0 %}
+                  {% if pick_up_availabilities.size == 0 or isDeposit == true %}
                     <p class="custom-pickup-availability-text">
                       {{- 'products.product.inventory_only_on_warehouse' | t -}}
                     </p>
                   {%- endif -%}
 
                   <pickup-availability
-                    class="product__pickup-availabilities no-js-hidden quick-add-hidden"
+                    class="product__pickup-availabilities no-js-hidden quick-add-hidden {% if isDeposit == true %} hidden {% endif %}"
                     {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %}
                       available
                     {% endif %}
@@ -827,6 +846,8 @@
                 data-shipping-time-tuesday="{{ 'products.product.ship_day_tuesday' | t }}"
                 data-shipping-time-tomorrow="{{ 'products.product.shipping_time_tomorrow' | t }}"
                 data-out-of-stock="{{ 'products.product.inventory_out_of_stock' | t }}"
+                data-shipping-pre-order-text="{{ 'products.product.shipping_text_pre_order' | t }}"
+                data-shipping-pre-order-time="{{ 'products.product.shipping_time_pre_order' | t }}"
               >
                 <div class="product__shipping-time" {{ block.shopify_attributes }}>
                   <p class="shipping-time">
