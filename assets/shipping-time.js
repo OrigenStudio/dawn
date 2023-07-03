@@ -42,10 +42,6 @@ if (!customElements.get("shipping-time")) {
           }
         `;
 
-        // metafield (namespace: "custom", key: "lead_time") {
-        //   value
-        // }
-        
         fetch('https://velodrom-barcelona.myshopify.com/api/2023-04/graphql.json', {
           method: 'POST',
           headers: {

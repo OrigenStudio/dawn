@@ -1608,7 +1608,6 @@ a.product__text {
   border: 2px solid black;
 }
 
-/* TODO: DOS OPCIONES */
 .swatch .swatch-element.color-swatch.soldout label::before {
   content: '';
   position: absolute;
