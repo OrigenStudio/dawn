@@ -116,7 +116,7 @@
       "pay_deposit": "PAY DEPOSIT",
       "deposit": "Deposit: ",
       "full_price": "Full price: ",
-      "deposit_note": "Please note that the payment is a pre-order deposit, the full price of the product will be due later.",
+      "deposit_note": "DEPOSIT NOTE: You are paying for a deposit for this bike. Our team will contact you and order the bike after receiving the deposit. The full price will be paid upon the reception of the bike at our warehouse.",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
