@@ -945,8 +945,6 @@ class VariantSelects extends HTMLElement {
 
       const depositMessageDiv = document.getElementById('deposit-note');
 
-      console.log("CHANGE BUTTONS", this.currentVariant);
-
       if (this.currentVariant.option2 === "Deposit"){
         
         if (depositMessageDiv) {
