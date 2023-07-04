@@ -793,11 +793,12 @@ class VariantSelects extends HTMLElement {
   
     if (currentVariant && currentVariant.available === false){
       this.currentVariant = this.getVariantData().find((variant) => {
-        return variant.option1 === currentVariant.option1 && variant.option2 === "Deposit";
+        return variant.option1 === currentVariant.option1 && variant.option2.toLowerCase() === "deposit";
       });
-    } else if (currentVariant && currentVariant.option2 === "Deposit"){ 
+    } else if (currentVariant && currentVariant.option2.toLowerCase() === "deposit"){ 
+
       const variantWithReadyToShip = this.getVariantData().find((variant) => {
-        return variant.option1 === currentVariant.option1 && variant.option2 === "Ready to ship" && variant.available === true;
+        return variant.option1 === currentVariant.option1 && variant.option2.toLowerCase() === "ready to ship" && variant.available === true;
       });
       this.currentVariant = variantWithReadyToShip || currentVariant;
     } else {
