@@ -71,8 +71,8 @@ if (!customElements.get("shipping-time")) {
         var store_availabilities_available = data.storeAvailability.nodes.length > 0;
 
         var isDeposit = () => {
-          var availabilityOption = data.selectedOptions.find(option => option.name === 'Availability');
-          return !!availabilityOption && availabilityOption.value === 'Deposit';
+          var availabilityOption = data.selectedOptions.find(option => option.name?.toLowerCase() === 'availability');
+          return !!availabilityOption && availabilityOption.value?.toLowerCase() === 'deposit';
         }
 
 
