@@ -6,14 +6,13 @@ if (!customElements.get("shipping-time")) {
       constructor() {
         super();
         this.fetchVariantInfo(this.dataset.variantId);
-        this.errorHtml =
-          this.querySelector("template").content.firstElementChild.cloneNode(
-            true
-          );
+        // this.errorHtml =
+        //   this.querySelector("template").content.firstElementChild.cloneNode(
+        //     true
+        //   );
       }
 
       fetchVariantInfo(variantId) {
-        console.log('fetchVariantInfo', variantId)
         const gid = "gid://shopify/ProductVariant/" + variantId
         const query = `
           query getProductVariant($id: ID!){
@@ -21,6 +20,10 @@ if (!customElements.get("shipping-time")) {
               ... on ProductVariant {
                 title
                 availableForSale
+                selectedOptions {
+                  name
+                  value
+                }
                 storeAvailability (first: 5) {
                   nodes {
                     available
@@ -29,11 +32,16 @@ if (!customElements.get("shipping-time")) {
                     }
                   }
                 }
+                product {
+                  metafield (namespace: "custom", key: "lead_time") {
+                    value
+                  }
+                }
               }
             }
           }
         `;
-        
+
         fetch('https://velodrom-barcelona.myshopify.com/api/2023-04/graphql.json', {
           method: 'POST',
           headers: {
@@ -60,9 +68,20 @@ if (!customElements.get("shipping-time")) {
         var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
   
         var hasStock = data.availableForSale;
-        var store_availabilities_available = data.storeAvailability.nodes.length > 0;          
+        var store_availabilities_available = data.storeAvailability.nodes.length > 0;
 
-        if (!hasStock) {
+        var isDeposit = () => {
+          var availabilityOption = data.selectedOptions.find(option => option.name?.toLowerCase() === 'availability');
+          return !!availabilityOption && availabilityOption.value?.toLowerCase() === 'deposit';
+        }
+
+
+        if (isDeposit()) {
+
+          textValue = this.dataset.shippingPreOrderText;
+          shippingTimeCountdown.innerHTML = data.product.metafield.value + ' ' + this.dataset.shippingPreOrderTime;
+
+        } else if (!hasStock) {
        
           textValue = '';
           shippingTimeCountdown.innerHTML = '';
@@ -113,7 +132,6 @@ if (!customElements.get("shipping-time")) {
       
         var shippingTimeText = document.getElementById('shipping-time-text');
         shippingTimeText.innerHTML = textValue;
-        // }, 500);
       }
     }    
   );
