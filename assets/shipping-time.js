@@ -68,13 +68,26 @@ if (!customElements.get("shipping-time")) {
         var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
   
         var hasStock = data.availableForSale;
-        var store_availabilities_available = data.storeAvailability.nodes.length > 0;
+        // var store_availabilities_available = data.storeAvailability.nodes.length > 0;
+        var store_availabilities_available = () => {
+          var isAvilable = data.storeAvailability.nodes.find(node => node.available);
+          return !!isAvilable;
+        }
 
         var isDeposit = () => {
           var availabilityOption = data.selectedOptions.find(option => option.name?.toLowerCase() === 'availability');
           return !!availabilityOption && availabilityOption.value?.toLowerCase() === 'deposit';
         }
 
+        console.log("stores", data.storeAvailability.nodes);
+        console.log('isDeposit', isDeposit());
+        console.log('hasStock', hasStock, "!hasStock", !hasStock);
+        console.log('store_availabilities_available', store_availabilities_available);
+        console.log("day", day);
+        console.log("now", now);
+        console.log("end", end);
+        console.log("diffInHours", diffInHours);
+        console.log("diffInMinutes", diffInMinutes);
 
         if (isDeposit()) {
 
@@ -92,7 +105,7 @@ if (!customElements.get("shipping-time")) {
         } else {
           if (day == 5 && now.getHours() >= 15 || day == 6 || day == 0) {
         
-            if(!store_availabilities_available){
+            if(!store_availabilities_available()){
         
               textValue = this.dataset.shippingTimeWarehouseWeekend;
               shippingTimeCountdown.innerHTML = this.dataset.shippingTimeTuesday;
@@ -105,8 +118,8 @@ if (!customElements.get("shipping-time")) {
             }
         
           } else {
-        
-            if(!store_availabilities_available){
+
+            if(!store_availabilities_available()){
         
               textValue = this.dataset.shippingTimeWarehouse;
               shippingTimeCountdown.innerHTML = '48-72HRS';
@@ -117,7 +130,7 @@ if (!customElements.get("shipping-time")) {
                 end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 15, 0, 0, 0);
               } else {
                 end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 15, 0, 0, 0);
-                extValue = this.dataset.shippingTimeTomorrow;
+                textValue = this.dataset.shippingTimeTomorrow;
               }
         
               var timeleft = end.getTime() - now.getTime();
