@@ -791,6 +791,7 @@ class VariantSelects extends HTMLElement {
       }).includes(false);
     });
 
+    console.log("currentVariant", currentVariant)
   
     if (currentVariant && currentVariant.option2 && currentVariant.available === false){
       
