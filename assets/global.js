@@ -791,25 +791,39 @@ class VariantSelects extends HTMLElement {
       }).includes(false);
     });
 
-    console.log("currentVariant", currentVariant)
+    console.log("currentVariant", currentVariant) // TODO: remove
+    console.log("THIS", this) // TODO: remove"
+    console.log("this.options", this.options) // TODO: remove
+    console.log("this.product", JSON.parse(this.querySelector('[type="application/json"]').textContent)) // TODO: remove
   
-    if (currentVariant && currentVariant.option2 && currentVariant.available === false){
+    if (currentVariant && currentVariant.option1 && currentVariant.option1.toLowerCase() === "ready to ship" && currentVariant.available === false){
+
+      console.log("IF") // TODO: remove
       
       this.currentVariant = this.getVariantData().find((variant) => {
-        return variant.option1 === currentVariant?.option1 
-              && variant.option2?.toLowerCase() === "deposit";
+        return variant.option1.toLowerCase() === "deposit"
+              && variant.option2 === currentVariant.option2 
+              && variant.option3 === currentVariant.option3;
       });
-    } else if (currentVariant && currentVariant.option2?.toLowerCase() === "deposit"){ 
+    } else if (currentVariant && currentVariant.option1 && currentVariant.option1.toLowerCase() === "deposit"){ 
+
+      console.log("ELSE IF") // TODO: remove
 
       const variantWithReadyToShip = this.getVariantData().find((variant) => {
-        return variant.option1 === currentVariant.option1 
-              && variant.option2?.toLowerCase() === "ready to ship" 
+        return  variant.option1.toLowerCase() === "ready to ship"
+              &&  variant.option2 === currentVariant.option2
+              && variant.option3 === currentVariant.option3
               && variant.available === true;
       });
       this.currentVariant = variantWithReadyToShip || currentVariant;
     } else {
+
+      console.log("ELSE") // TODO: remove
+
       this.currentVariant = currentVariant;
     }
+
+    console.log("this.currentVariant", this.currentVariant) // TODO: remove
 
   }
 
@@ -849,13 +863,17 @@ class VariantSelects extends HTMLElement {
   updateVariantStatuses() {
     const selectedOptionOneVariants = this.variantData.filter(variant => this.querySelector(':checked').value === variant.option1);
     const inputWrappers = [...this.querySelectorAll('.product-form__input')];
-    inputWrappers.forEach((option, index) => {
-      if (index === 0) return;
-      const optionInputs = [...option.querySelectorAll('input[type="radio"], option')]
-      const previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
-      const availableOptionInputsValue = selectedOptionOneVariants.filter(variant => variant.available && variant[`option${ index }`] === previousOptionSelected).map(variantOption => variantOption[`option${ index + 1 }`]);
-      this.setInputAvailability(optionInputs, availableOptionInputsValue)
-    });
+    const availabilityInputWrapper = inputWrappers.find(inputWrapper => inputWrapper.querySelector('input[name="Availability"]'));
+    const availabilityInputWrapperDropdown = inputWrappers.find(inputWrapper => inputWrapper.querySelector('option[name="Availability"]'));
+    if (!availabilityInputWrapper && !availabilityInputWrapperDropdown) {
+      inputWrappers.forEach((option, index) => {
+        if (index === 0) return;
+        const optionInputs = [...option.querySelectorAll('input[type="radio"], option')]
+        const previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
+        const availableOptionInputsValue = selectedOptionOneVariants.filter(variant => variant.available && variant[`option${ index }`] === previousOptionSelected).map(variantOption => variantOption[`option${ index + 1 }`]);
+        this.setInputAvailability(optionInputs, availableOptionInputsValue)
+      });
+    }
   }
 
   setInputAvailability(listOfOptions, listOfAvailableOptions) {
@@ -952,7 +970,7 @@ class VariantSelects extends HTMLElement {
 
       const depositMessageDiv = document.getElementById('deposit-note');
 
-      if (this.currentVariant.option2 === "Deposit"){
+      if (this.currentVariant.option1.toLowerCase() === "deposit"){
         
         if (depositMessageDiv) {
           depositMessageDiv.classList.remove('hidden');

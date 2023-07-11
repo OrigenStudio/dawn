@@ -68,7 +68,6 @@ if (!customElements.get("shipping-time")) {
         var shippingTimeCountdown = document.getElementById('shipping-time-countdown');
   
         var hasStock = data.availableForSale;
-        // var store_availabilities_available = data.storeAvailability.nodes.length > 0;
         var store_availabilities_available = () => {
           var isAvilable = data.storeAvailability.nodes.find(node => node.available);
           return !!isAvilable;
@@ -78,16 +77,6 @@ if (!customElements.get("shipping-time")) {
           var availabilityOption = data.selectedOptions.find(option => option.name?.toLowerCase() === 'availability');
           return !!availabilityOption && availabilityOption.value?.toLowerCase() === 'deposit';
         }
-
-        console.log("stores", data.storeAvailability.nodes);
-        console.log('isDeposit', isDeposit());
-        console.log('hasStock', hasStock, "!hasStock", !hasStock);
-        console.log('store_availabilities_available', store_availabilities_available);
-        console.log("day", day);
-        console.log("now", now);
-        console.log("end", end);
-        console.log("diffInHours", diffInHours);
-        console.log("diffInMinutes", diffInMinutes);
 
         if (isDeposit()) {
 
