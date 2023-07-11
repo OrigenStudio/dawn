@@ -790,15 +790,8 @@ class VariantSelects extends HTMLElement {
         return this.options[index] === option;
       }).includes(false);
     });
-
-    console.log("currentVariant", currentVariant) // TODO: remove
-    console.log("THIS", this) // TODO: remove"
-    console.log("this.options", this.options) // TODO: remove
-    console.log("this.product", JSON.parse(this.querySelector('[type="application/json"]').textContent)) // TODO: remove
   
     if (currentVariant && currentVariant.option1 && currentVariant.option1.toLowerCase() === "ready to ship" && currentVariant.available === false){
-
-      console.log("IF") // TODO: remove
       
       this.currentVariant = this.getVariantData().find((variant) => {
         return variant.option1.toLowerCase() === "deposit"
@@ -806,8 +799,6 @@ class VariantSelects extends HTMLElement {
               && variant.option3 === currentVariant.option3;
       });
     } else if (currentVariant && currentVariant.option1 && currentVariant.option1.toLowerCase() === "deposit"){ 
-
-      console.log("ELSE IF") // TODO: remove
 
       const variantWithReadyToShip = this.getVariantData().find((variant) => {
         return  variant.option1.toLowerCase() === "ready to ship"
@@ -818,12 +809,8 @@ class VariantSelects extends HTMLElement {
       this.currentVariant = variantWithReadyToShip || currentVariant;
     } else {
 
-      console.log("ELSE") // TODO: remove
-
       this.currentVariant = currentVariant;
     }
-
-    console.log("this.currentVariant", this.currentVariant) // TODO: remove
 
   }
 
