@@ -790,24 +790,25 @@ class VariantSelects extends HTMLElement {
         return this.options[index] === option;
       }).includes(false);
     });
-
-    console.log("currentVariant", currentVariant)
   
-    if (currentVariant && currentVariant.option2 && currentVariant.available === false){
+    if (currentVariant && currentVariant.option1 && currentVariant.option1.toLowerCase() === "ready to ship" && currentVariant.available === false){
       
       this.currentVariant = this.getVariantData().find((variant) => {
-        return variant.option1 === currentVariant?.option1 
-              && variant.option2?.toLowerCase() === "deposit";
+        return variant.option1.toLowerCase() === "deposit"
+              && variant.option2 === currentVariant.option2 
+              && variant.option3 === currentVariant.option3;
       });
-    } else if (currentVariant && currentVariant.option2?.toLowerCase() === "deposit"){ 
+    } else if (currentVariant && currentVariant.option1 && currentVariant.option1.toLowerCase() === "deposit"){ 
 
       const variantWithReadyToShip = this.getVariantData().find((variant) => {
-        return variant.option1 === currentVariant.option1 
-              && variant.option2?.toLowerCase() === "ready to ship" 
+        return  variant.option1.toLowerCase() === "ready to ship"
+              &&  variant.option2 === currentVariant.option2
+              && variant.option3 === currentVariant.option3
               && variant.available === true;
       });
       this.currentVariant = variantWithReadyToShip || currentVariant;
     } else {
+
       this.currentVariant = currentVariant;
     }
 
@@ -849,13 +850,17 @@ class VariantSelects extends HTMLElement {
   updateVariantStatuses() {
     const selectedOptionOneVariants = this.variantData.filter(variant => this.querySelector(':checked').value === variant.option1);
     const inputWrappers = [...this.querySelectorAll('.product-form__input')];
-    inputWrappers.forEach((option, index) => {
-      if (index === 0) return;
-      const optionInputs = [...option.querySelectorAll('input[type="radio"], option')]
-      const previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
-      const availableOptionInputsValue = selectedOptionOneVariants.filter(variant => variant.available && variant[`option${ index }`] === previousOptionSelected).map(variantOption => variantOption[`option${ index + 1 }`]);
-      this.setInputAvailability(optionInputs, availableOptionInputsValue)
-    });
+    const availabilityInputWrapper = inputWrappers.find(inputWrapper => inputWrapper.querySelector('input[name="Availability"]'));
+    const availabilityInputWrapperDropdown = inputWrappers.find(inputWrapper => inputWrapper.querySelector('option[name="Availability"]'));
+    if (!availabilityInputWrapper && !availabilityInputWrapperDropdown) {
+      inputWrappers.forEach((option, index) => {
+        if (index === 0) return;
+        const optionInputs = [...option.querySelectorAll('input[type="radio"], option')]
+        const previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
+        const availableOptionInputsValue = selectedOptionOneVariants.filter(variant => variant.available && variant[`option${ index }`] === previousOptionSelected).map(variantOption => variantOption[`option${ index + 1 }`]);
+        this.setInputAvailability(optionInputs, availableOptionInputsValue)
+      });
+    }
   }
 
   setInputAvailability(listOfOptions, listOfAvailableOptions) {
@@ -952,7 +957,7 @@ class VariantSelects extends HTMLElement {
 
       const depositMessageDiv = document.getElementById('deposit-note');
 
-      if (this.currentVariant.option2 === "Deposit"){
+      if (this.currentVariant.option1.toLowerCase() === "deposit"){
         
         if (depositMessageDiv) {
           depositMessageDiv.classList.remove('hidden');

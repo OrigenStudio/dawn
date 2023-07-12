@@ -33,7 +33,13 @@
   for option in product.selected_or_first_available_variant.options
     if option == 'Deposit'
       assign isDeposit = true
-      assign fullPrice = product.price_max
+      for variant in product.variants
+        assign availability = variant.option1 | downcase
+        if  availability == 'ready to ship' and variant.option2 == target.option2 and variant.option3 == target.option3 
+          assign fullPrice = variant.price
+          break
+        endif
+      endfor
       break
     endif
   endfor 

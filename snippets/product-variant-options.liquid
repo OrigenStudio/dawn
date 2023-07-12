@@ -23,6 +23,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 
+
 {%- for value in option.values -%}
   {%- liquid
     assign option_disabled = true
@@ -55,7 +56,7 @@
       {% if option.selected_value == value %}
         checked
       {% endif %}
-      {% if option_disabled %}
+      {% if option_disabled and product.options_with_values[0].name != "Availability" %}
         class="disabled"
       {% endif %}
     >
