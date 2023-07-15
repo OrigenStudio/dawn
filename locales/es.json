@@ -115,7 +115,7 @@
     "product": {
       "add_to_cart": "AÑADE AL CARRITO",
       "description": "Descripción",
-      "deposit_note": "DEPÓSITO: Estás pagando un depósito por este producto. Nuestro equipo se pondrá en contacto contigo y encargará el producto después de recibir el depósito. El precio total se pagará al recibir el producto en nuestro almacén.",
+      "deposit_note": "DEPÓSITO: Estás pagando un depósito por este producto. Nuestro equipo se pondrá en contacto contigo y encargará el producto después de recibir el depósito. El importe restante se pagará al recibir el producto en nuestro almacén.",
       "on_sale": "Oferta",
       "product_variants": "Variantes de producto",
       "quantity": {
