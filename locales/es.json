@@ -113,9 +113,9 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Agregar al carrito",
+      "add_to_cart": "AÑADE AL CARRITO",
       "description": "Descripción",
-      "deposit_note": "DEPÓSITO: Estás pagando un depósito por esta bicicleta. Nuestro equipo se pondrá en contacto contigo y pedirá la bicicleta después de recibir el depósito. El precio total se pagará al recibir la bicicleta en nuestro almacén.",
+      "deposit_note": "DEPÓSITO: Estás pagando un depósito por este producto. Nuestro equipo se pondrá en contacto contigo y encargará el producto después de recibir el depósito. El importe restante se pagará al recibir el producto en nuestro almacén.",
       "on_sale": "Oferta",
       "product_variants": "Variantes de producto",
       "quantity": {
@@ -150,8 +150,8 @@
         "view_store_info": "Ver disponibilidad en tiendas",
         "check_other_stores": "Ver disponibilidad en tiendas",
         "pick_up_available": "Retiro disponible",
-        "pick_up_available_at_html": "Retiro disponible en <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_available_at_html": "Retiro disponible en <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "unavailable": "No se pudo cargar la disponibilidad de retiro",
         "refresh": "Actualizar"
       },
@@ -167,7 +167,7 @@
       },
       "view_full_details": "Ver todos los detalles",
       "include_taxes": "Impuesto incluido.",
-      "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago.",
+      "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío<\/a> se calculan en la pantalla de pago.",
       "choose_options": "Seleccionar opciones",
       "choose_product_options": "Elegir opciones para {{ product_name }}",
       "value_unavailable": "{{ option_value }}: no disponible",
@@ -178,8 +178,11 @@
       "inventory_low_stock_show_count": "Bajas existencias: quedan {{ quantity }}",
       "inventory_out_of_stock": "Agotado",
       "inventory_out_of_stock_continue_selling": "En existencias",
-      "inventory_only_on_warehouse": "Producto no disponible para recoger en tienda",
-      "sku": "SKU"
+      "inventory_only_on_warehouse": "Producto no disponible para recoger hoy en tienda",
+      "sku": "SKU",
+      "pay_deposit": "PAGAR DEPÓSITO",
+      "deposit": "Depósito:",
+      "full_price": "Precio Total:"
     },
     "modal": {
       "label": "Galería multimedia"
