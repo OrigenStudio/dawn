@@ -18,6 +18,7 @@ if (!customElements.get("shipping-time")) {
           query getProductVariant($id: ID!){
             node(id: $id) {
               ... on ProductVariant {
+                id
                 title
                 availableForSale
                 selectedOptions {
@@ -33,6 +34,8 @@ if (!customElements.get("shipping-time")) {
                   }
                 }
                 product {
+                  id
+                  title
                   metafield (namespace: "custom", key: "lead_time") {
                     value
                   }
