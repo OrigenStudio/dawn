@@ -762,6 +762,7 @@ class VariantSelects extends HTMLElement {
   onVariantChange() {
     this.updateOptions();
     this.updateMasterId();
+    this.updateVariantAvailability(); // Just in case the variant have the "Availability" option (Deposit or Ready to Ship)
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
@@ -811,7 +812,70 @@ class VariantSelects extends HTMLElement {
 
       this.currentVariant = currentVariant;
     }
+  }
 
+  // Just in case the variant have the "Availability" option (Deposit or Ready to Ship)
+  updateVariantAvailability() {
+    if (this.currentVariant && this.currentVariant.option1 && this.currentVariant.option1.toLowerCase() !== "ready to ship" && this.currentVariant.option1.toLowerCase() !== "deposit") return;
+    
+      const materialOptions = document.querySelectorAll(`[id^="Material-Options"]`);
+
+      const variantsAvailables = [];
+
+      const variantsWithSelectedSize = this.getVariantData().filter((variant) => {
+        return  (variant.option1.toLowerCase() === "ready to ship"
+                && variant.available === true
+                && variant.option2 === this.currentVariant.option2) 
+                ||
+                (variant.option1.toLowerCase() === "deposit"
+                && variant.option2 === this.currentVariant.option2);
+      });
+ 
+      const readyToShipVariants = variantsWithSelectedSize.filter((variant) => {
+        return variant.option1.toLowerCase() === "ready to ship";
+      });
+ 
+      variantsAvailables.push(...readyToShipVariants);
+  
+      variantsWithSelectedSize.forEach((variant) => {
+        if (!variantsAvailables.some((v) => v.option2 === variant.option2 && v.option3 === variant.option3)){
+          variantsAvailables.push(variant);
+        }
+      });
+    
+      materialOptions.forEach((materialOption) => {
+  
+        const materialOptionText = materialOption.innerText;
+        const wasDeposit = !materialOption.querySelector("svg");
+        const variantAvailable = variantsAvailables.find((variant) => {
+          return materialOptionText.includes(variant.option3);
+        });
+        
+        if(wasDeposit) {         
+          if (variantAvailable && variantAvailable.option1.toLowerCase() === "ready to ship") {
+
+            const svg = document.createElement("svg");
+            svg.setAttribute("width", "10");
+            svg.setAttribute("height", "10");
+            svg.setAttribute("aria-hidden", "true");
+            const circle = document.createElement("circle");
+            circle.setAttribute("cx", "7");
+            circle.setAttribute("cy", "7");
+            circle.setAttribute("r", "3");
+            circle.setAttribute("fill", "rgb(62,214,96)");
+            svg.appendChild(circle);
+            const span = document.createElement("span");
+            span.innerHTML = "&nbsp;&nbsp;";
+            svg.appendChild(span);
+            
+            materialOption.innerHTML = svg.outerHTML + materialOption.innerHTML;
+          } 
+        } else {
+          if (variantAvailable && variantAvailable.option1.toLowerCase() === "deposit"){
+            materialOption.innerText = variantAvailable.option3;
+          }
+        }
+      });
   }
 
   updateMedia() {
