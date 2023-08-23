@@ -130,6 +130,7 @@
         "blocks": {
           "127d21ed-09e3-43b4-93ba-5e568ed753de": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "MAAP Mid Year Sale! 15% of Maap products: USE THE CODE \"MAAPMIDYEARSALE\"",
               "text_alignment": "center",
