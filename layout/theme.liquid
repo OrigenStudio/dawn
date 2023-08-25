@@ -1,6 +1,25 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+    <!-- heatmap.com snippet -->
+<script>
+  (function() {      
+    var _heatmap_paq = window._heatmap_paq = window._heatmap_paq || [];
+    var heatUrl = window.heatUrl = 'https://dashboard.heatmap.com/';
+    function hLoadInitialScript(url) {
+      var script = document.createElement('script'); script.type = 'text/javascript'; 
+      script.src = url; script.async = false; script.defer = true; document.head.appendChild(script);
+    }
+    hLoadInitialScript(heatUrl+'preprocessor.min.js?sid=397');
+    window.addEventListener('DOMContentLoaded', function (){	 
+        if(typeof _heatmap_paq != 'object' || _heatmap_paq.length == 0) {     
+          _heatmap_paq.push(['setTrackerUrl', heatUrl+'sttracker.php']);
+          hLoadInitialScript(heatUrl+'heatmap-light.min.js?sid=397');
+        } 
+    });
+  })();
+</script>
+<!-- End heatmap.com snippet Code -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
