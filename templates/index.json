@@ -161,43 +161,34 @@
             "image_padding": false
           }
         },
-        "a3d944b9-fa26-4108-9436-81a02fa69695": {
-          "type": "image",
+        "462acf69-b1e0-4d38-8d88-063b4121decd": {
+          "type": "product",
           "settings": {
-            "image": "shopify:\/\/shop_images\/K1-01.webp",
-            "title": "",
-            "description": "",
-            "image_link": "shopify:\/\/collections\/pas-normal-studios",
-            "image_padding": false
+            "product": "alba-optics-eyewear-anvma-iii-vibe-vzum™-plasma",
+            "second_image": false
           }
         },
-        "923923a4-5f8a-4304-9d9d-52df5ac780a1": {
-          "type": "image",
+        "9b9687da-ffac-4110-b833-be5febe1ee0f": {
+          "type": "product",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Q2-01.webp",
-            "title": "",
-            "description": "",
-            "image_link": "shopify:\/\/collections\/brandblack",
-            "image_padding": false
+            "product": "yeti-rambler-18-oz-532-ml-bottle-with-chug-cap-camp-green",
+            "second_image": false
           }
         },
-        "409b7e7b-86a7-4693-9d12-f3e127eb9eb3": {
-          "type": "image",
+        "1aff5b4d-960c-4267-943d-98feec21f5be": {
+          "type": "product",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lasercap.01.webp",
-            "title": "",
-            "description": "",
-            "image_link": "shopify:\/\/collections\/laser-barcelona",
-            "image_padding": false
+            "product": "nnormal-tomir-trail-shoes-beige",
+            "second_image": false
           }
         }
       },
       "block_order": [
         "dd696413-cfea-4a69-abb3-3a225aa4ba27",
         "b5d63601-2bac-4530-8e59-298838708944",
-        "a3d944b9-fa26-4108-9436-81a02fa69695",
-        "923923a4-5f8a-4304-9d9d-52df5ac780a1",
-        "409b7e7b-86a7-4693-9d12-f3e127eb9eb3"
+        "462acf69-b1e0-4d38-8d88-063b4121decd",
+        "9b9687da-ffac-4110-b833-be5febe1ee0f",
+        "1aff5b4d-960c-4267-943d-98feec21f5be"
       ],
       "settings": {
         "heading": "",
