@@ -253,12 +253,14 @@
             "image_padding": false
           }
         },
-        "0e727a75-b267-40ec-9570-d94f0502dea7": {
-          "type": "collection",
+        "f72ee634-5f22-4a2a-a337-2122f056a44b": {
+          "type": "image",
           "settings": {
-            "collection": "eyewear",
-            "title": "SHOP SUNGLASSES",
-            "description": ""
+            "image": "shopify:\/\/shop_images\/sunglassesalbaoptics.webp",
+            "title": "Shop Sunglasses",
+            "description": "",
+            "image_link": "https:\/\/www.velodrom.cc\/collections\/eyewear",
+            "image_padding": false
           }
         }
       },
@@ -267,7 +269,7 @@
         "4eb853ee-52af-4bd2-9f38-db95856df3ac",
         "af463e46-c055-4df5-9a05-cd4b1c6bdf3a",
         "60ca8f96-d519-40d3-b398-9c36b6b563ea",
-        "0e727a75-b267-40ec-9570-d94f0502dea7"
+        "f72ee634-5f22-4a2a-a337-2122f056a44b"
       ],
       "settings": {
         "heading": "",
