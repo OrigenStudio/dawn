@@ -151,16 +151,6 @@
             "image_padding": false
           }
         },
-        "b5d63601-2bac-4530-8e59-298838708944": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/D18.02.webp",
-            "title": "",
-            "description": "",
-            "image_link": "shopify:\/\/collections\/velodrom-vcc",
-            "image_padding": false
-          }
-        },
         "462acf69-b1e0-4d38-8d88-063b4121decd": {
           "type": "product",
           "settings": {
@@ -181,14 +171,21 @@
             "product": "nnormal-tomir-trail-shoes-beige",
             "second_image": false
           }
+        },
+        "5325ee7e-c5b3-4f08-a98d-9cc03444d44d": {
+          "type": "product",
+          "settings": {
+            "product": "specialized-sworks-tarmac-sl8-2023-road-frameset-satin-carbon-rtp-chameleon-snake-eye",
+            "second_image": false
+          }
         }
       },
       "block_order": [
         "dd696413-cfea-4a69-abb3-3a225aa4ba27",
-        "b5d63601-2bac-4530-8e59-298838708944",
         "462acf69-b1e0-4d38-8d88-063b4121decd",
         "9b9687da-ffac-4110-b833-be5febe1ee0f",
-        "1aff5b4d-960c-4267-943d-98feec21f5be"
+        "1aff5b4d-960c-4267-943d-98feec21f5be",
+        "5325ee7e-c5b3-4f08-a98d-9cc03444d44d"
       ],
       "settings": {
         "heading": "",
