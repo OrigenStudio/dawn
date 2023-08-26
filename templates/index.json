@@ -233,12 +233,14 @@
             "image_padding": false
           }
         },
-        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-2": {
-          "type": "collection",
+        "af463e46-c055-4df5-9a05-cd4b1c6bdf3a": {
+          "type": "image",
           "settings": {
-            "collection": "velodrom-pockets-collection",
-            "title": "POCKET COLLECTION",
-            "description": ""
+            "image": "shopify:\/\/shop_images\/3texploroapex.jpg",
+            "title": "3T EXPLORO AXS APEX",
+            "description": "",
+            "image_link": "shopify:\/\/collections\/3t-exploro-axs-apex",
+            "image_padding": false
           }
         },
         "60ca8f96-d519-40d3-b398-9c36b6b563ea": {
@@ -263,7 +265,7 @@
       "block_order": [
         "d5114076-50ea-4407-b011-53683a1d9e29",
         "4eb853ee-52af-4bd2-9f38-db95856df3ac",
-        "template--14546355290246__e4ad0f87-69fc-4ab1-a711-1a7b96eabf86-16686085946a160927-2",
+        "af463e46-c055-4df5-9a05-cd4b1c6bdf3a",
         "60ca8f96-d519-40d3-b398-9c36b6b563ea",
         "0e727a75-b267-40ec-9570-d94f0502dea7"
       ],
