@@ -216,7 +216,7 @@
         "d5114076-50ea-4407-b011-53683a1d9e29": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepageyeti.webp",
+            "image": "shopify:\/\/shop_images\/yetihomepage2.webp",
             "title": "YETI",
             "description": "<p>Discover the new accesories from YETI<\/p>",
             "image_link": "shopify:\/\/collections\/yeti",
@@ -226,10 +226,10 @@
         "4eb853ee-52af-4bd2-9f38-db95856df3ac": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lasers-MENU.webp",
-            "title": "LASER IN STORE",
+            "image": "shopify:\/\/shop_images\/8485CCCA-6B10-488D-AA44-41F131BF361D.jpg",
+            "title": "NNORMAL",
             "description": "",
-            "image_link": "shopify:\/\/collections\/laser-barcelona",
+            "image_link": "shopify:\/\/collections\/nnormal",
             "image_padding": false
           }
         },
