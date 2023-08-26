@@ -198,6 +198,62 @@
         "padding_bottom": 36
       }
     },
+    "0c51e748-ba08-476b-b81d-dc929a1a184f": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ICON-001.png",
+            "title": "FAST NATIONAL SHIPPING",
+            "text": "<p>24-48h shipping to Spain<br\/>Pick-up available at out stores<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ICON-003.webp",
+            "title": "INTERNATIONAL SHIPPING",
+            "text": "<p>Shipping to anywhere in the world with express options at checkout<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ICON-002.webp",
+            "title": "FREE SIZE EXCHANGE",
+            "text": "<p>Free size exhange when shipping to\/from Europe<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0",
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1",
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86": {
       "type": "collage",
       "blocks": {
@@ -270,62 +326,6 @@
         "padding_bottom": 36
       }
     },
-    "0c51e748-ba08-476b-b81d-dc929a1a184f": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ICON-001.png",
-            "title": "FAST NATIONAL SHIPPING",
-            "text": "<p>24-48h shipping to Spain<br\/>Pick-up available at out stores<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ICON-003.webp",
-            "title": "INTERNATIONAL SHIPPING",
-            "text": "<p>Shipping to anywhere in the world with express options at checkout<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ICON-002.webp",
-            "title": "FREE SIZE EXCHANGE",
-            "text": "<p>Free size exhange when shipping to\/from Europe<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0",
-        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1",
-        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "circle",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "3f450f81-8ef5-4cb4-9131-0db3d899a279": {
       "type": "collection-list",
       "blocks": {
@@ -365,12 +365,6 @@
             "collection": "ndlss"
           }
         },
-        "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "tactic"
-          }
-        },
         "7f36f87d-a7d3-461e-9530-37a8061668f2": {
           "type": "featured_collection",
           "settings": {
@@ -395,6 +389,12 @@
           "settings": {
             "collection": "brandblack"
           }
+        },
+        "92675594-4494-4214-80d8-0f6d780ba6ec": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mission-workshop"
+          }
         }
       },
       "block_order": [
@@ -404,11 +404,11 @@
         "13eed67e-291a-482d-9bc5-59ba331f525e",
         "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-1",
         "7b87dc12-4e12-4daa-bf45-03a9f9645e67",
-        "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-2",
         "7f36f87d-a7d3-461e-9530-37a8061668f2",
         "e909b6fe-416a-4f6e-bb26-045ea4944158",
         "c3fb98a3-d7cc-42f7-bd77-4104b2d33926",
-        "a6d7fb5f-0391-4a4f-b1dc-b765b39a1dd4"
+        "a6d7fb5f-0391-4a4f-b1dc-b765b39a1dd4",
+        "92675594-4494-4214-80d8-0f6d780ba6ec"
       ],
       "settings": {
         "title": "APPAREL BRANDS",
@@ -419,6 +419,33 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "85bca2a0-303e-464e-8f28-8945a53e06e4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "VELODROM VCC",
+        "heading_size": "h2",
+        "description": "<p>DISCOVER THE VELODROM VCC COLLECTION<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "velodrom-vcc",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -510,44 +537,17 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "85bca2a0-303e-464e-8f28-8945a53e06e4": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "VELODROM VCC",
-        "heading_size": "h2",
-        "description": "<p>DISCOVER THE VELODROM VCC COLLECTION<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "velodrom-vcc",
-        "products_to_show": 5,
-        "columns_desktop": 5,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "e0911e38-e306-463a-9877-cdf1960a5028",
     "81eb5dff-ea73-49d9-945f-59d6b676ce36",
     "collage",
-    "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86",
     "0c51e748-ba08-476b-b81d-dc929a1a184f",
+    "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86",
     "3f450f81-8ef5-4cb4-9131-0db3d899a279",
+    "85bca2a0-303e-464e-8f28-8945a53e06e4",
     "4c322433-45f4-4925-8736-535bb7314d61",
-    "82567d4d-8ae0-45d7-a3be-82328b8203f7",
-    "85bca2a0-303e-464e-8f28-8945a53e06e4"
+    "82567d4d-8ae0-45d7-a3be-82328b8203f7"
   ]
 }
