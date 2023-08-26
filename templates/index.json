@@ -371,12 +371,6 @@
             "collection": "fingerscrossed"
           }
         },
-        "e909b6fe-416a-4f6e-bb26-045ea4944158": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "erstwhile"
-          }
-        },
         "c3fb98a3-d7cc-42f7-bd77-4104b2d33926": {
           "type": "featured_collection",
           "disabled": true,
@@ -395,6 +389,12 @@
           "settings": {
             "collection": "mission-workshop"
           }
+        },
+        "e00c16b1-ea2e-4d40-a7e4-fb23c6d77fb3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
@@ -405,10 +405,10 @@
         "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-1",
         "7b87dc12-4e12-4daa-bf45-03a9f9645e67",
         "7f36f87d-a7d3-461e-9530-37a8061668f2",
-        "e909b6fe-416a-4f6e-bb26-045ea4944158",
         "c3fb98a3-d7cc-42f7-bd77-4104b2d33926",
         "a6d7fb5f-0391-4a4f-b1dc-b765b39a1dd4",
-        "92675594-4494-4214-80d8-0f6d780ba6ec"
+        "92675594-4494-4214-80d8-0f6d780ba6ec",
+        "e00c16b1-ea2e-4d40-a7e4-fb23c6d77fb3"
       ],
       "settings": {
         "title": "APPAREL BRANDS",
