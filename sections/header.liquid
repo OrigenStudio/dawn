@@ -28,12 +28,15 @@
   align-items: center;
   padding: 0 1.5rem;
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  height: 60px
 }
+
 @media screen and (min-width: 990px) {
   .header__common {
     grid-template-areas: "heading nav icons";
     grid-template-columns: 1fr auto auto;
     padding: 0 5rem;
+    height: auto
   }
 }
 
@@ -184,7 +187,7 @@
 header-drawer {
     grid-area: left-icon;
     justify-self: start;
-    margin-left: -1.2rem;
+    margin-left: -0.5rem; /* Move hamburguer and close icon more to the right */
 }
 
 .header__heading-logo {
@@ -199,12 +202,14 @@ header-drawer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: 0.5rem; /* Move right icons more to the left */
 }
 
 @media screen and (min-width: 990px) {
     header-drawer {
         display: none;
     }
+
     .header__common-account {
         display: block;
     }
