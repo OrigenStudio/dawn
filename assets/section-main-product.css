@@ -312,6 +312,8 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   margin-bottom: 1rem;
+  color:#FFFFFF;
+  background-color:#000000;
 }
 
 .no-js .product-form__submit.button--secondary {
@@ -409,7 +411,7 @@ a.product__text {
 }
 
 .product__title > h1 {
-  font-size: calc(var(--font-heading-scale) * 2.5rem);
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
   text-transform: uppercase;
 }
 
