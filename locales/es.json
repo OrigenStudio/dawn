@@ -181,8 +181,8 @@
       "inventory_only_on_warehouse": "Producto no disponible para recoger hoy en tienda",
       "sku": "SKU",
       "pay_deposit": "PAGAR DEPÓSITO",
-      "deposit": "Depósito:",
-      "full_price": "Precio Total:"
+      "deposit": "Depósito de",
+      "full_price": ""
     },
     "modal": {
       "label": "Galería multimedia"

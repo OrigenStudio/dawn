@@ -18,13 +18,20 @@
   text-align: right;
 }
 
-.price .price-item {
+.price .price-item { /* Total Price */
   display: inline-block;
   margin: 0 1rem 0 0;
+  font-weight: bold;
 }
 
-.price__regular .price-item--regular {
+.price__regular .price-item--regular { 
   margin-right: 0;
+}
+
+.price__deposit .price-item--deposit { /* Deposit Price */
+  font-size: 1.4rem;
+  font-weight: lighter;
+  /* text-decoration: underline; (in case we link the Deposit Note here)*/
 }
 
 .price:not(.price--show-badge) .price-item--last:last-of-type {
@@ -108,6 +115,6 @@
   color: rgba(var(--color-foreground), 0.7);
 }
 
-.deposit-note {
+.deposit-note { 
   font-weight: 900;
 }
