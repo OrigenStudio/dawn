@@ -1,15 +1,17 @@
 {
-  "parent": "index.json",
-  "context": {
-    "market": "es"
+  "parent":"index.json",
+  "context":{
+    "market":"es"
   },
-  "sections": {
-    "e0911e38-e306-463a-9877-cdf1960a5028": {
-      "settings": {
+  "sections":{
+    "e0911e38-e306-463a-9877-cdf1960a5028":{
+      "settings":{
+        
       },
-      "blocks": {
-        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf": {
-          "settings": {
+      "blocks":{
+        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf":{
+          "settings":{
+            
           }
         }
       }
