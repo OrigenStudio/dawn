@@ -3,6 +3,24 @@
     "e0911e38-e306-463a-9877-cdf1960a5028": {
       "type": "slideshow",
       "blocks": {
+        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230913_PNS_MECHANISM_AW2336326.jpg",
+            "heading": "MECHANISM AW23",
+            "heading_size": "h0",
+            "subheading": "PAS NORMAL STUDIOS Mechanism Collection: Balancing performance and aesthetics for the days that matter the most.",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/pas-normal-studios-pas-capsule-ss23",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 60,
+            "color_scheme": "accent-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "0f7b703a-7798-417b-aa4a-5030c3773521": {
           "type": "slide",
           "settings": {
@@ -57,24 +75,6 @@
             "text_alignment_mobile": "center"
           }
         },
-        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/230913_PNS_MECHANISM_AW2336326.jpg",
-            "heading": "MECHANISM AW23",
-            "heading_size": "h0",
-            "subheading": "PAS NORMAL STUDIOS Mechanism Collection is race-fit, with carefully selected technical fabrics.",
-            "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/pas-normal-studios-pas-capsule-ss23",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 60,
-            "color_scheme": "accent-1",
-            "text_alignment_mobile": "center"
-          }
-        },
         "97e73aef-1ac7-4d7c-babc-783ca2d37e4f": {
           "type": "slide",
           "settings": {
@@ -95,10 +95,10 @@
         }
       },
       "block_order": [
+        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1",
         "0f7b703a-7798-417b-aa4a-5030c3773521",
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0",
         "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf",
-        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1",
         "97e73aef-1ac7-4d7c-babc-783ca2d37e4f"
       ],
       "settings": {
