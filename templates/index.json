@@ -16,7 +16,7 @@
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 60,
+            "image_overlay_opacity": 30,
             "color_scheme": "accent-1",
             "text_alignment_mobile": "center"
           }
