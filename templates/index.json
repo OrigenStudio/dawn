@@ -1,418 +1,418 @@
 {
-  "sections":{
-    "e0911e38-e306-463a-9877-cdf1960a5028":{
-      "type":"slideshow",
-      "blocks":{
-        "0f7b703a-7798-417b-aa4a-5030c3773521":{
-          "type":"slide",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/PNS_FIZIK_2023_WHITE_2033-hd.jpg",
-            "heading":"PAS NORMAL STUDIOS X FIZIK",
-            "heading_size":"h0",
-            "subheading":"The first collaboration with Italian cycling shoe innovator Fizik is here: the Ferox Carbon.",
-            "button_label":"Shop Now",
-            "link":"shopify:\/\/products\/fizik-x-pas-normal-studios-gravel-mtb-cycling-shoes-vento-ferox-carbon-off-white",
-            "button_style_secondary":false,
-            "box_align":"middle-left",
-            "show_text_box":false,
-            "text_alignment":"center",
-            "image_overlay_opacity":40,
-            "color_scheme":"background-1",
-            "text_alignment_mobile":"center"
+  "sections": {
+    "e0911e38-e306-463a-9877-cdf1960a5028": {
+      "type": "slideshow",
+      "blocks": {
+        "0f7b703a-7798-417b-aa4a-5030c3773521": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PNS_FIZIK_2023_WHITE_2033-hd.jpg",
+            "heading": "PAS NORMAL STUDIOS X FIZIK",
+            "heading_size": "h0",
+            "subheading": "The first collaboration with Italian cycling shoe innovator Fizik is here: the Ferox Carbon.",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/products\/fizik-x-pas-normal-studios-gravel-mtb-cycling-shoes-vento-ferox-carbon-off-white",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 40,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         },
-        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0":{
-          "type":"slide",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/PNS_MECH_LateDrop_2023_04_20605-hd.jpg",
-            "heading":"Mechanism Late Drop",
-            "heading_size":"h0",
-            "subheading":"A new take on Pas Normal Studios classics",
-            "button_label":"Shop Collection",
-            "link":"shopify:\/\/collections\/pas-normal-studios-mechanism-late-drop-ss23",
-            "button_style_secondary":false,
-            "box_align":"middle-left",
-            "show_text_box":false,
-            "text_alignment":"center",
-            "image_overlay_opacity":10,
-            "color_scheme":"background-1",
-            "text_alignment_mobile":"center"
+        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PNS_MECH_LateDrop_2023_04_20605-hd.jpg",
+            "heading": "Mechanism Late Drop",
+            "heading_size": "h0",
+            "subheading": "A new take on Pas Normal Studios classics",
+            "button_label": "Shop Collection",
+            "link": "shopify:\/\/collections\/pas-normal-studios-mechanism-late-drop-ss23",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         },
-        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf":{
-          "type":"slide",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/ROAD-5758_Tarmac_SL8_SW_Frameset_LC_02.jpg",
-            "heading":"SPECIALIZED TARMAC SL8",
-            "heading_size":"h0",
-            "subheading":"One Bike to Rule Them All. Preorder yours NOW.",
-            "button_label":"Shop Now",
-            "link":"shopify:\/\/collections\/specialized-sworks-tarmac-sl8-2023",
-            "button_style_secondary":false,
-            "box_align":"middle-left",
-            "show_text_box":false,
-            "text_alignment":"center",
-            "image_overlay_opacity":10,
-            "color_scheme":"background-1",
-            "text_alignment_mobile":"center"
+        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ROAD-5758_Tarmac_SL8_SW_Frameset_LC_02.jpg",
+            "heading": "SPECIALIZED TARMAC SL8",
+            "heading_size": "h0",
+            "subheading": "One Bike to Rule Them All. Preorder yours NOW.",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/specialized-sworks-tarmac-sl8-2023",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         },
-        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1":{
-          "type":"slide",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/sliderpas.webp",
-            "heading":"PAS CAPSULE COLLECTION",
-            "heading_size":"h0",
-            "subheading":"PAS NORMAL STUDIOS",
-            "button_label":"Shop Now",
-            "link":"shopify:\/\/collections\/pas-normal-studios-pas-capsule-ss23",
-            "button_style_secondary":false,
-            "box_align":"middle-left",
-            "show_text_box":false,
-            "text_alignment":"center",
-            "image_overlay_opacity":60,
-            "color_scheme":"accent-1",
-            "text_alignment_mobile":"center"
+        "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230913_PNS_MECHANISM_AW2336326.jpg",
+            "heading": "MECHANISM AW23",
+            "heading_size": "h0",
+            "subheading": "PAS NORMAL STUDIOS Mechanism Collection is race-fit, with carefully selected technical fabrics.",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/pas-normal-studios-pas-capsule-ss23",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 60,
+            "color_scheme": "accent-1",
+            "text_alignment_mobile": "center"
           }
         },
-        "97e73aef-1ac7-4d7c-babc-783ca2d37e4f":{
-          "type":"slide",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/VELODROM_SUMMER_VCC_COLLECTION_03.jpg",
-            "heading":"VELODROM VCC MOSAIC JERSEY",
-            "heading_size":"h1",
-            "subheading":"Nuestra colección VCC evoluciona y se hace aún más exclusiva",
-            "button_label":"Shop Now",
-            "link":"shopify:\/\/collections\/vcc-mosaic-limited-drop-collection",
-            "button_style_secondary":false,
-            "box_align":"middle-left",
-            "show_text_box":false,
-            "text_alignment":"left",
-            "image_overlay_opacity":10,
-            "color_scheme":"background-1",
-            "text_alignment_mobile":"center"
+        "97e73aef-1ac7-4d7c-babc-783ca2d37e4f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VELODROM_SUMMER_VCC_COLLECTION_03.jpg",
+            "heading": "VELODROM VCC MOSAIC JERSEY",
+            "heading_size": "h1",
+            "subheading": "Nuestra colección VCC evoluciona y se hace aún más exclusiva",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/vcc-mosaic-limited-drop-collection",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 10,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         }
       },
-      "block_order":[
+      "block_order": [
         "0f7b703a-7798-417b-aa4a-5030c3773521",
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0",
         "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf",
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-1",
         "97e73aef-1ac7-4d7c-babc-783ca2d37e4f"
       ],
-      "settings":{
-        "layout":"full_bleed",
-        "slide_height":"large",
-        "slider_visual":"none",
-        "auto_rotate":true,
-        "change_slides_speed":9,
-        "show_text_below":false,
-        "accessibility_info":"Slideshow about our brand"
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "none",
+        "auto_rotate": true,
+        "change_slides_speed": 9,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
-    "4b71bcb2-dd4d-4161-b73f-6f13e87a1559":{
-      "type":"custom-liquid",
-      "settings":{
-        "custom_liquid":"<!-- TrustBox widget - Horizontal -->\n<div class=\"trustpilot-widget\" data-locale=\"en-GB\" data-template-id=\"5406e65db0d04a09e042d5fc\" data-businessunit-id=\"638999ace0b13a628a9acd65\" data-style-height=\"28px\" data-style-width=\"100%\" data-theme=\"light\">\n  <a href=\"https:\/\/uk.trustpilot.com\/review\/velodrom.cc\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n<\/div>\n<!-- End TrustBox widget -->",
-        "color_scheme":"background-1",
-        "padding_top":20,
-        "padding_bottom":4
+    "4b71bcb2-dd4d-4161-b73f-6f13e87a1559": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- TrustBox widget - Horizontal -->\n<div class=\"trustpilot-widget\" data-locale=\"en-GB\" data-template-id=\"5406e65db0d04a09e042d5fc\" data-businessunit-id=\"638999ace0b13a628a9acd65\" data-style-height=\"28px\" data-style-width=\"100%\" data-theme=\"light\">\n  <a href=\"https:\/\/uk.trustpilot.com\/review\/velodrom.cc\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n<\/div>\n<!-- End TrustBox widget -->",
+        "color_scheme": "background-1",
+        "padding_top": 20,
+        "padding_bottom": 4
       }
     },
-    "169478961070cb4c46":{
-      "type":"apps",
-      "settings":{
-        "include_margins":true
+    "169478961070cb4c46": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
       }
     },
-    "81eb5dff-ea73-49d9-945f-59d6b676ce36":{
-      "type":"featured-collection",
-      "settings":{
-        "title":"NEW ARRIVALS",
-        "heading_size":"h2",
-        "description":"<p>Discover the new products arriving to our store.<\/p>",
-        "show_description":false,
-        "description_style":"body",
-        "collection":"new-arrivals",
-        "products_to_show":5,
-        "columns_desktop":5,
-        "full_width":false,
-        "show_view_all":true,
-        "view_all_style":"link",
-        "enable_desktop_slider":true,
-        "color_scheme":"background-1",
-        "image_ratio":"square",
-        "show_secondary_image":true,
-        "show_vendor":false,
-        "show_rating":false,
-        "enable_quick_add":false,
-        "columns_mobile":"2",
-        "swipe_on_mobile":true,
-        "padding_top":36,
-        "padding_bottom":0
+    "81eb5dff-ea73-49d9-945f-59d6b676ce36": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "NEW ARRIVALS",
+        "heading_size": "h2",
+        "description": "<p>Discover the new products arriving to our store.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 0
       }
     },
-    "collage":{
-      "type":"collage",
-      "blocks":{
-        "dd696413-cfea-4a69-abb3-3a225aa4ba27":{
-          "type":"image",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/HOME-VCC-25OFF.webp",
-            "title":"25€ OFF IN YOUR FIRST ORDER",
-            "description":"<p>SIGN-UP FOR OUR NEWSLETTER - CLICK HERE<\/p>",
-            "image_link":"shopify:\/\/pages\/newsletter-signup",
-            "image_padding":false
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "dd696413-cfea-4a69-abb3-3a225aa4ba27": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HOME-VCC-25OFF.webp",
+            "title": "25€ OFF IN YOUR FIRST ORDER",
+            "description": "<p>SIGN-UP FOR OUR NEWSLETTER - CLICK HERE<\/p>",
+            "image_link": "shopify:\/\/pages\/newsletter-signup",
+            "image_padding": false
           }
         },
-        "462acf69-b1e0-4d38-8d88-063b4121decd":{
-          "type":"product",
-          "settings":{
-            "product":"alba-optics-eyewear-anvma-iii-vibe-vzum™-plasma",
-            "second_image":false
+        "462acf69-b1e0-4d38-8d88-063b4121decd": {
+          "type": "product",
+          "settings": {
+            "product": "alba-optics-eyewear-anvma-iii-vibe-vzum™-plasma",
+            "second_image": false
           }
         },
-        "9b9687da-ffac-4110-b833-be5febe1ee0f":{
-          "type":"product",
-          "settings":{
-            "product":"yeti-rambler-18-oz-532-ml-bottle-with-chug-cap-camp-green",
-            "second_image":false
+        "9b9687da-ffac-4110-b833-be5febe1ee0f": {
+          "type": "product",
+          "settings": {
+            "product": "yeti-rambler-18-oz-532-ml-bottle-with-chug-cap-camp-green",
+            "second_image": false
           }
         },
-        "1aff5b4d-960c-4267-943d-98feec21f5be":{
-          "type":"product",
-          "settings":{
-            "product":"nnormal-tomir-trail-shoes-beige",
-            "second_image":false
+        "1aff5b4d-960c-4267-943d-98feec21f5be": {
+          "type": "product",
+          "settings": {
+            "product": "nnormal-tomir-trail-shoes-beige",
+            "second_image": false
           }
         },
-        "5325ee7e-c5b3-4f08-a98d-9cc03444d44d":{
-          "type":"product",
-          "settings":{
-            "product":"specialized-sworks-tarmac-sl8-2023-road-frameset-satin-carbon-rtp-chameleon-snake-eye",
-            "second_image":false
+        "5325ee7e-c5b3-4f08-a98d-9cc03444d44d": {
+          "type": "product",
+          "settings": {
+            "product": "specialized-sworks-tarmac-sl8-2023-road-frameset-satin-carbon-rtp-chameleon-snake-eye",
+            "second_image": false
           }
         }
       },
-      "block_order":[
+      "block_order": [
         "dd696413-cfea-4a69-abb3-3a225aa4ba27",
         "462acf69-b1e0-4d38-8d88-063b4121decd",
         "9b9687da-ffac-4110-b833-be5febe1ee0f",
         "1aff5b4d-960c-4267-943d-98feec21f5be",
         "5325ee7e-c5b3-4f08-a98d-9cc03444d44d"
       ],
-      "settings":{
-        "heading":"",
-        "heading_size":"h2",
-        "desktop_layout":"left",
-        "mobile_layout":"collage",
-        "card_styles":"product-card-wrapper",
-        "color_scheme":"background-1",
-        "padding_top":36,
-        "padding_bottom":36
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86":{
-      "type":"collage",
-      "blocks":{
-        "d5114076-50ea-4407-b011-53683a1d9e29":{
-          "type":"image",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/yetihomepage2.webp",
-            "title":"YETI",
-            "description":"<p>Discover the new accesories from YETI<\/p>",
-            "image_link":"shopify:\/\/collections\/yeti",
-            "image_padding":false
+    "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86": {
+      "type": "collage",
+      "blocks": {
+        "d5114076-50ea-4407-b011-53683a1d9e29": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/yetihomepage2.webp",
+            "title": "YETI",
+            "description": "<p>Discover the new accesories from YETI<\/p>",
+            "image_link": "shopify:\/\/collections\/yeti",
+            "image_padding": false
           }
         },
-        "4eb853ee-52af-4bd2-9f38-db95856df3ac":{
-          "type":"image",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/8485CCCA-6B10-488D-AA44-41F131BF361D.jpg",
-            "title":"NNORMAL",
-            "description":"",
-            "image_link":"shopify:\/\/collections\/nnormal",
-            "image_padding":false
+        "4eb853ee-52af-4bd2-9f38-db95856df3ac": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8485CCCA-6B10-488D-AA44-41F131BF361D.jpg",
+            "title": "NNORMAL",
+            "description": "",
+            "image_link": "shopify:\/\/collections\/nnormal",
+            "image_padding": false
           }
         },
-        "af463e46-c055-4df5-9a05-cd4b1c6bdf3a":{
-          "type":"image",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/3texploroapex.jpg",
-            "title":"3T EXPLORO AXS APEX",
-            "description":"",
-            "image_link":"shopify:\/\/collections\/3t-exploro-axs-apex",
-            "image_padding":false
+        "af463e46-c055-4df5-9a05-cd4b1c6bdf3a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3texploroapex.jpg",
+            "title": "3T EXPLORO AXS APEX",
+            "description": "",
+            "image_link": "shopify:\/\/collections\/3t-exploro-axs-apex",
+            "image_padding": false
           }
         },
-        "60ca8f96-d519-40d3-b398-9c36b6b563ea":{
-          "type":"image",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/buildyourdreambike.webp",
-            "title":"BUILD YOUR DREAM BIKE",
-            "description":"",
-            "image_link":"https:\/\/velodrom.dreambikebuilder.com\/",
-            "image_padding":false
+        "60ca8f96-d519-40d3-b398-9c36b6b563ea": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/buildyourdreambike.webp",
+            "title": "BUILD YOUR DREAM BIKE",
+            "description": "",
+            "image_link": "https:\/\/velodrom.dreambikebuilder.com\/",
+            "image_padding": false
           }
         },
-        "f72ee634-5f22-4a2a-a337-2122f056a44b":{
-          "type":"image",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/sunglassesalbaoptics.webp",
-            "title":"Shop Sunglasses",
-            "description":"",
-            "image_link":"https:\/\/www.velodrom.cc\/collections\/eyewear",
-            "image_padding":false
+        "f72ee634-5f22-4a2a-a337-2122f056a44b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sunglassesalbaoptics.webp",
+            "title": "Shop Sunglasses",
+            "description": "",
+            "image_link": "https:\/\/www.velodrom.cc\/collections\/eyewear",
+            "image_padding": false
           }
         }
       },
-      "block_order":[
+      "block_order": [
         "d5114076-50ea-4407-b011-53683a1d9e29",
         "4eb853ee-52af-4bd2-9f38-db95856df3ac",
         "af463e46-c055-4df5-9a05-cd4b1c6bdf3a",
         "60ca8f96-d519-40d3-b398-9c36b6b563ea",
         "f72ee634-5f22-4a2a-a337-2122f056a44b"
       ],
-      "settings":{
-        "heading":"",
-        "heading_size":"h1",
-        "desktop_layout":"right",
-        "mobile_layout":"collage",
-        "card_styles":"product-card-wrapper",
-        "color_scheme":"background-1",
-        "padding_top":36,
-        "padding_bottom":36
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "right",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "0c51e748-ba08-476b-b81d-dc929a1a184f":{
-      "type":"multicolumn",
-      "blocks":{
-        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0":{
-          "type":"column",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/ICON-001.png",
-            "title":"FAST NATIONAL SHIPPING",
-            "text":"<p>24-48h shipping to Spain<br\/>Pick-up available at out stores<\/p>",
-            "link_label":"",
-            "link":""
+    "0c51e748-ba08-476b-b81d-dc929a1a184f": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ICON-001.png",
+            "title": "FAST NATIONAL SHIPPING",
+            "text": "<p>24-48h shipping to Spain<br\/>Pick-up available at out stores<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1":{
-          "type":"column",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/ICON-003.webp",
-            "title":"INTERNATIONAL SHIPPING",
-            "text":"<p>Shipping to anywhere in the world with express options at checkout<\/p>",
-            "link_label":"",
-            "link":""
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ICON-003.webp",
+            "title": "INTERNATIONAL SHIPPING",
+            "text": "<p>Shipping to anywhere in the world with express options at checkout<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2":{
-          "type":"column",
-          "settings":{
-            "image":"shopify:\/\/shop_images\/ICON-002.webp",
-            "title":"FREE SIZE EXCHANGE",
-            "text":"<p>Free size exhange when shipping to\/from Europe<\/p>",
-            "link_label":"",
-            "link":""
+        "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ICON-002.webp",
+            "title": "FREE SIZE EXCHANGE",
+            "text": "<p>Free size exhange when shipping to\/from Europe<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
-      "block_order":[
+      "block_order": [
         "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-0",
         "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-1",
         "template--14546355290246__0c51e748-ba08-476b-b81d-dc929a1a184f-1675330771f636aab3-2"
       ],
-      "settings":{
-        "title":"",
-        "heading_size":"h1",
-        "image_width":"third",
-        "image_ratio":"circle",
-        "columns_desktop":3,
-        "column_alignment":"center",
-        "background_style":"primary",
-        "button_label":"",
-        "button_link":"",
-        "color_scheme":"background-1",
-        "columns_mobile":"1",
-        "swipe_on_mobile":true,
-        "padding_top":36,
-        "padding_bottom":36
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "3f450f81-8ef5-4cb4-9131-0db3d899a279":{
-      "type":"collection-list",
-      "blocks":{
-        "90033165-845c-4b78-af1b-0d41d8db1735":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"pas-normal-studios"
+    "3f450f81-8ef5-4cb4-9131-0db3d899a279": {
+      "type": "collection-list",
+      "blocks": {
+        "90033165-845c-4b78-af1b-0d41d8db1735": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pas-normal-studios"
           }
         },
-        "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-0":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"maap"
+        "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "maap"
           }
         },
-        "5487b3d9-fa30-4e56-98c5-6bf1d66c1348":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"rapha"
+        "5487b3d9-fa30-4e56-98c5-6bf1d66c1348": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rapha"
           }
         },
-        "13eed67e-291a-482d-9bc5-59ba331f525e":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"velodrom-vcc"
+        "13eed67e-291a-482d-9bc5-59ba331f525e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "velodrom-vcc"
           }
         },
-        "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-1":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"cafe-du-cycliste"
+        "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cafe-du-cycliste"
           }
         },
-        "7b87dc12-4e12-4daa-bf45-03a9f9645e67":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"ndlss"
+        "7b87dc12-4e12-4daa-bf45-03a9f9645e67": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ndlss"
           }
         },
-        "7f36f87d-a7d3-461e-9530-37a8061668f2":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"fingerscrossed"
+        "7f36f87d-a7d3-461e-9530-37a8061668f2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fingerscrossed"
           }
         },
-        "c3fb98a3-d7cc-42f7-bd77-4104b2d33926":{
-          "type":"featured_collection",
-          "disabled":true,
-          "settings":{
-            "collection":"laser-barcelona"
+        "c3fb98a3-d7cc-42f7-bd77-4104b2d33926": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "laser-barcelona"
           }
         },
-        "a6d7fb5f-0391-4a4f-b1dc-b765b39a1dd4":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"brandblack"
+        "a6d7fb5f-0391-4a4f-b1dc-b765b39a1dd4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brandblack"
           }
         },
-        "92675594-4494-4214-80d8-0f6d780ba6ec":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"mission-workshop"
+        "92675594-4494-4214-80d8-0f6d780ba6ec": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mission-workshop"
           }
         },
-        "e00c16b1-ea2e-4d40-a7e4-fb23c6d77fb3":{
-          "type":"featured_collection",
-          "settings":{
-            "collection":"nnormal"
+        "e00c16b1-ea2e-4d40-a7e4-fb23c6d77fb3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nnormal"
           }
         }
       },
-      "block_order":[
+      "block_order": [
         "90033165-845c-4b78-af1b-0d41d8db1735",
         "template--14546355290246__3f450f81-8ef5-4cb4-9131-0db3d899a279-1668608594fd6afd40-0",
         "5487b3d9-fa30-4e56-98c5-6bf1d66c1348",
@@ -425,136 +425,136 @@
         "92675594-4494-4214-80d8-0f6d780ba6ec",
         "e00c16b1-ea2e-4d40-a7e4-fb23c6d77fb3"
       ],
-      "settings":{
-        "title":"APPAREL BRANDS",
-        "heading_size":"h2",
-        "image_ratio":"adapt",
-        "columns_desktop":5,
-        "color_scheme":"background-1",
-        "show_view_all":false,
-        "columns_mobile":"1",
-        "swipe_on_mobile":true,
-        "padding_top":36,
-        "padding_bottom":36
+      "settings": {
+        "title": "APPAREL BRANDS",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "85bca2a0-303e-464e-8f28-8945a53e06e4":{
-      "type":"featured-collection",
-      "settings":{
-        "title":"VELODROM VCC",
-        "heading_size":"h2",
-        "description":"<p>DISCOVER THE VELODROM VCC COLLECTION<\/p>",
-        "show_description":false,
-        "description_style":"body",
-        "collection":"velodrom-vcc",
-        "products_to_show":5,
-        "columns_desktop":5,
-        "full_width":false,
-        "show_view_all":true,
-        "view_all_style":"link",
-        "enable_desktop_slider":false,
-        "color_scheme":"background-1",
-        "image_ratio":"square",
-        "show_secondary_image":true,
-        "show_vendor":false,
-        "show_rating":false,
-        "enable_quick_add":false,
-        "columns_mobile":"2",
-        "swipe_on_mobile":false,
-        "padding_top":36,
-        "padding_bottom":36
+    "85bca2a0-303e-464e-8f28-8945a53e06e4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "VELODROM VCC",
+        "heading_size": "h2",
+        "description": "<p>DISCOVER THE VELODROM VCC COLLECTION<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "velodrom-vcc",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "4c322433-45f4-4925-8736-535bb7314d61":{
-      "type":"image-with-text",
-      "blocks":{
-        "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-0":{
-          "type":"heading",
-          "settings":{
-            "heading":"BRANDBLACK",
-            "heading_size":"h1"
+    "4c322433-45f4-4925-8736-535bb7314d61": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "BRANDBLACK",
+            "heading_size": "h1"
           }
         },
-        "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-1":{
-          "type":"text",
-          "settings":{
-            "text":"<p>BE RARE. Brandblack is the ultimate shoe brand.<\/p>",
-            "text_style":"body"
+        "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>BE RARE. Brandblack is the ultimate shoe brand.<\/p>",
+            "text_style": "body"
           }
         },
-        "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-2":{
-          "type":"button",
-          "settings":{
-            "button_label":"Shop Now",
-            "button_link":"shopify:\/\/collections\/brandblack"
+        "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/brandblack"
           }
         }
       },
-      "block_order":[
+      "block_order": [
         "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-0",
         "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-1",
         "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-2"
       ],
-      "settings":{
-        "image":"shopify:\/\/shop_images\/BRANDBLACK_SHOES23_a035159a-4c68-4ae2-abba-ae0436c2b088.webp",
-        "height":"adapt",
-        "desktop_image_width":"medium",
-        "layout":"image_first",
-        "desktop_content_position":"middle",
-        "desktop_content_alignment":"left",
-        "content_layout":"no-overlap",
-        "color_scheme":"background-1",
-        "mobile_content_alignment":"left",
-        "padding_top":36,
-        "padding_bottom":36
+      "settings": {
+        "image": "shopify:\/\/shop_images\/BRANDBLACK_SHOES23_a035159a-4c68-4ae2-abba-ae0436c2b088.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "82567d4d-8ae0-45d7-a3be-82328b8203f7":{
-      "type":"image-with-text",
-      "blocks":{
-        "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-0":{
-          "type":"heading",
-          "settings":{
-            "heading":"HAMMERHEAD KAROO",
-            "heading_size":"h1"
+    "82567d4d-8ae0-45d7-a3be-82328b8203f7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "HAMMERHEAD KAROO",
+            "heading_size": "h1"
           }
         },
-        "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-1":{
-          "type":"text",
-          "settings":{
-            "text":"<p>Available now in Velodrom. Stay ahead of the competition with Hammerhead Karoo.<\/p>",
-            "text_style":"body"
+        "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Available now in Velodrom. Stay ahead of the competition with Hammerhead Karoo.<\/p>",
+            "text_style": "body"
           }
         },
-        "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-2":{
-          "type":"button",
-          "settings":{
-            "button_label":"Shop Now",
-            "button_link":"shopify:\/\/products\/hammerhead-karoo-2-cycling-gps"
+        "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/hammerhead-karoo-2-cycling-gps"
           }
         }
       },
-      "block_order":[
+      "block_order": [
         "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-0",
         "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-1",
         "template--14546355290246__82567d4d-8ae0-45d7-a3be-82328b8203f7-1668608684e46b6877-2"
       ],
-      "settings":{
-        "image":"shopify:\/\/shop_images\/hammerhead_karoo.jpg",
-        "height":"adapt",
-        "desktop_image_width":"medium",
-        "layout":"text_first",
-        "desktop_content_position":"middle",
-        "desktop_content_alignment":"left",
-        "content_layout":"no-overlap",
-        "color_scheme":"background-1",
-        "mobile_content_alignment":"left",
-        "padding_top":36,
-        "padding_bottom":36
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hammerhead_karoo.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
-  "order":[
+  "order": [
     "e0911e38-e306-463a-9877-cdf1960a5028",
     "4b71bcb2-dd4d-4161-b73f-6f13e87a1559",
     "169478961070cb4c46",
