@@ -15,7 +15,7 @@
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 20,
             "color_scheme": "accent-1",
             "text_alignment_mobile": "center"
@@ -33,7 +33,7 @@
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 40,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
@@ -51,7 +51,7 @@
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 10,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
@@ -69,7 +69,7 @@
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 10,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
