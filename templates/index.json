@@ -159,10 +159,10 @@
         "dd696413-cfea-4a69-abb3-3a225aa4ba27": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HOME-VCC-25OFF.webp",
-            "title": "10% OFF IN YOUR FIRST ORDER",
-            "description": "<p>SIGN-UP FOR OUR NEWSLETTER - CLICK HERE<\/p>",
-            "image_link": "shopify:\/\/pages\/newsletter-signup",
+            "image": "shopify:\/\/shop_images\/archive-sales.webp",
+            "title": "Our little Black Friday",
+            "description": "",
+            "image_link": "https:\/\/www.velodrom.cc\/collections\/de-stocks?tab=products&sort_by=discount&page=2",
             "image_padding": false
           }
         },
