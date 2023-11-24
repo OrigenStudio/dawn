@@ -137,7 +137,7 @@
         "description": "<p>Discover the new products arriving to our store.<\/p>",
         "show_description": false,
         "description_style": "subtitle",
-        "collection": "cycling-apparel-latest-launches",
+        "collection": "new-arrivals",
         "products_to_show": 8,
         "columns_desktop": 5,
         "full_width": true,
