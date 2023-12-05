@@ -1,5 +1,13 @@
 {
   "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
     "1701771595dbed1265": {
       "type": "apps",
       "blocks": {
@@ -35,8 +43,8 @@
               "long-sleeve-jerseys"
             ],
             "menu_shape": "square",
-            "menu_margin_top": 8,
-            "menu_margin_bottom": 8,
+            "menu_margin_top": 0,
+            "menu_margin_bottom": 0,
             "menu_gap": 20,
             "menu_width": 80,
             "menu_height": 80,
@@ -61,14 +69,6 @@
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
       }
     },
     "product-grid": {
@@ -108,8 +108,8 @@
     }
   },
   "order": [
-    "1701771595dbed1265",
     "banner",
+    "1701771595dbed1265",
     "product-grid",
     "168234674072c34e91"
   ]
