@@ -3,6 +3,30 @@
     "1701771595dbed1265": {
       "type": "apps",
       "blocks": {
+        "311c22f7-3085-4803-ac3c-2a8591f7f991": {
+          "type": "shopify:\/\/apps\/kobu-menu-highlight\/blocks\/app-block\/09834ec7-34c9-444c-86c6-fab2bbb63d27",
+          "settings": {
+            "menu_group": "Group 1",
+            "menu_shape": "circle",
+            "menu_margin_top": 8,
+            "menu_margin_bottom": 8,
+            "menu_gap": 20,
+            "menu_width": 80,
+            "menu_height": 80,
+            "menu_title_alignment": "flex-start",
+            "menu_title_font_size": 14,
+            "menu_title_font_weight": 4,
+            "menu_title_font_decoration": "none",
+            "menu_title_font_style": "normal",
+            "menu_mode": "slider",
+            "menu_position": "center",
+            "fixed_menu": "none",
+            "section_background": "",
+            "menu_display_max_width": "9999",
+            "custom_css": "",
+            "custom_js": ""
+          }
+        },
         "f97554b8-7aff-40e2-a8ec-ced71f288b4f": {
           "type": "shopify:\/\/apps\/kobu-menu-highlight\/blocks\/collection-conditional-block\/09834ec7-34c9-444c-86c6-fab2bbb63d27",
           "settings": {
@@ -17,7 +41,7 @@
             "menu_width": 80,
             "menu_height": 80,
             "menu_mode": "slider",
-            "menu_title_alignment": "center",
+            "menu_title_alignment": "flex-start",
             "menu_title_font_size": 14,
             "menu_title_font_weight": 4,
             "menu_title_font_decoration": "none",
@@ -32,6 +56,7 @@
         }
       },
       "block_order": [
+        "311c22f7-3085-4803-ac3c-2a8591f7f991",
         "f97554b8-7aff-40e2-a8ec-ced71f288b4f"
       ],
       "settings": {
