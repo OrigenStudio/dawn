@@ -34,7 +34,7 @@
             "fixed_menu": "none",
             "section_background": "",
             "menu_display_max_width": "9999",
-            "custom_css": "margin-left:40px;",
+            "custom_css": "margin-left:100px;",
             "custom_js": ""
           }
         }
