@@ -6,14 +6,14 @@
         "template--14546355290246__e0911e38-e306-463a-9877-cdf1960a5028-16686086846f083c6b-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vccclassic.jpg",
+            "image": "shopify:\/\/shop_images\/HEADERvccclassic.jpg",
             "heading": "VCC CLASSIC COLLECTION",
             "heading_size": "h0",
             "subheading": "Elegant. Modern. Striking. This is Velodrom VCC",
             "button_label": "SHOP VELODROM VCC CLASSIC COLLECTION",
             "link": "shopify:\/\/collections\/velodrom-vcc-classic-collection-aw23",
             "button_style_secondary": false,
-            "box_align": "bottom-right",
+            "box_align": "bottom-left",
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 10,
