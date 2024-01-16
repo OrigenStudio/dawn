@@ -1,17 +1,28 @@
 {
-  "parent":"index.json",
-  "context":{
-    "market":"es"
+  "parent": "index.json",
+  "context": {
+    "market": "es"
   },
-  "sections":{
-    "e0911e38-e306-463a-9877-cdf1960a5028":{
-      "settings":{
-        
+  "sections": {
+    "e0911e38-e306-463a-9877-cdf1960a5028": {
+      "settings": {
       },
-      "blocks":{
-        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf":{
-          "settings":{
-            
+      "blocks": {
+        "6242f8ed-ab30-4dd2-b15b-eb2f09cee6bf": {
+          "settings": {
+          }
+        }
+      }
+    },
+    "e4ad0f87-69fc-4ab1-a711-1a7b96eabf86": {
+      "settings": {
+      },
+      "blocks": {
+        "60ca8f96-d519-40d3-b398-9c36b6b563ea": {
+          "settings": {
+            "title": "VELODROM TRAVEL",
+            "image": "shopify:\/\/shop_images\/VELODROM-TRAVEL.webp",
+            "image_link": "https:\/\/global.velodrom.cc\/es\/viajes-velodrom-travel\/?_ga=2.249722115.48311679.1705310532-555138193.1696231143&_gac=1.191405400.1703784063.Cj0KCQiA1rSsBhDHARIsANB4EJbJhw4n7TzG7PDGUPVQzdHFtoArHJm1Bp064ci89R28Papan30eyc4aAnJ-EALw_wcB&_gl=1*xfk5jy*_ga*NTU1MTM4MTkzLjE2OTYyMzExNDM.*_ga_G1B1T881S4*MTcwNTM5MzMyNi4yMDguMS4xNzA1Mzk0MjAxLjAuMC4w"
           }
         }
       }
