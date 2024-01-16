@@ -222,7 +222,7 @@
         "d5114076-50ea-4407-b011-53683a1d9e29": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home-yeti.jpg",
+            "image": "shopify:\/\/shop_images\/homepage3.webp",
             "title": "YETI",
             "description": "<p>Discover the new accesories from YETI<\/p>",
             "image_link": "shopify:\/\/collections\/yeti",
@@ -499,7 +499,7 @@
         "template--14546355290246__4c322433-45f4-4925-8736-535bb7314d61-1668608684e46b6877-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BRANDBLACK_SHOES23_a035159a-4c68-4ae2-abba-ae0436c2b088.webp",
+        "image": "shopify:\/\/shop_images\/bb21_8f7a6caf-ceac-4339-b873-65692def7e68.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
