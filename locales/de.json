@@ -163,7 +163,16 @@
       "pay_deposit": "Anzahlung zahlen",
       "deposit": "Anzahlung von",
       "deposit_note": "HINWEIS ZUR ANZAHLUNG: Sie zahlen für dieses Produkt eine Anzahlung. Unser Team wird sich nach Erhalt der Anzahlung mit Ihnen in Verbindung setzen und das Produkt bestellen. Der Restbetrag wird bei Erhalt des Produkts in unserem Lager beglichen.",
-      "inventory_only_on_warehouse": "Das Produkt kann heute nicht im Geschäft abgeholt werden"
+      "inventory_only_on_warehouse": "Das Produkt kann heute nicht im Geschäft abgeholt werden",
+      "shipping_time": "Wir versenden es noch heute, wenn Sie es innerhalb dieser Frist bestellen",
+      "shipping_time_tomorrow": "Wir versenden es morgen, wenn Sie es innerhalb dieser Frist bestellen",
+      "shipping_time_day": "Wir versenden es am nächsten Werktag",
+      "shipping_time_warehouse": "Produkt im externen Lager. Wir versenden es in",
+      "shipping_time_warehouse_weekend": "Produkt im externen Lager. Wir werden es als nächstes versenden",
+      "ship_day_tuesday": "Dienstag",
+      "ship_day_monday": "Montag",
+      "shipping_text_pre_order": "Bestellen Sie jetzt vor, um es zu erhalten",
+      "shipping_time_pre_order": "Wochen"
     },
     "modal": {
       "label": "Medien-Galerie"
