@@ -142,6 +142,17 @@
             "page": ""
           }
         },
+        "collapsible_tab_LT77W9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open": false,
+            "heading": "GEOMETRY",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.technical_specifications.value.label.value }}<\/p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d": {
           "type": "icon-with-text",
           "settings": {
@@ -188,6 +199,7 @@
         "collapsible-row-1",
         "collapsible-row-0",
         "collapsible_tab_bNJghP",
+        "collapsible_tab_LT77W9",
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d",
         "c4ab42d0-a4e9-49c0-832f-7ba9eb03db2d",
         "f57b8618-0949-4b1a-8c3e-e6b02651a179"
