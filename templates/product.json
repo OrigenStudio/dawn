@@ -137,7 +137,7 @@
             "open": false,
             "heading": "TECHNICAL SPECIFICATIONS",
             "icon": "none",
-            "content": "<p>{{ product.metafields.custom.technical_specifications.value.label.value }}<\/p>",
+            "content": "<p>{{ product.metafields.custom.technical_specifications.value.description | metafield_tag }}<\/p>",
             "liquid": "",
             "page": ""
           }
