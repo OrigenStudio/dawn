@@ -131,28 +131,6 @@
             "page": ""
           }
         },
-        "collapsible_tab_bNJghP": {
-          "type": "collapsible_tab",
-          "settings": {
-            "open": false,
-            "heading": "TECHNICAL SPECIFICATIONS",
-            "icon": "none",
-            "content": "{{ product.metafields.custom.technical_specifications | metafield_tag: field: 'label' }}",
-            "liquid": "{% assign technicalEspecifications = product.metafields.custom.technical_especifications.value %}\n{% for item in technicalEspecifications %}\n {{item.label}}\n{{item.descriptions}}\n{% endfor %}",
-            "page": ""
-          }
-        },
-        "collapsible_tab_LT77W9": {
-          "type": "collapsible_tab",
-          "settings": {
-            "open": false,
-            "heading": "GEOMETRY",
-            "icon": "none",
-            "content": "",
-            "liquid": "",
-            "page": ""
-          }
-        },
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d": {
           "type": "icon-with-text",
           "settings": {
@@ -198,8 +176,6 @@
         "61663cae-fef9-4fe5-8a51-10b611701560",
         "collapsible-row-1",
         "collapsible-row-0",
-        "collapsible_tab_bNJghP",
-        "collapsible_tab_LT77W9",
         "9d5dbc74-6089-4876-8a3a-efb84a6edc0d",
         "c4ab42d0-a4e9-49c0-832f-7ba9eb03db2d",
         "f57b8618-0949-4b1a-8c3e-e6b02651a179"
@@ -235,6 +211,50 @@
         "padding_bottom": 28
       }
     },
+    "multicolumn_bQVcHx": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6zEyVP": {
+          "type": "column",
+          "settings": {
+            "title": "TECHNICAL SPECIFICATIONS",
+            "text": "{{ product.metafields.custom.technical_specifications | metafield_tag: field: 'label' }}",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_fEtiQC": {
+          "type": "column",
+          "settings": {
+            "image": "{{ product.metafields.custom.geometry.value.table.value }}",
+            "title": "GEOMETRY",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6zEyVP",
+        "column_fEtiQC"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1677840062bc3437d7": {
       "type": "apps",
       "blocks": {
@@ -259,6 +279,7 @@
   "order": [
     "main",
     "product-recommendations",
+    "multicolumn_bQVcHx",
     "1677840062bc3437d7"
   ]
 }
