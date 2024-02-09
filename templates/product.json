@@ -138,7 +138,7 @@
             "heading": "TECHNICAL SPECIFICATIONS",
             "icon": "none",
             "content": "{{ product.metafields.custom.technical_specifications | metafield_tag: field: 'label' }}",
-            "liquid": "",
+            "liquid": "{% assign technicalEspecifications = product.metafields.custom.technical_especifications.value %}\n{% for item in technicalEspecifications %}\n {{item.label}}\n{{item.descriptions}}\n{% endfor %}",
             "page": ""
           }
         },
@@ -148,7 +148,7 @@
             "open": false,
             "heading": "GEOMETRY",
             "icon": "none",
-            "content": "<p>{{ product.metafields.custom.technical_specifications.value.label.value }}<\/p>",
+            "content": "",
             "liquid": "",
             "page": ""
           }
