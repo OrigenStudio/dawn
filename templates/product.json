@@ -217,7 +217,7 @@
         "column_6zEyVP": {
           "type": "column",
           "settings": {
-            "title": "TECHNICAL SPECIFICATIONS",
+            "title": "GEOMETRY",
             "text": "",
             "link_label": "",
             "link": ""
@@ -238,7 +238,6 @@
         "column_6zEyVP",
         "column_fEtiQC"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h2",
