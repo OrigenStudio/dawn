@@ -216,6 +216,7 @@
       "blocks": {
         "column_6zEyVP": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "GEOMETRY",
             "text": "",
@@ -225,6 +226,7 @@
         },
         "column_fEtiQC": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "{{ product.metafields.custom.geometry.value.table.value }}",
             "title": "GEOMETRY",
