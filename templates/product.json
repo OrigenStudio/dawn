@@ -220,6 +220,7 @@
         "column_6zEyVP",
         "column_fEtiQC"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -233,6 +234,35 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_YNftjC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EFyken": {
+          "type": "heading",
+          "settings": {
+            "heading": "GEOMETRY",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EFyken"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "{{ product.metafields.custom.geometry.value.table.value }}",
+        "height": "large",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -253,34 +283,6 @@
         "columns_mobile": "2",
         "padding_top": 44,
         "padding_bottom": 28
-      }
-    },
-    "image_with_text_YNftjC": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_EFyken": {
-          "type": "heading",
-          "settings": {
-            "heading": "GEOMETRY",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "heading_EFyken"
-      ],
-      "settings": {
-        "image": "{{ product.metafields.custom.geometry.value.table.value }}",
-        "height": "large",
-        "desktop_image_width": "large",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "1677840062bc3437d7": {
@@ -307,8 +309,8 @@
   "order": [
     "main",
     "multicolumn_bQVcHx",
-    "product-recommendations",
     "image_with_text_YNftjC",
+    "product-recommendations",
     "1677840062bc3437d7"
   ]
 }
