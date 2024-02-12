@@ -211,6 +211,34 @@
         "padding_bottom": 28
       }
     },
+    "image_with_text_YNftjC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EFyken": {
+          "type": "heading",
+          "settings": {
+            "heading": "GEOMETRY",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EFyken"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.geometry.value.table.value }}",
+        "height": "large",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_bQVcHx": {
       "type": "multicolumn",
       "blocks": {
@@ -281,6 +309,7 @@
   "order": [
     "main",
     "product-recommendations",
+    "image_with_text_YNftjC",
     "multicolumn_bQVcHx",
     "1677840062bc3437d7"
   ]
